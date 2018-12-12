@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Flask Plotlyjs Example</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -31,17 +32,15 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse navbar-right">
           <ul class="nav navbar-nav">
+            <li class=""><a href="data.html">Info</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="plots/temperature.html">Temperature</a></li>
-                <li><a href="plots/humidity.html">Humidity</a></li>
-                <li><a href="plots/cloudiness.html">Cloudiness</a></li>
-                <li><a href="plots/wind-speed.html">Wind Speed</a></li>
+                <li><a href="plots/temperature.html">Heat Map</a></li>
+                <li><a href="plots/humidity.html">Scatter</a></li>
+                <li><a href="plots/cloudiness.html">Charts</a></li>
               </ul>
             </li>
-            <li><a href="comparison.html">Comparison</a></li>
-            <li class=""><a href="data.html">Data</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -51,8 +50,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12 jumbotron text-center">
-        <h1>Belly Button Biodiversity Dashboard</h1>
-        <p>Use the interactive charts below to explore the dataset</p>
+        <h1>Happiness Index</h1>
       </div>
     </div>
     <div class="row">
