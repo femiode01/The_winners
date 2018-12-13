@@ -44,12 +44,13 @@ def heat():
 
 
 @app.route("/scatter")
-def scatter(sample):
+def scatter():
+    
     return render_template("index.html")
 
 
 @app.route("/charts")
-def charts(sample):
+def charts():
     return render_template("index.html")
 
 
