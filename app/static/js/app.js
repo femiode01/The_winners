@@ -1,4 +1,5 @@
 jQuery(document).ready( function($){
+  // navigation toggle
   $('.sidebar-nav .tab').click( function(){
     if($(this).parent().hasClass('active')){
       $(this).parent().removeClass('active');
