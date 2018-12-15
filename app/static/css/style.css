@@ -1,15 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
 /* HEADER */
 header{
-	background-color: #ccc;
-	opacity: .5;
+	position: relative;
+	margin: 0;
+	background: black;
+	background-image: url("../images/bg.jpg");
+	background-attachment: fixed;
+	background-position: 40% center;
+	background-size: cover;
 }
 header h1{
 	padding-top: 150px;
 	padding-bottom: 150px;
 	font-size: 60px;
+	font-family: 'Open Sans', sans-serif;
 	text-align: center;
 	width: 100%;
 	margin: 0;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: rgba(50,150,50, 0.6);
 }
 
 /* NAV */
@@ -71,6 +82,7 @@ section.main{
 }
 
 .sidebar-nav ul li a{
+	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	padding-left: 30px;
 	padding-right: 40px;
