@@ -43,16 +43,17 @@ section.main{
 	display: inline-block;
 	position: absolute;
 	right: -37px;
-	
+	top: -2px;
 }
 .sidebar-nav .tab:hover{
 	cursor: pointer;
 }
 .sidebar-nav .tab span{
-	padding: 10px 15px;
+	padding: 14px 12px;
 	background-color: #467dd6;
 	color: #fff;
 	display: block;
+	margin-right: 0;
 }
 .sidebar-nav.active{
 	left: 0;
