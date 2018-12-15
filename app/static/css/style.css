@@ -1,6 +1,90 @@
+/* HEADER */
+header{
+	background-color: #ccc;
+	opacity: .5;
+}
+header h1{
+	padding-top: 150px;
+	padding-bottom: 150px;
+	font-size: 60px;
+	text-align: center;
+	width: 100%;
+	margin: 0;
+}
+
 /* NAV */
 .navbar {
 	margin-bottom: 0px;
 }
 .navbar-brand img {
 	max-height: 100%;
+}
+/* MAIN */
+section.main{
+	padding-bottom: 150px;
+	padding-top: 50px;
+	position: relative;
+	overflow: hidden;
+}
+.glyphicon{
+	margin-right: 10px;
+}
+.sidebar-nav{
+	position: absolute;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	top: 0px;
+	z-index: 100;
+	width: 170px;
+	left: -170px;
+	transition: all ease-in-out .5s;
+}
+.sidebar-nav .tab{
+	display: inline-block;
+	position: absolute;
+	right: -37px;
+	
+}
+.sidebar-nav .tab:hover{
+	cursor: pointer;
+}
+.sidebar-nav .tab span{
+	padding: 10px 15px;
+	background-color: #467dd6;
+	color: #fff;
+	display: block;
+}
+.sidebar-nav.active{
+	left: 0;
+	transition: all ease-in-out .5s;
+}
+.sidebar-nav.active .tab{
+	transform: rotate(180deg);
+	top: 0px;
+	transition: ease-in-out;
+}
+.sidebar-nav ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.sidebar-nav ul li a{
+	font-size: 16px;
+	padding-left: 30px;
+	padding-right: 40px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: block;
+}
+
+.sidebar-nav ul li a, .sidebar-nav ul li a:hover{
+	color: #fff;
+	text-decoration: none;
+}
+
+.chartContainer .home-tile{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #ddd;
+}

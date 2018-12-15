@@ -5,9 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Flask Plotlyjs Example</title>
+  <title>Happiness Index | Homepage</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> -->
+  <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css') }}"> -->
+  <link rel="stylesheet" href="../static/css/style.css">
+  <link rel="stylesheet" href="../static/css/animate.css">
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -16,7 +19,7 @@
 
 <body>
   <!-- NAVIGATION START -->
-  <header>
+  <!-- <header>
     <nav class="navbar navbar-default navbar-static-top">
       <div class="container">
         <div class="navbar-header">
@@ -41,33 +44,61 @@
               </ul>
             </li>
             <li class=""><a href="/info">Info</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
+          </ul> 
+        </div>--><!--/.nav-collapse -->
+      <!-- </div>
     </nav>
-  </header>
+  </header> -->
     <!-- NAVIGATION END -->
+  <header>
+    <h1>Happiness Index</h1>
+  </header>
   <div class="container">
-    <div class="row">
-      <div class="col-md-12 jumbotron text-center">
-        <h1>Happiness Index</h1>
+    <section class="main">
+      <div class="sidebar-nav">
+        <div class="tab">
+          <span>></span>
+        </div>
+        <div class="sidebar-items">
+          <ul>
+            <li><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Home</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Info</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span>Heat Map</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span>Scatter</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-stats" aria-hidden="true"></span>Charts</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <div class="chartContainer">
-          content goes here
-        </div>  
+      <div class="row">
+        <div class="col-md-12">
+          <div class="chartContainer">
+            <section>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="home-tile animated fadeInUp hide">
+
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="home-tile animated fadeInUp hide">
+
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>  
+        </div>
       </div>
-    </div>
+    </section>
   </div>
 
   <!-- <script src="https://cdn.plot.ly/plotly-1.31.2.min.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script src="{{ url_for('static', filename='js/bonus.js') }}"></script>
-  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
-
+  <!-- <script src="{{ url_for('static', filename='js/bonus.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script> -->
+  <script src="../static/js/bonus.js"></script>
+  <script src="../static/js/app.js"></script>
 </body>
 
 </html>
