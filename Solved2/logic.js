@@ -89,7 +89,8 @@ for (var i = 0; i < countries.length; i++) {
   countryMarkers.push(
     L.marker(countries[i].location).bindPopup("<h1>" + countries[i].Country + "</h1><strong><p><strong>Ranked  " + 
     countries[i].Happiness_Rank + " in " + countries[i].Happiness_Year +  " </p>" + 
-    "</h1><hr>Factors of happiness<hr><p> Economy :  " + countries[i].Economy_GDP_Per_Capita + "</h1></p>Family : "  + countries[i].Family + "</h1></p>Freedom : "  + countries[i].Freedom + "</h1></p>" ));
+    "</h1><hr>Factors of happiness<hr><p> Economy :  " + countries[i].Economy_GDP_Per_Capita + "</h1></p>Family : " 
+     + countries[i].Family + "</h1></p>Freedom : "  + countries[i].Freedom + "</h1></p>" ));
   }
 
 
@@ -97,7 +98,7 @@ for (var i = 0; i < countries.length; i++) {
 // Now we can handle them as one group instead of referencing each individually
 
 
-var cityLayer = L.layerGroup(countryMarkers);
+var countryLayer = L.layerGroup(countryMarkers);
 
 // Define variables for our tile layers
 var light = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
@@ -116,13 +117,14 @@ var dark = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?acc
 
 // Only one base layer can be shown at a time
 var baseMaps = {
-  Light: light,
-  Dark: dark
+  
+  Dark: dark,
+  Light: light
 };
 
 // Overlays that may be toggled on or off
 var overlayMaps = {
-  countries: cityLayer
+  Countries: countryLayer
 };
 
 
@@ -130,9 +132,9 @@ var overlayMaps = {
 var myMap = L.map("map", {
   center: [31.20, 21.92],
   zoom: 1.5,
-  layers: [light, cityLayer]
+  layers: [light, countryLayer]
 });
 
 // Pass our map layers into our layer control
 // Add the layer control to the map
-L.control.layers(baseMaps, overlayMaps, layout).addTo(myMap);
+L.control.layers(baseMaps, overlayMaps).addTo(myMap);

@@ -1,5 +1,5 @@
 // Function to get JSON data
-d3.json("map1.geojson", function(data) {
+d3.json("data1.geojson", function(data) {
   // Once we get a response, send the data.features object to the createFeatures function
   createFeatures(data);
 });
@@ -10,8 +10,10 @@ function createFeatures(happinessData) {
   // Give each feature a popup describing the place and time of the earthquake
   function onEachFeature(feature, layer) {
     layer.bindPopup("<h3>" + feature.properties.Country +
-    "</h3> Happiest country to live in this region <hr><p>Happiness Rank : " + feature.properties.Happiness_Rank + "</p>Happiness Year : " + feature.properties.Happiness_Year + "</p>");
-  }
+    "</h3> <hr><p>Ranked " + feature.properties.Happiness_Rank + " in " + feature.properties.Happiness_Year + "</p>"  + 
+    "</h1><hr>Factors of happiness<hr><p> Economy :  " + feature.properties.Economy_GDP_per_capita+ "</h1></p>Family : "  + feature.properties.Family + "</h1></p>Freedom : "  + feature.properties.Freedom + "</h1></p>" );
+  };
+  
 
   // Create a GeoJSON layer containing the features array on the earthquakeData object
   // Run the onEachFeature function once for each piece of data in the array

@@ -1,4 +1,4 @@
-﻿Country,Happiness_Rank,Happiness_Score,Whisker_high,Whisker_low,Economy_(GDP_per_capita),Family,Health_(Life_Expectancy),Freedom,Generosity,Trust_(Goverment_Corruption),Dystopia_Residual,Lat,Lng,Happiness_Year
+﻿Country,Happiness_Rank,Happiness_Score,Whisker_high,Whisker_low,Economy_GDP_per_capita,Family,Health_(Life_Expectancy),Freedom,Generosity,Trust_(Goverment_Corruption),Dystopia_Residual,Lat,Lng,Happiness_Year
 Norway,1,7.537000179,7.594444821,7.479555538,1.616463184,1.53352356,0.796666503,0.635422587,0.362012237,0.315963835,2.277026653,60.472024,8.468946,2017
 Canada,7,7.315999985,7.384402835,7.247597134,1.479204416,1.481348991,0.834557652,0.611100912,0.435539722,0.287371516,2.187264442,56.130366,-106.346771,2017
 Australia,10,7.28399992,7.356651225,7.211348615,1.484414935,1.510041952,0.843886793,0.601607382,0.47769925,0.30118373,2.065210819,-25.274398,133.775136,2017
