@@ -41,7 +41,7 @@ section.main{
 	margin-right: 10px;
 }
 .sidebar-nav{
-	position: absolute;
+	position: fixed;
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0.7);
 	top: 0px;
@@ -53,14 +53,14 @@ section.main{
 .sidebar-nav .tab{
 	display: inline-block;
 	position: absolute;
-	right: -37px;
+	right: -46px;
 	top: -2px;
 }
 .sidebar-nav .tab:hover{
 	cursor: pointer;
 }
 .sidebar-nav .tab span{
-	padding: 14px 12px;
+	padding: 20px 16px;
 	background-color: #467dd6;
 	color: #fff;
 	display: block;
