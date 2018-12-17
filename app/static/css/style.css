@@ -46,8 +46,8 @@ section.main{
 	background-color: rgba(0, 0, 0, 0.7);
 	top: 0px;
 	z-index: 100;
-	width: 170px;
-	left: -170px;
+	width: 200px;
+	left: -200px;
 	transition: all ease-in-out .5s;
 }
 .sidebar-nav .tab{

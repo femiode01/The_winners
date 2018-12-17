@@ -1,7 +1,6 @@
 jQuery(document).ready( function(){
 
-	function createChart(ds){
-		
+	function createChart(ds){		
 		var trace1 = {
     	x : ds.map( x => x.Happiness_score),
 	    y : ds.map( x => x.Economy),
@@ -14,7 +13,6 @@ jQuery(document).ready( function(){
 		        name : "GDP"
 		      }
 		};
-		console.log(ds);
 		var trace2 = {
 		    x : ds.map( x => x.Happiness_score),
 		    y : ds.map(x => x.Health),
@@ -28,7 +26,7 @@ jQuery(document).ready( function(){
 		      }
 
 		};
-		console.log(trace2);
+
 		var data = [trace1,trace2];
 		// Define the plot layout
 		var layout = {

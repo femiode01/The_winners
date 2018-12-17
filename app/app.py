@@ -33,11 +33,15 @@ def index():
     """Return the homepage."""
     return render_template("index.html")
 
+@app.route("/info")
+def info():
+
+	return render_template("info.html")
 
 @app.route("/map")
-def heat():
+def map():
 
-    return render_template("index.html")
+    return render_template("map.html")
 
 
 @app.route("/scatter")
