@@ -3,10 +3,14 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Flask Plotlyjs Example</title>
+  <title>Happiness Index | Homepage</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css') }}"> -->
+  <link rel="stylesheet" href="../static/css/style.css">
+  <link rel="stylesheet" href="../static/css/animate.css">
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -14,80 +18,53 @@
 </head>
 
 <body>
-  <!-- NAVIGATION START -->
   <header>
-    <nav class="navbar navbar-default navbar-static-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">
-            <img src="images/logo.png" alt="Lattitude" title="Lattitude">
-          </a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse navbar-right">
-          <ul class="nav navbar-nav">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="plots/temperature.html">Temperature</a></li>
-                <li><a href="plots/humidity.html">Humidity</a></li>
-                <li><a href="plots/cloudiness.html">Cloudiness</a></li>
-                <li><a href="plots/wind-speed.html">Wind Speed</a></li>
-              </ul>
-            </li>
-            <li><a href="comparison.html">Comparison</a></li>
-            <li class=""><a href="data.html">Data</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
+    <h1>Happiness Index</h1>
   </header>
-    <!-- NAVIGATION END -->
   <div class="container">
-    <div class="row">
-      <div class="col-md-12 jumbotron text-center">
-        <h1>Belly Button Biodiversity Dashboard</h1>
-        <p>Use the interactive charts below to explore the dataset</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-2">
-        <div class="well">
-          <h5>SELECT Sample:</h5>
-          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+    <section class="main">
+      <div class="sidebar-nav">
+        <div class="tab">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         </div>
-        <div class="panel panel-primary">
-          <div class="panel-heading">
-            <h3 class="panel-title">Sample MetaData</h3>
-          </div>
-          <div id="sample-metadata" class="panel-body"></div>
+        <div class="sidebar-items">
+          <ul>
+            <li><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Home</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Info</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span>Heat Map</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span>Scatter</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-stats" aria-hidden="true"></span>Charts</a></li>
+          </ul>
         </div>
       </div>
-      <div class="col-md-5">
-        <div id="pie"></div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="chartContainer">
+            <section>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="home-tile animated fadeInUp hide">
+
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="home-tile animated fadeInUp hide">
+
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>  
+        </div>
       </div>
-      <div class="col-md-5">
-        <div id="gauge"></div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-12">
-      <div id="bubble"></div>
-    </div>
+    </section>
   </div>
 
-  <!-- <script src="https://cdn.plot.ly/plotly-1.31.2.min.js"></script> -->
+  <script src="https://cdn.plot.ly/plotly-1.31.2.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script src="{{ url_for('static', filename='js/bonus.js') }}"></script>
-  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
-
+  <!-- <script src="{{ url_for('static', filename='js/app.js') }}"></script> -->
+  <script src="../static/js/app.js"></script>
 </body>
 
 </html>
