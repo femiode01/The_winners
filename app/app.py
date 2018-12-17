@@ -34,7 +34,7 @@ def index():
     return render_template("index.html")
 
 
-@app.route("/heat")
+@app.route("/map")
 def heat():
 
     return render_template("index.html")
@@ -43,7 +43,7 @@ def heat():
 @app.route("/scatter")
 def scatter():
     
-    return render_template("index.html")
+    return render_template("scatter.html")
 
 
 @app.route("/charts")
