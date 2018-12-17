@@ -9,27 +9,24 @@ from sqlalchemy.orm import Session
 from sqlalchemy import create_engine
 
 from flask import Flask, jsonify, render_template
-from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
-
 
 #################################################
 # Database Setup
 #################################################
 
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///db/bellybutton.sqlite"
-db = SQLAlchemy(app)
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:passowrd@server/happiness'
+# db = SQLAlchemy(app)
 
-# reflect an existing database into a new model
-Base = automap_base()
-# reflect the tables
-Base.prepare(db.engine, reflect=True)
+import pymysql
 
-# Save references to each table
-Samples_Metadata = Base.classes.sample_metadata
-Samples = Base.classes.samples
-
+db = pymysql.connect(host='localhost',
+        user='root',
+        password='password',
+        db='happiness',
+        cursorclass=pymysql.cursors.DictCursor)
+cursor = db.cursor()
 
 @app.route("/")
 def index():
@@ -51,8 +48,16 @@ def scatter():
 
 @app.route("/charts")
 def charts():
-    return render_template("index.html")
 
+    return render_template("charts.html")
+
+@app.route("/api/charts")
+def apiCharts():
+	sql = "SELECT * FROM happiness_master"
+	cursor.execute(sql)
+	results = cursor.fetchall()
+	print(results)
+	return jsonify(results)
 
 if __name__ == "__main__":
     app.run()
