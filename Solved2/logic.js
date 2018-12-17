@@ -7,7 +7,9 @@ countries  = [{
     Country: "Jamaica",
     Happiness_Rank: "76",
     Happiness_Year: "2017",
-    img: "image.jpg",
+    Economy_GDP_Per_Capita: 0.925,
+    Family: 1.368,
+    Freedom: 0.474
       },
   {
     location: [
@@ -16,7 +18,9 @@ countries  = [{
       Country: "Norway",
       Happiness_Rank: "1",
       Happiness_Year: "2017",
-      
+      Economy_GDP_Per_Capita: 1.616,
+      Family: 1.533,
+      Freedom : 0.635
     },
   
     { location: [
@@ -25,7 +29,9 @@ countries  = [{
         Country: "Canada",
         Happiness_Rank: "7",
         Happiness_Year: "2017",
-        
+        Economy_GDP_Per_Capita: 1.479,
+    Family: 1.481,
+    Freedom: 0.611
         },
     { location: [
             -25.27,133.77
@@ -33,7 +39,9 @@ countries  = [{
         Country: "Australia",
         Happiness_Rank: "10",
         Happiness_Year: "2017",
-       
+        Economy_GDP_Per_Capita: 1.484,
+        Family: 1.510,
+        Freedom: 0.601
         },
     {location: [      
       -35.67,-71.54
@@ -41,7 +49,9 @@ countries  = [{
         Country: "Chile",
         Happiness_Rank: "20",
         Happiness_Year: "2017",
-        
+        Economy_GDP_Per_Capita: 1.252 ,
+        Family: 1.284,
+        Freedom: 0.376
         },
     {
       location: [
@@ -51,7 +61,9 @@ countries  = [{
         Country: "Singapore",
         Happiness_Rank: "26",
         Happiness_Year : "2017",
-        
+        Economy_GDP_Per_Capita: 1.692,
+        Family: 1.353,
+        Freedom: 0.549
         },
   
     { location: [
@@ -61,7 +73,9 @@ countries  = [{
         Country: "Algeria",
         Happiness_Rank: "53",     
         Happiness_Year: "2017",
-       
+        Economy_GDP_Per_Capita: 1.091,
+        Family: 1.146,
+        Freedom: 0.233,
   }
   ];
 
@@ -73,7 +87,9 @@ for (var i = 0; i < countries.length; i++) {
   // loop through the cities array, create a new marker, push it to the cityMarkers array
   
   countryMarkers.push(
-    L.marker(countries[i].location).bindPopup("<h1>" + countries[i].Country + "</h1><strong>Happiest country to live in this region<hr><p><strong>Ranked : " + countries[i].Happiness_Rank + "</p>" + "</h1><strong> Year : " + countries[i].Happiness_Year + "</p>"));
+    L.marker(countries[i].location).bindPopup("<h1>" + countries[i].Country + "</h1><strong><p><strong>Ranked  " + 
+    countries[i].Happiness_Rank + " in " + countries[i].Happiness_Year +  " </p>" + 
+    "</h1><hr>Factors of happiness<hr><p> Economy :  " + countries[i].Economy_GDP_Per_Capita + "</h1></p>Family : "  + countries[i].Family + "</h1></p>Freedom : "  + countries[i].Freedom + "</h1></p>" ));
   }
 
 
