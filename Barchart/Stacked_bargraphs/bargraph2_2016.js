@@ -3,14 +3,14 @@ console.log(ds);
 
 var trace1 = {
   y : ds.map( x => x.Country),
-  x : ds.map( x => x.Economy_GDP_per_Capita),
+  x : ds.map( x => x.Dystopia_Residual),
   mode: "markers",
   orientation: 'h',
   type: "bar",
-  name: "GDP",
+  name: "Dystopia Residual",
   marker: {
-      color: "green",
-      width: 4    
+      color: "pink",
+      width: 4     
     }
 };
 var trace2 = {
@@ -58,7 +58,7 @@ var trace2 = {
     type: "bar",
     name: "Corruption",
     marker: {
-        color: "pink",
+        color: "purple",
         width: 4     
       }
   };  
@@ -75,19 +75,37 @@ var trace2 = {
         width: 4     
       }
   };  
+  var trace7 = {
+    y : ds.map( x => x.Country),
+    x : ds.map( x => x.Economy_GDP_per_Capita),
+    mode: "markers",
+    orientation: 'h',
+    type: "bar",
+    name: "GDP",
+    marker: {
+        color: "green",
+        width: 4    
+      }
+  };      
+  
 
-var data = [trace1,trace2,trace3,trace4,trace5,trace6];
+var data = [trace1,trace2,trace3,trace4,trace5,trace6,trace7];
 console.log(data);
 // Define the plot layout
 var layout = {barmode: 'stack',
-  title: "Happiness Ranking for Top 20 Countries",
+  autosize: false,
+  width: 900,
+  height: 700,
+  title: "Happiness Ranking for Top 20 Countries - 2016",
   xaxis: { autorange: true,
     type: "linear"
     // title: "Country"
 },    
 //   yaxis: { title: "Happiness_Score",tickangle: -45,
-  }
-
+  automargin: true,
+  paper_bgcolor: '#17becf',
+  plot_bgcolor: '#c7c7c7'  
+}
 
 // Plot - div tag with id "plot"
 Plotly.newPlot("plot", data, layout);
