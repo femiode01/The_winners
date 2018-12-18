@@ -115,11 +115,11 @@ section.main{
     font-size: 15px;
     z-index: 999;
 }
-.mapPage #map {
+.mapPage #map, .worldPage #plot {
     min-height: 800px;
 }
 
-.mapPage .main{
+.mapPage .main, .worldPage .main{
 	padding-top: 0;
 	padding-bottom: 0;
 }
