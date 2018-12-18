@@ -41,26 +41,26 @@ section.main{
 	margin-right: 10px;
 }
 .sidebar-nav{
-	position: absolute;
+	position: fixed;
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0.7);
 	top: 0px;
-	z-index: 100;
-	width: 170px;
-	left: -170px;
+	z-index: 99999;
+	width: 200px;
+	left: -200px;
 	transition: all ease-in-out .5s;
 }
 .sidebar-nav .tab{
 	display: inline-block;
 	position: absolute;
-	right: -37px;
+	right: -46px;
 	top: -2px;
 }
 .sidebar-nav .tab:hover{
 	cursor: pointer;
 }
 .sidebar-nav .tab span{
-	padding: 14px 12px;
+	padding: 20px 16px;
 	background-color: #467dd6;
 	color: #fff;
 	display: block;
@@ -100,4 +100,41 @@ section.main{
 	padding-top: 50px;
 	padding-bottom: 50px;
 	background-color: #ddd;
+}
+
+/*** map page ***/
+.details {
+    top: 170px;
+    visibility: hidden;
+    width: 100px;
+    padding: 10px;
+    height: 50%;
+    opacity: 0.4;
+    position: absolute;
+    background-color: aliceblue;
+    font-size: 15px;
+    z-index: 999;
+}
+.mapPage #map, .worldPage #plot {
+    min-height: 800px;
+}
+
+.mapPage .main, .worldPage .main{
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.mapPage .chartContainer {
+	position: relative;
+}
+.mapPage .mapFilter{
+	position: absolute;
+	right: 0;
+	top: 0;
+	background-color: rgba(80,30, 200, .5);
+	padding: 10px;
+	z-index: 400;
+}
+.mapPage .mapFilter span{
+	color: #fff;
+	padding-right: 15px;
 }
