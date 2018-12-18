@@ -1,44 +1,54 @@
 jQuery(document).ready( function(){
 
 	function createChart(ds){
-		
-		var trace1 = {
-    	x : ds.map( x => x.Happiness_score),
-	    y : ds.map( x => x.Economy),
-	    mode: "markers",
-	    type: "scatter",
-	    marker: {
-		        color: "#2077b4",
-		        symbol: "hexagram",
-		        size : 12,
-		        name : "GDP"
-		      }
-		};
 		console.log(ds);
-		var trace2 = {
-		    x : ds.map( x => x.Happiness_score),
-		    y : ds.map(x => x.Health),
-		    mode: "markers",
-		    type: "scatter",
-		    marker: {
-		        color: "orange",
-		        symbol: "diamond-x",
-		        size : 11,
-		        name: "Health"
-		      }
-
+		var trace1 = {
+			x: ds.map( d => d.region),
+			y: ds.map( d => d.Average),
+			text: ds.map( d => d.region),
+			type: 'bar',
+			name: '2015',
+			marker: {
+			color: 'rgb(49,130,189)',
+			opacity: 0.7,
+			}
 		};
-		console.log(trace2);
-		var data = [trace1,trace2];
-		// Define the plot layout
+
+		// var trace2 = {
+		//   x: [1,2,3,4,5,6,7,8,9,10],
+		//   y: ds[1].map( d => d.Happiness_score),
+		// 	text: ds[0].map( d => d.Country),
+		//   type: 'bar',
+		//   name: '2016',
+		//   marker: {
+		//     color: 'rgb(204,204,204)',
+		//     opacity: 0.5
+		//   }
+		// };
+
+		// var trace3 = {
+		//   x: [1,2,3,4,5,6,7,8,9,10],
+		//   y: ds[2].map( d => d.Happiness_score),
+		// 	text: ds[0].map( d => d.Country),
+		//   type: 'bar',
+		//   name: '2017',
+		//   marker: {
+		//     color: 'rgb(204,55,109)',
+		//     opacity: 0.5
+		//   }
+		// };
+
+		var data = [trace1];
+
 		var layout = {
-		  title: "Happiness Score vs GDP and Health",
-		  xaxis: { title: "GDP and Health" },
-		  yaxis: { title: "Happiness Score" }
+		  title: 'Happiness Scores VS ?',
+		  xaxis: {
+		    tickangle: -45
+		  },
+		  barmode: 'group'
 		};
 
-		// Plot - div tag with id "plot"
-		Plotly.newPlot("plot", data, layout);
+		Plotly.newPlot('plot', data, layout);
 	}
 	var url = "/api/charts";
 	d3.json(url).then(function(data) {

@@ -6,9 +6,9 @@ jQuery(document).ready( function(){
 	    y : ds.map( x => x.Economy),
 	    mode: "markers",
 	    type: "scatter",
+	    name: "GDP",
 	    marker: {
 		        color: "#2077b4",
-		        symbol: "hexagram",
 		        size : 12,
 		        name : "GDP"
 		      }
@@ -18,6 +18,7 @@ jQuery(document).ready( function(){
 		    y : ds.map(x => x.Health),
 		    mode: "markers",
 		    type: "scatter",
+		    name: "Health",
 		    marker: {
 		        color: "orange",
 		        symbol: "diamond-x",
@@ -42,7 +43,7 @@ jQuery(document).ready( function(){
 			Plotly.newPlot("plot", data, layout, {responsive: true});
 		}, 600);
 	}
-	var url = "/api/charts";
+	var url = "/api/scatter";
 	$("#plot").addClass('hide animated fadeInDown');
 	d3.json(url).then(function(data) {
 		createChart(data);

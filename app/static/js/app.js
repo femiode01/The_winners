@@ -4,7 +4,6 @@ jQuery(document).ready( function($){
     if($(this).parent().hasClass('active')){
       $(this).parent().removeClass('active');
     }else{
-      console.log('no');
       $(this).parent().addClass('active');
     }
   });

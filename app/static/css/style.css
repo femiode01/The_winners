@@ -101,3 +101,39 @@ section.main{
 	padding-bottom: 50px;
 	background-color: #ddd;
 }
+
+/*** map page ***/
+.details {
+    top: 170px;
+    visibility: hidden;
+    width: 100px;
+    padding: 10px;
+    height: 50%;
+    opacity: 0.4;
+    position: absolute;
+    background-color: aliceblue;
+    font-size: 15px;
+    z-index: 999;
+}
+.mapPage #map {
+    min-height: 800px;
+}
+
+.mapPage .main{
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.mapPage .chartContainer {
+	position: relative;
+}
+.mapPage .mapFilter{
+	position: absolute;
+	right: 0;
+	top: 0;
+	background-color: rgba(80,30, 200, .5);
+	padding: 10px;
+	z-index: 400;
+}
+.mapPage .mapFilter span{
+	color: #fff;
+}

@@ -55,12 +55,32 @@ def charts():
 
     return render_template("charts.html")
 
-@app.route("/api/charts")
-def apiCharts():
+@app.route("/api/scatter")
+def apiScatter():
 	sql = "SELECT * FROM happiness_master"
 	cursor.execute(sql)
 	results = cursor.fetchall()
 	print(results)
+	return jsonify(results)
+
+@app.route("/api/charts")
+def apiCharts():
+	# send=[]
+	# sql = "select * from happiness_master where happiness_rank < 11 and happiness_year = '2015'"
+	# cursor.execute(sql)
+	# results = cursor.fetchall()
+	# send.append(results)
+	# sql = "select * from happiness_master where happiness_rank < 11 and happiness_year = '2016'"
+	# cursor.execute(sql)
+	# results = cursor.fetchall()
+	# send.append(results)
+	# sql = "select * from happiness_master where happiness_rank < 11 and happiness_year = '2017'"
+	# cursor.execute(sql)
+	# results = cursor.fetchall()
+	# send.append(results)
+	sql='select avg(happiness_score) as "Average", country_region.region from happiness_master join country_region on happiness_master.country = country_region.country group by country_region.region order by average asc'
+	cursor.execute(sql)
+	results = cursor.fetchall()
 	return jsonify(results)
 
 if __name__ == "__main__":
