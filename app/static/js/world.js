@@ -2,30 +2,58 @@ jQuery(document).ready(function(){
 	// An array of cities and their locations
 	var url = "/api/world";
 	var countryMarkers2015 = [];
+	var countryMarkers2015b = [];
 	var countryMarkers2016 = [];
+	var countryMarkers2016b = [];
 	var countryMarkers2017 = [];
+	var countryMarkers2017b = [];
 	d3.json(url).then(function(data) {
 
-			// CREATE markers for each year
+			// CREATE markers for each year top 10
+			console.log(data)
 			data[0].forEach(function(a){
 				 countryMarkers2015.push(
 				    L.marker([a.Lat, a.Lng]).bindPopup("<h1>" + a.Country + "</h1><strong><p><strong>Ranked  " + 
-				    a.Happiness_Rank + " in " + a.Happiness_Year +  " </p>" + 
+				    a.Happiness_rank + " in " + a.Happiness_year +  " </p>" + 
 				    "</h1><hr>Factors of happiness<hr><p> Economy :  " + a.Economy + "</h1></p>Family : " 
 				     + a.Family + "</h1></p>Freedom : "  + a.Freedom + "</h1></p>" ));
 			});
 			
 			data[1].forEach(function(a){
 				 countryMarkers2016.push(
-				    L.marker([a.Lat, a.Lng],{icon: violetIcon}).bindPopup("<h1>" + a.Country + "</h1><strong><p><strong>Ranked  " + 
-				    a.Happiness_Rank + " in " + a.Happiness_Year +  " </p>" + 
+				    L.marker([a.Lat, a.Lng],{icon: redIcon}).bindPopup("<h1>" + a.Country + "</h1><strong><p><strong>Ranked  " + 
+				    a.Happiness_rank + " in " + a.Happiness_year +  " </p>" + 
 				    "</h1><hr>Factors of happiness<hr><p> Economy :  " + a.Economy + "</h1></p>Family : " 
 				     + a.Family + "</h1></p>Freedom : "  + a.Freedom + "</h1></p>" ));
 			});
 			data[2].forEach(function(a){
 				 countryMarkers2017.push(
-				    L.marker([a.Lat, a.Lng],{icon: greenIcon}).bindPopup("<h1>" + a.Country + "</h1><strong><p><strong>Ranked  " + 
-				    a.Happiness_Rank + " in " + a.Happiness_Year +  " </p>" + 
+				    L.marker([a.Lat, a.Lng],{icon: greyIcon}).bindPopup("<h1>" + a.Country + "</h1><strong><p><strong>Ranked  " + 
+				    a.Happiness_rank + " in " + a.Happiness_year +  " </p>" + 
+				    "</h1><hr>Factors of happiness<hr><p> Economy :  " + a.Economy + "</h1></p>Family : " 
+				     + a.Family + "</h1></p>Freedom : "  + a.Freedom + "</h1></p>" ));
+			});
+
+			// CREATE markers for each year bottom 10
+			data[3].forEach(function(a){
+				 countryMarkers2015.push(
+				    L.marker([a.Lat, a.Lng],{icon: violetIcon}).bindPopup("<h1>" + a.Country + "</h1><strong><p><strong>Ranked  " + 
+				    a.Happiness_rank + " in " + a.Happiness_year +  " </p>" + 
+				    "</h1><hr>Factors of happiness<hr><p> Economy :  " + a.Economy + "</h1></p>Family : " 
+				     + a.Family + "</h1></p>Freedom : "  + a.Freedom + "</h1></p>" ));
+			});
+			
+			data[4].forEach(function(a){
+				 countryMarkers2016.push(
+				    L.marker([a.Lat, a.Lng],{icon: orangeIcon}).bindPopup("<h1>" + a.Country + "</h1><strong><p><strong>Ranked  " + 
+				    a.Happiness_rank + " in " + a.Happiness_year +  " </p>" + 
+				    "</h1><hr>Factors of happiness<hr><p> Economy :  " + a.Economy + "</h1></p>Family : " 
+				     + a.Family + "</h1></p>Freedom : "  + a.Freedom + "</h1></p>" ));
+			});
+			data[5].forEach(function(a){
+				 countryMarkers2017.push(
+				    L.marker([a.Lat, a.Lng],{icon: blackIcon}).bindPopup("<h1>" + a.Country + "</h1><strong><p><strong>Ranked  " + 
+				    a.Happiness_rank + " in " + a.Happiness_year +  " </p>" + 
 				    "</h1><hr>Factors of happiness<hr><p> Economy :  " + a.Economy + "</h1></p>Family : " 
 				     + a.Family + "</h1></p>Freedom : "  + a.Freedom + "</h1></p>" ));
 			});

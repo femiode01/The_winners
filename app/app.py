@@ -91,6 +91,19 @@ def apiWorld():
 	cursor.execute(sql)
 	results = cursor.fetchall()
 	send.append(results)
+	
+	sql = "select * from happiness_master join country_lon_lng on happiness_master.country = country_lon_lng.country where Happiness_year = '2015' order by happiness_rank desc limit 10"
+	cursor.execute(sql)
+	results = cursor.fetchall()
+	send.append(results)
+	sql = "select * from happiness_master join country_lon_lng on happiness_master.country = country_lon_lng.country where Happiness_year = '2016' order by happiness_rank desc limit 10"
+	cursor.execute(sql)
+	results = cursor.fetchall()
+	send.append(results)
+	sql = "select * from happiness_master join country_lon_lng on happiness_master.country = country_lon_lng.country where Happiness_year = '2017' order by happiness_rank desc limit 10"
+	cursor.execute(sql)
+	results = cursor.fetchall()
+	send.append(results)
 
 	return jsonify(send)
 
