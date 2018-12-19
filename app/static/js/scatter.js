@@ -1,6 +1,8 @@
 jQuery(document).ready( function(){
+	var url = "/api/scatter/";
 
-	function createChart(ds){		
+	function createChart(ds){
+		$("#plot").addClass('hide animated fadeIn');	
 		var trace1 = {
     	x : ds.map( x => x.Happiness_score),
 	    y : ds.map( x => x.Economy),
@@ -43,9 +45,36 @@ jQuery(document).ready( function(){
 			Plotly.newPlot("plot", data, layout, {responsive: true});
 		}, 600);
 	}
-	var url = "/api/scatter";
-	$("#plot").addClass('hide animated fadeInDown');
-	d3.json(url).then(function(data) {
-		createChart(data);
+	
+	
+	function getData(year,start=false){
+		var u = url + year;
+		d3.json(u).then(function(data) {
+			if(start){
+				createChart(data);				
+			}else{
+				$("#plot").html('');
+				createChart(data);
+			}
+		});	
+	}
+
+	function init(){
+		getData(2015,true);
+	}
+	
+	$(".dateSwitch ul li a").click( function(a){
+		a.preventDefault();
+		var dt='';
+		if(!($(this).hasClass('active')) ){
+			dt=$(this).data('dt');
+			$(".dateSwitch ul li a").removeClass('active');
+			$(this).addClass('active');
+			getData(dt);
+		}else{
+			console.log('not active');
+		}
 	});
+
+	init();
 });
