@@ -138,3 +138,45 @@ section.main{
 	color: #fff;
 	padding-right: 15px;
 }
+
+/** SCATTER **/
+.dateSwitch{
+	width: 100%;
+	background-color: rgba(130,130,130, .7);
+	text-align: center;
+}
+.dateSwitch ul{
+	display: inline-block;
+	width: auto;
+	margin: 0;
+	padding: 10px 15px;
+	list-style-type: none;
+}
+
+.dateSwitch ul li{
+	float: left;
+	padding-left: 30px;
+}
+.dateSwitch ul li:first-child{
+	padding-left: 0px;
+}
+.dateSwitch ul:last-child:after{
+	display: block;
+	content: '';
+	clear:both;
+}
+.dateSwitch ul li a{
+	display: block;
+	padding: 10px 15px;
+	background-color: #3399be;
+	color: #000;
+	transition: all ease-in-out .3s;
+	text-decoration: none;
+}
+
+.dateSwitch ul li a:hover, .dateSwitch ul li a.active{
+	background-color: #666;
+	color: #fff;
+	text-decoration: none;
+	transition: all ease-in-out .3s;
+}

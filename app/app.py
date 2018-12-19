@@ -60,12 +60,12 @@ def world():
 
     return render_template("world.html")
 
-@app.route("/api/scatter")
-def apiScatter():
-	sql = "SELECT * FROM happiness_master"
+@app.route("/api/scatter/<dt>")
+def apiScatter(dt):
+	sql = "SELECT * FROM happiness_master WHERE happiness_year = '"+dt+"'"
 	cursor.execute(sql)
 	results = cursor.fetchall()
-	print(results)
+
 	return jsonify(results)
 
 @app.route("/api/charts")
