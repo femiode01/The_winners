@@ -180,3 +180,15 @@ section.main{
 	text-decoration: none;
 	transition: all ease-in-out .3s;
 }
+
+ ul.chartSwitch{
+	float: left;
+}
+.dateSwitch ul.dtSwitch {
+	float: right;
+}
+.dateSwitch:after{
+	display:block;
+	clear: both;
+	content: '';
+}

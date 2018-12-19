@@ -47,7 +47,7 @@ jQuery(document).ready( function(){
 	}
 	
 	
-	function getData(year,start){
+	function getData(year,start=false){
 		var u = url + year;
 		d3.json(u).then(function(data) {
 			if(start){

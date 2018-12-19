@@ -68,12 +68,22 @@ def apiScatter(dt):
 
 	return jsonify(results)
 
-@app.route("/api/charts")
-def apiCharts():
+@app.route("/api/charts/<dt>")
+def apiCharts(dt):
 	
-	sql='select avg(happiness_score) as "Average", country_region.region from happiness_master join country_region on happiness_master.country = country_region.country group by country_region.region order by average asc'
+	sql='select avg(happiness_score) as "Average", country_region.region from happiness_master join country_region on happiness_master.country = country_region.country  where happiness_master.happiness_year="'+dt+'" group by country_region.region order by average asc'
 	cursor.execute(sql)
 	results = cursor.fetchall()
+
+	return jsonify(results)
+
+@app.route("/api/bar/<dt>")
+def apiBar(dt):
+	
+	sql = "SELECT * FROM happiness_master WHERE happiness_year = '"+dt+"' order by happiness_rank asc limit 15"
+	cursor.execute(sql)
+	results = cursor.fetchall()
+
 	return jsonify(results)
 
 @app.route("/api/world")
