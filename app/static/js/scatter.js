@@ -31,9 +31,10 @@ jQuery(document).ready( function(){
 		};
 
 		var data = [trace1,trace2];
+		var showDate = $(".dateSwitch ul li a.active").data('dt');
 		// Define the plot layout
 		var layout = {
-		  title: "Happiness Score vs GDP and Health",
+		  title: "Happiness Score vs GDP and Health - "+showDate,
 		  xaxis: { title: "GDP and Health" },
 		  yaxis: { title: "Happiness Score" }
 		};
