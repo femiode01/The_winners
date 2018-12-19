@@ -27,7 +27,7 @@ jQuery(document).ready( function(){
 
 	function createBar(ds){
 		var yyy= $(".dateSwitch ul.dtSwitch li a.active").data('dt');
-		console.log(ds);
+
 		var trace1 = {
 		  y : ds.map( x => x.Country),
 		  x : ds.map( x => x.Dystopia),
@@ -120,7 +120,7 @@ jQuery(document).ready( function(){
 		var layout = {barmode: 'stack',
 		  autosize: true,
 		  height: 550,
-		  title: "Happiness Ranking for Top 20 Countries - "+yyy,
+		  title: "Happiness Ranking for Top 15 Countries - "+yyy,
 		  xaxis: { autorange: true,
 		    type: "linear"
 		    // title: "Country"
