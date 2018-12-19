@@ -119,8 +119,8 @@ jQuery(document).ready( function(){
 		// Define the plot layout
 		var layout = {barmode: 'stack',
 		  autosize: true,
-		  height: 550,
-		  title: "Happiness Ranking for Top 15 Countries - "+yyy,
+		  height: 700,
+		  title: "Happiness Ranking for Top 50 Countries - "+yyy,
 		  xaxis: { autorange: true,
 		    type: "linear"
 		    // title: "Country"
