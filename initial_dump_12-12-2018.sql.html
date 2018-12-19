@@ -1,0 +1,1445 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  <link rel="dns-prefetch" href="https://assets-cdn.github.com">
+  <link rel="dns-prefetch" href="https://avatars0.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars1.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars2.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars3.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com">
+  <link rel="dns-prefetch" href="https://user-images.githubusercontent.com/">
+  <link rel="dns-prefetch" href="https://github.githubassets.com">
+
+
+
+  <link crossorigin="anonymous" media="all" integrity="sha512-lLo2nlsdl+bHLu6PGvC2j3wfP45RnK4wKQLiPnCDcuXfU38AiD+JCdMywnF3WbJC1jaxe3lAI6AM4uJuMFBLEw==" rel="stylesheet" href="https://github.githubassets.com/assets/frameworks-08fc49d3bd2694c870ea23d0906f3610.css" />
+  <link crossorigin="anonymous" media="all" integrity="sha512-OZCQ3slg8YEUBWwmkOmn3W2QaV+jZZpPm1mOdb5MHdbNGc8iEAJUUwMoY+M+enUN/fn+HtnV824ioPXCbRSCEg==" rel="stylesheet" href="https://github.githubassets.com/assets/github-790e8cab9d500f9bf63c66e6052d983c.css" />
+  
+  
+  
+  
+  
+
+  <meta name="viewport" content="width=device-width">
+  
+  <title>The_winners/initial_dump_12-12-2018.sql at sandino · femiode01/The_winners</title>
+    <meta name="description" content="Contribute to femiode01/The_winners development by creating an account on GitHub.">
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+  <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+  <meta property="fb:app_id" content="1401488693436528">
+
+    
+    <meta property="og:image" content="https://avatars2.githubusercontent.com/u/41710282?s=400&amp;v=4" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="femiode01/The_winners" /><meta property="og:url" content="https://github.com/femiode01/The_winners" /><meta property="og:description" content="Contribute to femiode01/The_winners development by creating an account on GitHub." />
+
+  <link rel="assets" href="https://assets-cdn.github.com/">
+  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6MzExMjM0NzQwOmNiY2E1MmMyYjk2MzZmMmY5YjY4YjExYjljZThmMDc5ZTY2MTI5NDA5ZDZkOThjYWIxNjcyZjA0ZjE0NDk0ZGU=--004e330c76560bb05a7ef21c3cc5e2d71e44f7dd">
+  <meta name="pjax-timeout" content="1000">
+  <link rel="sudo-modal" href="/sessions/sudo_modal">
+  <meta name="request-id" content="D9E9:3DAA:2E59F1B:5A8E2E9:5C11B879" data-pjax-transient>
+
+
+  
+
+  <meta name="selected-link" value="repo_source" data-pjax-transient>
+
+      <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+    <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+    <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
+
+  <meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-request_id" content="D9E9:3DAA:2E59F1B:5A8E2E9:5C11B879" /><meta name="octolytics-dimension-region_edge" content="iad" /><meta name="octolytics-dimension-region_render" content="iad" /><meta name="octolytics-actor-id" content="41707119" /><meta name="octolytics-actor-login" content="Payedas7" /><meta name="octolytics-actor-hash" content="9a336567ac174ca44fa679a8e0f25c285d00286414522066cdf3857e2f0a46a7" />
+<meta name="analytics-location" content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" />
+
+
+
+    <meta name="google-analytics" content="UA-3769691-2">
+
+  <meta class="js-ga-set" name="userId" content="a334f640292a37d63b0dbf5ba8a917b6" %>
+
+<meta class="js-ga-set" name="dimension1" content="Logged In">
+
+
+
+  
+
+      <meta name="hostname" content="github.com">
+    <meta name="user-login" content="Payedas7">
+
+      <meta name="expected-hostname" content="github.com">
+    <meta name="js-proxy-site-detection-payload" content="NDQyYjA5NDhlZDA1ZDYwZTQ1N2EzMzhhZTdjZGYyNmQ0MDI5OGFjMjUxNDk4ODhkNmYwM2E3NjM4YWQ5NzlkN3x7InJlbW90ZV9hZGRyZXNzIjoiNTAuMjI0LjE5Mi4xOTQiLCJyZXF1ZXN0X2lkIjoiRDlFOTozREFBOjJFNTlGMUI6NUE4RTJFOTo1QzExQjg3OSIsInRpbWVzdGFtcCI6MTU0NDY2NTI0NCwiaG9zdCI6ImdpdGh1Yi5jb20ifQ==">
+
+    <meta name="enabled-features" content="DASHBOARD_V2_LAYOUT_OPT_IN,EXPLORE_DISCOVER_REPOSITORIES,UNIVERSE_BANNER,MARKETPLACE_PLAN_RESTRICTION_EDITOR,NOTIFY_ON_BLOCK,TIMELINE_COMMENT_UPDATES,ISSUE_TEMPLATES_PIONEER,RELATED_ISSUES,MARKETPLACE_INSIGHTS_V2,ASSETS_CDN_NEW">
+
+  <meta name="html-safe-nonce" content="030085f352c074cf330f931bace531a4a130e68e">
+
+  <meta http-equiv="x-pjax-version" content="c370644329a22cb840d9d303a4638259">
+  
+
+      <link href="https://github.com/femiode01/The_winners/commits/sandino.atom" rel="alternate" title="Recent Commits to The_winners:sandino" type="application/atom+xml">
+
+  <meta name="go-import" content="github.com/femiode01/The_winners git https://github.com/femiode01/The_winners.git">
+
+  <meta name="octolytics-dimension-user_id" content="41710282" /><meta name="octolytics-dimension-user_login" content="femiode01" /><meta name="octolytics-dimension-repository_id" content="160966916" /><meta name="octolytics-dimension-repository_nwo" content="femiode01/The_winners" /><meta name="octolytics-dimension-repository_public" content="true" /><meta name="octolytics-dimension-repository_is_fork" content="false" /><meta name="octolytics-dimension-repository_network_root_id" content="160966916" /><meta name="octolytics-dimension-repository_network_root_nwo" content="femiode01/The_winners" /><meta name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" content="false" />
+
+
+    <link rel="canonical" href="https://github.com/femiode01/The_winners/blob/sandino/dumps/initial_dump_12-12-2018.sql" data-pjax-transient>
+
+
+  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+
+  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+
+  <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#000000">
+  <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://assets-cdn.github.com/favicon.ico">
+
+<meta name="theme-color" content="#1e2327">
+
+  <link rel="apple-touch-icon" href="https://github.githubassets.com/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://github.githubassets.com/apple-touch-icon-180x180.png">
+  <meta name="apple-mobile-web-app-title" content="GitHub">
+
+
+  <link rel="manifest" href="/manifest.json" crossOrigin="use-credentials">
+
+  </head>
+
+  <body class="logged-in env-production false page-blob">
+    
+
+  <div class="position-relative js-header-wrapper ">
+    <a href="#start-of-content" tabindex="1" class="p-3 bg-blue text-white show-on-focus js-skip-to-content">Skip to content</a>
+    <div id="js-pjax-loader-bar" class="pjax-loader-bar"><div class="progress"></div></div>
+
+    
+    
+    
+
+
+        
+<header class="Header  f5" role="banner">
+  <div class="d-flex flex-justify-between px-3 ">
+    <div class="d-flex flex-justify-between ">
+      <div class="">
+        <a class="header-logo-invertocat" href="https://github.com/" data-hotkey="g d" aria-label="Homepage" data-ga-click="Header, go to dashboard, icon:logo">
+  <svg height="32" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+</a>
+
+      </div>
+
+    </div>
+
+    <div class="HeaderMenu d-flex flex-justify-between flex-auto">
+      <nav class="d-flex" aria-label="Global">
+            <div class="">
+              <div class="header-search scoped-search site-scoped-search js-site-search position-relative js-jump-to"
+  role="combobox"
+  aria-owns="jump-to-results"
+  aria-label="Search or jump to"
+  aria-haspopup="listbox"
+  aria-expanded="false"
+>
+  <div class="position-relative">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-site-search-form" data-scope-type="Repository" data-scope-id="160966916" data-scoped-search-url="/femiode01/The_winners/search" data-unscoped-search-url="/search" action="/femiode01/The_winners/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+      <label class="form-control header-search-wrapper header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center js-chromeless-input-container">
+        <input type="text"
+          class="form-control header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable"
+          data-hotkey="s,/"
+          name="q"
+          value=""
+          placeholder="Search or jump to…"
+          data-unscoped-placeholder="Search or jump to…"
+          data-scoped-placeholder="Search or jump to…"
+          autocapitalize="off"
+          aria-autocomplete="list"
+          aria-controls="jump-to-results"
+          aria-label="Search or jump to…"
+          data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations#csrf-token=QEfUgR0LvF4IfQtsyfTEnYZLi1Wr5VHSOo5qDO3rUAIWDH3gPnA0HAINPWHzArNc0JRFB/PATde9QF9Q1NcPUA=="
+          spellcheck="false"
+          autocomplete="off"
+          >
+          <input type="hidden" class="js-site-search-type-field" name="type" >
+            <img src="https://github.githubassets.com/images/search-key-slash.svg" alt="" class="mr-2 header-search-key-slash">
+
+            <div class="Box position-absolute overflow-hidden d-none jump-to-suggestions js-jump-to-suggestions-container">
+              
+<ul class="d-none js-jump-to-suggestions-template-container">
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-suggestion" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
+        In this repository
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+</ul>
+
+<ul class="d-none js-jump-to-no-results-template-container">
+  <li class="d-flex flex-justify-center flex-items-center f5 d-none js-jump-to-suggestion p-2">
+    <span class="text-gray">No suggested jump to results</span>
+  </li>
+</ul>
+
+<ul id="jump-to-results" role="listbox" class="p-0 m-0 js-navigation-container jump-to-suggestions-results-container js-jump-to-suggestions-results-container">
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-scoped-search d-none" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
+        In this repository
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-global-search d-none" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
+        In this repository
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+
+    <li class="d-flex flex-justify-center flex-items-center p-0 f5 js-jump-to-suggestion">
+      <img src="https://github.githubassets.com/images/spinners/octocat-spinner-128.gif" alt="Octocat Spinner Icon" class="m-2" width="28">
+    </li>
+</ul>
+
+            </div>
+      </label>
+</form>  </div>
+</div>
+
+            </div>
+
+          <ul class="d-flex pl-2 flex-items-center text-bold list-style-none">
+            <li>
+              <a class="js-selected-navigation-item HeaderNavlink px-2" data-hotkey="g p" data-ga-click="Header, click, Nav menu - item:pulls context:user" aria-label="Pull requests you created" data-selected-links="/pulls /pulls/assigned /pulls/mentioned /pulls" href="/pulls">
+                Pull requests
+</a>            </li>
+            <li>
+              <a class="js-selected-navigation-item HeaderNavlink px-2" data-hotkey="g i" data-ga-click="Header, click, Nav menu - item:issues context:user" aria-label="Issues you created" data-selected-links="/issues /issues/assigned /issues/mentioned /issues" href="/issues">
+                Issues
+</a>            </li>
+              <li class="position-relative">
+                <a class="js-selected-navigation-item HeaderNavlink px-2" data-ga-click="Header, click, Nav menu - item:marketplace context:user" data-octo-click="marketplace_click" data-octo-dimensions="location:nav_bar" data-selected-links=" /marketplace" href="/marketplace">
+                   Marketplace
+</a>                  
+              </li>
+            <li>
+              <a class="js-selected-navigation-item HeaderNavlink px-2" data-ga-click="Header, click, Nav menu - item:explore" data-selected-links="/explore /trending /trending/developers /integrations /integrations/feature/code /integrations/feature/collaborate /integrations/feature/ship showcases showcases_search showcases_landing /explore" href="/explore">
+                Explore
+</a>            </li>
+          </ul>
+      </nav>
+
+      <div class="d-flex">
+        
+<ul class="user-nav d-flex flex-items-center list-style-none" id="user-links">
+  <li class="dropdown">
+    <span class="d-inline-block  px-2">
+      
+    <a aria-label="You have no unread notifications" class="notification-indicator tooltipped tooltipped-s  js-socket-channel js-notification-indicator" data-hotkey="g n" data-ga-click="Header, go to notifications, icon:read" data-channel="notification-changed:41707119" href="/notifications">
+        <span class="mail-status "></span>
+        <svg class="octicon octicon-bell" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 12v1H0v-1l.73-.58c.77-.77.81-2.55 1.19-4.42C2.69 3.23 6 2 6 2c0-.55.45-1 1-1s1 .45 1 1c0 0 3.39 1.23 4.16 5 .38 1.88.42 3.66 1.19 4.42l.66.58H14zm-7 4c1.11 0 2-.89 2-2H5c0 1.11.89 2 2 2z"/></svg>
+</a>
+    </span>
+  </li>
+
+  <li class="dropdown">
+    <details class="details-overlay details-reset d-flex px-2 flex-items-center">
+      <summary class="HeaderNavlink"
+         aria-label="Create new…"
+         data-ga-click="Header, create new, icon:add">
+        <svg class="octicon octicon-plus float-left mr-1 mt-1" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"/></svg>
+        <span class="dropdown-caret mt-1"></span>
+      </summary>
+      <details-menu class="dropdown-menu dropdown-menu-sw">
+        
+<a role="menuitem" class="dropdown-item" href="/new" data-ga-click="Header, create new repository">
+  New repository
+</a>
+
+  <a role="menuitem" class="dropdown-item" href="/new/import" data-ga-click="Header, import a repository">
+    Import repository
+  </a>
+
+<a role="menuitem" class="dropdown-item" href="https://gist.github.com/" data-ga-click="Header, create new gist">
+  New gist
+</a>
+
+  <a role="menuitem" class="dropdown-item" href="/organizations/new" data-ga-click="Header, create new organization">
+    New organization
+  </a>
+
+
+  <div class="dropdown-divider"></div>
+  <div class="dropdown-header">
+    <span title="femiode01/The_winners">This repository</span>
+  </div>
+    <a role="menuitem" class="dropdown-item" href="/femiode01/The_winners/issues/new" data-ga-click="Header, create new issue">
+      New issue
+    </a>
+
+
+      </details-menu>
+    </details>
+  </li>
+
+  <li class="dropdown">
+
+    <details class="details-overlay details-reset d-flex pl-2 flex-items-center">
+      <summary class="HeaderNavlink name mt-1"
+        aria-label="View profile and more"
+        data-ga-click="Header, show menu, icon:avatar">
+        <img alt="@Payedas7" class="avatar float-left mr-1" src="https://avatars0.githubusercontent.com/u/41707119?s=40&amp;v=4" height="20" width="20">
+        <span class="dropdown-caret"></span>
+      </summary>
+      <details-menu class="dropdown-menu dropdown-menu-sw">
+        <ul>
+          <li class="header-nav-current-user css-truncate"><a role="menuitem" class="no-underline user-profile-link px-3 pt-2 pb-2 mb-n2 mt-n1 d-block" href="/Payedas7" data-ga-click="Header, go to profile, text:Signed in as">Signed in as <strong class="css-truncate-target">Payedas7</strong></a></li>
+          <li class="dropdown-divider"></li>
+
+
+          <li><a role="menuitem" class="dropdown-item" href="/Payedas7" data-ga-click="Header, go to profile, text:your profile">Your profile</a></li>
+          <li><a role="menuitem" class="dropdown-item" href="/Payedas7?tab=repositories" data-ga-click="Header, go to repositories, text:your repositories">Your repositories</a></li>
+
+
+          <li><a role="menuitem" class="dropdown-item" href="/Payedas7?tab=stars" data-ga-click="Header, go to starred repos, text:your stars">Your stars</a></li>
+            <li><a role="menuitem" class="dropdown-item" href="https://gist.github.com/" data-ga-click="Header, your gists, text:your gists">Your gists</a></li>
+          <li class="dropdown-divider"></li>
+          <li><a role="menuitem" class="dropdown-item" href="https://help.github.com" data-ga-click="Header, go to help, text:help">Help</a></li>
+          <li><a role="menuitem" class="dropdown-item" href="/settings/profile" data-ga-click="Header, go to settings, icon:settings">Settings</a></li>
+          <li>
+            <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="logout-form" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="zSjySnVAPNcURypz5UblS+1+d0wnot1GQlADSa04YLhaousPQlgD3HY8t0s8xQcAXA0XqW0XnPnEJaJsi8vo8A==" />
+              <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout" role="menuitem">
+                Sign out
+              </button>
+</form>          </li>
+        </ul>
+      </details-menu>
+    </details>
+  </li>
+</ul>
+
+
+
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="sr-only right-0" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="VqrQIjid2GBEWMPCJldD5cHSiP63CsQrsfz3WQ1OuWPBIMlnD4XnayYjXvr/1KGucKHoG/2/hZQ3iVZ8K70xKw==" />
+          <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
+            Sign out
+          </button>
+</form>      </div>
+    </div>
+  </div>
+</header>
+
+      
+
+  </div>
+
+  <div id="start-of-content" class="show-on-focus"></div>
+
+    <div id="js-flash-container">
+
+</div>
+
+
+
+  <div role="main" class="application-main " data-commit-hovercards-enabled>
+        <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="">
+    <div id="js-repo-pjax-container" data-pjax-container >
+      
+
+
+  
+
+
+
+
+  <div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav  ">
+    <div class="repohead-details-container clearfix container">
+
+      <ul class="pagehead-actions">
+  <li>
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-remote="true" class="js-social-form js-social-container" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="IYl/gLv+tJtcmy+YCOHrB6F9TMtWu4jemjlvHOC55XjpT4znGd9XeYXq0rfLxINuLQO3dHLN338bKc4BwaidpQ==" />      <input type="hidden" name="repository_id" id="repository_id" value="160966916" class="form-control" />
+
+      <details class="details-reset details-overlay select-menu float-left">
+        <summary class="btn btn-sm btn-with-count select-menu-button" data-ga-click="Repository, click Watch settings, action:blob#show">
+          <span data-menu-button>
+              <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+              Watch
+          </span>
+        </summary>
+        <details-menu class="select-menu-modal position-absolute mt-5" style="z-index: 99;">
+          <div class="select-menu-header">
+            <span class="select-menu-title">Notifications</span>
+          </div>
+          <div class="select-menu-list">
+            <button type="submit" name="do" value="included" class="select-menu-item width-full" aria-checked="true" role="menuitemradio">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <div class="select-menu-item-text">
+                <span class="select-menu-item-heading">Not watching</span>
+                <span class="description">Be notified only when participating or @mentioned.</span>
+                <span class="hidden-select-button-text" data-menu-button-contents>
+                  <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+                  Watch
+                </span>
+              </div>
+            </button>
+
+              <button type="submit" name="do" value="release_only" class="select-menu-item width-full" aria-checked="false" role="menuitemradio">
+                <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+                <div class="select-menu-item-text">
+                  <span class="select-menu-item-heading">Releases only</span>
+                  <span class="description">Be notified of new releases, and when participating or @mentioned.</span>
+                  <span class="hidden-select-button-text" data-menu-button-contents>
+                    <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+                    Unwatch releases
+                  </span>
+                </div>
+              </button>
+
+            <button type="submit" name="do" value="subscribed" class="select-menu-item width-full" aria-checked="false" role="menuitemradio">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <div class="select-menu-item-text">
+                <span class="select-menu-item-heading">Watching</span>
+                <span class="description">Be notified of all conversations.</span>
+                <span class="hidden-select-button-text" data-menu-button-contents>
+                  <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+                  Unwatch
+                </span>
+              </div>
+            </button>
+
+            <button type="submit" name="do" value="ignore" class="select-menu-item width-full" aria-checked="false" role="menuitemradio">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <div class="select-menu-item-text">
+                <span class="select-menu-item-heading">Ignoring</span>
+                <span class="description">Never be notified.</span>
+                <span class="hidden-select-button-text" data-menu-button-contents>
+                  <svg class="octicon octicon-mute v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 2.81v10.38c0 .67-.81 1-1.28.53L3 10H1c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1h2l3.72-3.72C7.19 1.81 8 2.14 8 2.81zm7.53 3.22l-1.06-1.06-1.97 1.97-1.97-1.97-1.06 1.06L11.44 8 9.47 9.97l1.06 1.06 1.97-1.97 1.97 1.97 1.06-1.06L13.56 8l1.97-1.97z"/></svg>
+                  Stop ignoring
+                </span>
+              </div>
+            </button>
+          </div>
+        </details-menu>
+      </details>
+      <a class="social-count js-social-count"
+        href="/femiode01/The_winners/watchers"
+        aria-label="2 users are watching this repository">
+        2
+      </a>
+</form>
+  </li>
+
+  <li>
+    
+  <div class="js-toggler-container js-social-container starring-container ">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" action="/femiode01/The_winners/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="0XqBaTzZqEnZqyWyLq+fJ9NN1bDJSFnjoTWRcWupjsHXli3Y+LOG2w+5J6DNtOmni5eAit3xuvnVdnuur2266Q==" />
+      <input type="hidden" name="context" value="repository"></input>
+      <button
+        type="submit"
+        class="btn btn-sm btn-with-count js-toggler-target"
+        aria-label="Unstar this repository" title="Unstar femiode01/The_winners"
+        data-ga-click="Repository, click unstar button, action:blob#show; text:Unstar">
+        <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+        Unstar
+      </button>
+        <a class="social-count js-social-count" href="/femiode01/The_winners/stargazers"
+           aria-label="0 users starred this repository">
+          0
+        </a>
+</form>
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" action="/femiode01/The_winners/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="YQyX29skQjkR/kYEDt8RDjg7r7em526YR3uryZ+ed4Ma56z9G5kvmzXaqXv45PA8rV/QRi/JRd4KzAfNQ3vw+Q==" />
+      <input type="hidden" name="context" value="repository"></input>
+      <button
+        type="submit"
+        class="btn btn-sm btn-with-count js-toggler-target"
+        aria-label="Star this repository" title="Star femiode01/The_winners"
+        data-ga-click="Repository, click star button, action:blob#show; text:Star">
+        <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+        Star
+      </button>
+        <a class="social-count js-social-count" href="/femiode01/The_winners/stargazers"
+           aria-label="0 users starred this repository">
+          0
+        </a>
+</form>  </div>
+
+  </li>
+
+  <li>
+          <details class="details-reset details-overlay details-overlay-dark d-inline-block float-left"
+            data-deferred-details-content-url="/femiode01/The_winners/fork?fragment=1">
+            <summary class="btn btn-sm btn-with-count"
+              title="Fork your own copy of femiode01/The_winners to your account"
+              data-ga-click="Repository, show fork modal, action:blob#show; text:Fork">
+              <svg class="octicon octicon-repo-forked v-align-text-bottom" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+              Fork
+            </summary>
+            <details-dialog class="anim-fade-in fast Box Box--overlay d-flex flex-column">
+              <div class="Box-header">
+                <button class="Box-btn-octicon btn-octicon float-right" type="button" aria-label="Close dialog" data-close-dialog>
+                  <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+                </button>
+                <h3 class="Box-title">Fork The_winners</h3>
+              </div>
+              <div class="overflow-auto text-center">
+                <include-fragment>
+                  <div class="octocat-spinner my-3" aria-label="Loading..."></div>
+                  <p class="f5 text-gray">If this dialog fails to load, you can visit <a href="/femiode01/The_winners/fork">the fork page</a> directly.</p>
+                </include-fragment>
+              </div>
+            </details-dialog>
+          </details>
+
+    <a href="/femiode01/The_winners/network/members" class="social-count"
+       aria-label="0 users forked this repository">
+      0
+    </a>
+  </li>
+</ul>
+
+      <h1 class="public ">
+  <svg class="octicon octicon-repo" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+  <span class="author" itemprop="author"><a class="url fn" rel="author" data-hovercard-type="user" data-hovercard-url="/hovercards?user_id=41710282" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/femiode01">femiode01</a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong itemprop="name"><a data-pjax="#js-repo-pjax-container" href="/femiode01/The_winners">The_winners</a></strong>
+
+</h1>
+
+    </div>
+    
+<nav class="reponav js-repo-nav js-sidenav-container-pjax container"
+     itemscope
+     itemtype="http://schema.org/BreadcrumbList"
+    aria-label="Repository"
+     data-pjax="#js-repo-pjax-container">
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a class="js-selected-navigation-item selected reponav-item" itemprop="url" data-hotkey="g c" aria-current="page" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages /femiode01/The_winners/tree/sandino" href="/femiode01/The_winners/tree/sandino">
+      <svg class="octicon octicon-code" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"/></svg>
+      <span itemprop="name">Code</span>
+      <meta itemprop="position" content="1">
+</a>  </span>
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a itemprop="url" data-hotkey="g i" class="js-selected-navigation-item reponav-item" data-selected-links="repo_issues repo_labels repo_milestones /femiode01/The_winners/issues" href="/femiode01/The_winners/issues">
+        <svg class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+        <span itemprop="name">Issues</span>
+        <span class="Counter">0</span>
+        <meta itemprop="position" content="2">
+</a>    </span>
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a data-hotkey="g p" itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_pulls checks /femiode01/The_winners/pulls" href="/femiode01/The_winners/pulls">
+      <svg class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      <span itemprop="name">Pull requests</span>
+      <span class="Counter">0</span>
+      <meta itemprop="position" content="3">
+</a>  </span>
+
+
+    <a data-hotkey="g b" class="js-selected-navigation-item reponav-item" data-selected-links="repo_projects new_repo_project repo_project /femiode01/The_winners/projects" href="/femiode01/The_winners/projects">
+      <svg class="octicon octicon-project" viewBox="0 0 15 16" version="1.1" width="15" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></svg>
+      Projects
+      <span class="Counter" >0</span>
+</a>
+
+    <a class="js-selected-navigation-item reponav-item" data-hotkey="g w" data-selected-links="repo_wiki /femiode01/The_winners/wiki" href="/femiode01/The_winners/wiki">
+      <svg class="octicon octicon-book" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M3 5h4v1H3V5zm0 3h4V7H3v1zm0 2h4V9H3v1zm11-5h-4v1h4V5zm0 2h-4v1h4V7zm0 2h-4v1h4V9zm2-6v9c0 .55-.45 1-1 1H9.5l-1 1-1-1H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h5.5l1 1 1-1H15c.55 0 1 .45 1 1zm-8 .5L7.5 3H2v9h6V3.5zm7-.5H9.5l-.5.5V12h6V3z"/></svg>
+      Wiki
+</a>
+    <a class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors dependency_graph pulse alerts security /femiode01/The_winners/pulse" href="/femiode01/The_winners/pulse">
+      <svg class="octicon octicon-graph" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z"/></svg>
+      Insights
+</a>
+
+</nav>
+
+
+  </div>
+
+<div class="container new-discussion-timeline experiment-repo-nav  ">
+  <div class="repository-content ">
+
+    
+    
+
+
+
+  
+    <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/femiode01/The_winners/blob/b710e4bc0a0bc95e9d8d2a155a3ea53d66526048/dumps/initial_dump_12-12-2018.sql">Permalink</a>
+
+    <!-- blob contrib key: blob_contributors:v21:a022cccde4b5d4180096ec35d48b37c4 -->
+
+    
+
+    <div class="file-navigation">
+      
+<div class="select-menu branch-select-menu js-menu-container js-select-menu float-left">
+  <button class=" btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w"
+    
+    type="button" aria-label="Switch branches or tags" aria-expanded="false" aria-haspopup="true">
+      <i>Branch:</i>
+      <span class="js-select-button css-truncate-target">sandino</span>
+  </button>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax>
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <svg class="octicon octicon-x js-menu-close" role="img" aria-label="Close" viewBox="0 0 12 16" version="1.1" width="12" height="16"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+        <span class="select-menu-title">Switch branches/tags</span>
+      </div>
+
+      <tab-container>
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Find or create a branch…" id="context-commitish-filter-field" class="form-control js-filterable-field js-navigation-enable" placeholder="Find or create a branch…">
+        </div>
+        <div class="select-menu-tabs" role="tablist">
+          <ul>
+            <li class="select-menu-tab">
+              <button type="button" class="select-menu-tab-nav" data-filter-placeholder="Find or create a branch…" role="tab" aria-selected="true">Branches</button>
+            </li>
+            <li class="select-menu-tab">
+              <button type="button" class="select-menu-tab-nav" data-filter-placeholder="Find a tag…" role="tab">Tags</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="select-menu-list" role="tabpanel">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/femiode01/The_winners/blob/Payel/dumps/initial_dump_12-12-2018.sql"
+               data-name="Payel"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                Payel
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/femiode01/The_winners/blob/master/dumps/initial_dump_12-12-2018.sql"
+               data-name="master"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                master
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open selected"
+               href="/femiode01/The_winners/blob/sandino/dumps/initial_dump_12-12-2018.sql"
+               data-name="sandino"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                sandino
+              </span>
+            </a>
+        </div>
+
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="select-menu-new-item-form js-new-item-form" action="/femiode01/The_winners/branches" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="7nBhQ68//e8d+idQBwpNhBrWmODqAuYkVKSGfONuZwk2yiMLFyHEcJVD7HU4u9lRhSUqklfLxDtnqFwEvszL0g==" />
+            <input type="hidden" name="name" id="name" class="js-new-item-value">
+            <input type="hidden" name="branch" id="branch" value="sandino">
+            <input type="hidden" name="path_binary" id="path_binary" value="ZHVtcHMvaW5pdGlhbF9kdW1wXzEyLTEyLTIwMTguc3Fs">
+
+            <button type="submit" class="width-full select-menu-item js-navigation-open js-navigation-item">
+              <svg class="octicon octicon-git-branch select-menu-item-icon" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 5c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v.3c-.02.52-.23.98-.63 1.38-.4.4-.86.61-1.38.63-.83.02-1.48.16-2 .45V4.72a1.993 1.993 0 0 0-1-3.72C.88 1 0 1.89 0 3a2 2 0 0 0 1 1.72v6.56c-.59.35-1 .99-1 1.72 0 1.11.89 2 2 2 1.11 0 2-.89 2-2 0-.53-.2-1-.53-1.36.09-.06.48-.41.59-.47.25-.11.56-.17.94-.17 1.05-.05 1.95-.45 2.75-1.25S8.95 7.77 9 6.73h-.02C9.59 6.37 10 5.73 10 5zM2 1.8c.66 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2C1.35 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2zm0 12.41c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm6-8c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+              <div class="select-menu-item-text">
+                <span class="select-menu-item-heading">Create branch: <span class="js-new-item-name"></span></span>
+                <span class="description">from ‘sandino’</span>
+              </div>
+            </button>
+</form>
+      </div>
+
+      <div class="select-menu-list" role="tabpanel" hidden>
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+      </tab-container>
+    </div>
+  </div>
+</div>
+
+      <div class="BtnGroup float-right">
+        <a href="/femiode01/The_winners/find/sandino"
+              class="js-pjax-capture-input btn btn-sm BtnGroup-item"
+              data-pjax
+              data-hotkey="t">
+          Find file
+        </a>
+        <clipboard-copy for="blob-path" class="btn btn-sm BtnGroup-item">
+          Copy path
+        </clipboard-copy>
+      </div>
+      <div id="blob-path" class="breadcrumb">
+        <span class="repo-root js-repo-root"><span class="js-path-segment"><a data-pjax="true" href="/femiode01/The_winners/tree/sandino"><span>The_winners</span></a></span></span><span class="separator">/</span><span class="js-path-segment"><a data-pjax="true" href="/femiode01/The_winners/tree/sandino/dumps"><span>dumps</span></a></span><span class="separator">/</span><strong class="final-path">initial_dump_12-12-2018.sql</strong>
+      </div>
+    </div>
+
+
+    
+  <div class="commit-tease">
+      <span class="float-right">
+        <a class="commit-tease-sha" href="/femiode01/The_winners/commit/b710e4bc0a0bc95e9d8d2a155a3ea53d66526048" data-pjax>
+          b710e4b
+        </a>
+        <relative-time datetime="2018-12-13T01:16:51Z">Dec 12, 2018</relative-time>
+      </span>
+      <div>
+        <a rel="contributor" data-skip-pjax="true" data-hovercard-type="user" data-hovercard-url="/hovercards?user_id=7041475" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/kukuswish"><img class="avatar" src="https://avatars3.githubusercontent.com/u/7041475?s=40&amp;v=4" width="20" height="20" alt="@kukuswish" /></a>
+        <a class="user-mention" rel="contributor" data-hovercard-type="user" data-hovercard-url="/hovercards?user_id=7041475" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/kukuswish">kukuswish</a>
+          <a data-pjax="true" title="add sql dump for initial database" class="message" href="/femiode01/The_winners/commit/b710e4bc0a0bc95e9d8d2a155a3ea53d66526048">add sql dump for initial database</a>
+      </div>
+
+    <div class="commit-tease-contributors">
+      
+<details class="details-reset details-overlay details-overlay-dark lh-default text-gray-dark float-left mr-2" id="blob_contributors_box">
+  <summary class="btn-link" aria-haspopup="dialog"  >
+    
+    <span><strong>1</strong> contributor</span>
+  </summary>
+  <details-dialog class="Box Box--overlay d-flex flex-column anim-fade-in fast " aria-label="Users who have contributed to this file">
+    <div class="Box-header">
+      <button class="Box-btn-octicon btn-octicon float-right" type="button" aria-label="Close dialog" data-close-dialog>
+        <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+      </button>
+      <h3 class="Box-title">Users who have contributed to this file</h3>
+    </div>
+    
+        <ul class="list-style-none overflow-auto">
+            <li class="Box-row">
+              <a class="link-gray-dark no-underline" href="/kukuswish">
+                <img class="avatar mr-2" alt="" src="https://avatars3.githubusercontent.com/u/7041475?s=40&amp;v=4" width="20" height="20" />
+                kukuswish
+</a>            </li>
+        </ul>
+
+  </details-dialog>
+</details>
+      
+    </div>
+  </div>
+
+
+
+    <div class="file ">
+      
+
+<div class="file-header">
+
+  <div class="file-actions">
+
+
+    <div class="BtnGroup">
+      <a id="raw-url" class="btn btn-sm BtnGroup-item" href="/femiode01/The_winners/raw/sandino/dumps/initial_dump_12-12-2018.sql">Raw</a>
+        <a class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b" href="/femiode01/The_winners/blame/sandino/dumps/initial_dump_12-12-2018.sql">Blame</a>
+      <a rel="nofollow" class="btn btn-sm BtnGroup-item" href="/femiode01/The_winners/commits/sandino/dumps/initial_dump_12-12-2018.sql">History</a>
+    </div>
+
+        <a class="btn-octicon tooltipped tooltipped-nw"
+           href="x-github-client://openRepo/https://github.com/femiode01/The_winners?branch=sandino&amp;filepath=dumps%2Finitial_dump_12-12-2018.sql"
+           aria-label="Open this file in GitHub Desktop"
+           data-ga-click="Repository, open with desktop, type:mac">
+            <svg class="octicon octicon-device-desktop" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M15 2H1c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h5.34c-.25.61-.86 1.39-2.34 2h8c-1.48-.61-2.09-1.39-2.34-2H15c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 9H1V3h14v8z"/></svg>
+        </a>
+
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form js-update-url-with-hash" action="/femiode01/The_winners/edit/sandino/dumps/initial_dump_12-12-2018.sql" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="e5+2o99oxIJhOV6LSBwr+oQ8cHUHECFdMF+slkM+KruGK6yBKF3tgGXgr1QaB5j3m6qZKAYxHC56oM/Uol9YOw==" />
+            <button class="btn-octicon tooltipped tooltipped-nw" type="submit"
+              aria-label="Edit this file" data-hotkey="e" data-disable-with>
+              <svg class="octicon octicon-pencil" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 12v3h3l8-8-3-3-8 8zm3 2H1v-2h1v1h1v1zm10.3-9.3L12 6 9 3l1.3-1.3a.996.996 0 0 1 1.41 0l1.59 1.59c.39.39.39 1.02 0 1.41z"/></svg>
+            </button>
+</form>
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/femiode01/The_winners/delete/sandino/dumps/initial_dump_12-12-2018.sql" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="JmAZ1fJKD5AM2HjgUvaCGXBaqI+axzj4IIYsTqg10Qmm3jrVW7SJcd1uelJGztdNVXc3c8tSqNIoDZfjE0D4Iw==" />
+          <button class="btn-octicon btn-octicon-danger tooltipped tooltipped-nw" type="submit"
+            aria-label="Delete this file" data-disable-with>
+            <svg class="octicon octicon-trashcan" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"/></svg>
+          </button>
+</form>  </div>
+
+  <div class="file-info">
+      111 lines (95 sloc)
+      <span class="file-info-divider"></span>
+    69.3 KB
+  </div>
+</div>
+
+      
+
+  <div itemprop="text" class="blob-wrapper data type-sql ">
+      
+<table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tr>
+        <td id="L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-k">CREATE</span> <span class="pl-k">DATABASE</span>  <span class="pl-en">IF</span> NOT EXISTS <span class="pl-s"><span class="pl-pds">`</span>happiness<span class="pl-pds">`</span></span> <span class="pl-c"><span class="pl-c">/*</span>!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci <span class="pl-c">*/</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="LC2" class="blob-code blob-code-inner js-file-line">USE <span class="pl-s"><span class="pl-pds">`</span>happiness<span class="pl-pds">`</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="LC3" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">--</span> MySQL dump 10.13  Distrib 8.0.12, for Win64 (x86_64)</span></td>
+      </tr>
+      <tr>
+        <td id="L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="LC4" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">--</span></span></td>
+      </tr>
+      <tr>
+        <td id="L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="LC5" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">--</span> Host: 127.0.0.1    Database: happiness</span></td>
+      </tr>
+      <tr>
+        <td id="L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="LC6" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">--</span> ------------------------------------------------------</span></td>
+      </tr>
+      <tr>
+        <td id="L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="LC7" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">--</span> Server version	8.0.12</span></td>
+      </tr>
+      <tr>
+        <td id="L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="LC8" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="LC9" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">/*</span>!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT <span class="pl-c">*/</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="LC10" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">/*</span>!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS <span class="pl-c">*/</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="LC11" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">/*</span>!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION <span class="pl-c">*/</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td id="LC12" class="blob-code blob-code-inner js-file-line"> <span class="pl-k">SET</span> NAMES utf8 ;</td>
+      </tr>
+      <tr>
+        <td id="L13" class="blob-num js-line-number" data-line-number="13"></td>
+        <td id="LC13" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">/*</span>!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE <span class="pl-c">*/</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L14" class="blob-num js-line-number" data-line-number="14"></td>
+        <td id="LC14" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">/*</span>!40103 SET TIME_ZONE=&#39;+00:00&#39; <span class="pl-c">*/</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L15" class="blob-num js-line-number" data-line-number="15"></td>
+        <td id="LC15" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">/*</span>!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 <span class="pl-c">*/</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L16" class="blob-num js-line-number" data-line-number="16"></td>
+        <td id="LC16" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">/*</span>!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 <span class="pl-c">*/</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L17" class="blob-num js-line-number" data-line-number="17"></td>
+        <td id="LC17" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">/*</span>!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE=&#39;NO_AUTO_VALUE_ON_ZERO&#39; <span class="pl-c">*/</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L18" class="blob-num js-line-number" data-line-number="18"></td>
+        <td id="LC18" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">/*</span>!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 <span class="pl-c">*/</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L19" class="blob-num js-line-number" data-line-number="19"></td>
+        <td id="LC19" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L20" class="blob-num js-line-number" data-line-number="20"></td>
+        <td id="LC20" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">--</span></span></td>
+      </tr>
+      <tr>
+        <td id="L21" class="blob-num js-line-number" data-line-number="21"></td>
+        <td id="LC21" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">--</span> Table structure for table `country_lon_lng`</span></td>
+      </tr>
+      <tr>
+        <td id="L22" class="blob-num js-line-number" data-line-number="22"></td>
+        <td id="LC22" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">--</span></span></td>
+      </tr>
+      <tr>
+        <td id="L23" class="blob-num js-line-number" data-line-number="23"></td>
+        <td id="LC23" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L24" class="blob-num js-line-number" data-line-number="24"></td>
+        <td id="LC24" class="blob-code blob-code-inner js-file-line"><span class="pl-k">DROP</span> <span class="pl-k">TABLE</span> IF EXISTS <span class="pl-s"><span class="pl-pds">`</span>country_lon_lng<span class="pl-pds">`</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L25" class="blob-num js-line-number" data-line-number="25"></td>
+        <td id="LC25" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">/*</span>!40101 SET @saved_cs_client     = @@character_set_client <span class="pl-c">*/</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L26" class="blob-num js-line-number" data-line-number="26"></td>
+        <td id="LC26" class="blob-code blob-code-inner js-file-line"> <span class="pl-k">SET</span> character_set_client <span class="pl-k">=</span> utf8mb4 ;</td>
+      </tr>
+      <tr>
+        <td id="L27" class="blob-num js-line-number" data-line-number="27"></td>
+        <td id="LC27" class="blob-code blob-code-inner js-file-line"><span class="pl-k">CREATE</span> <span class="pl-k">TABLE</span> `<span class="pl-en">country_lon_lng</span>` (</td>
+      </tr>
+      <tr>
+        <td id="L28" class="blob-num js-line-number" data-line-number="28"></td>
+        <td id="LC28" class="blob-code blob-code-inner js-file-line">  <span class="pl-s"><span class="pl-pds">`</span>Country<span class="pl-pds">`</span></span> <span class="pl-k">varchar</span>(<span class="pl-c1">25</span>) <span class="pl-k">NOT NULL</span>,</td>
+      </tr>
+      <tr>
+        <td id="L29" class="blob-num js-line-number" data-line-number="29"></td>
+        <td id="LC29" class="blob-code blob-code-inner js-file-line">  <span class="pl-s"><span class="pl-pds">`</span>Lat<span class="pl-pds">`</span></span> double DEFAULT <span class="pl-k">NULL</span>,</td>
+      </tr>
+      <tr>
+        <td id="L30" class="blob-num js-line-number" data-line-number="30"></td>
+        <td id="LC30" class="blob-code blob-code-inner js-file-line">  <span class="pl-s"><span class="pl-pds">`</span>Lng<span class="pl-pds">`</span></span> double DEFAULT <span class="pl-k">NULL</span>,</td>
+      </tr>
+      <tr>
+        <td id="L31" class="blob-num js-line-number" data-line-number="31"></td>
+        <td id="LC31" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">PRIMARY KEY</span> (<span class="pl-s"><span class="pl-pds">`</span>Country<span class="pl-pds">`</span></span>)</td>
+      </tr>
+      <tr>
+        <td id="L32" class="blob-num js-line-number" data-line-number="32"></td>
+        <td id="LC32" class="blob-code blob-code-inner js-file-line">) ENGINE<span class="pl-k">=</span>InnoDB DEFAULT CHARSET<span class="pl-k">=</span>utf8mb4 COLLATE<span class="pl-k">=</span>utf8mb4_0900_ai_ci;</td>
+      </tr>
+      <tr>
+        <td id="L33" class="blob-num js-line-number" data-line-number="33"></td>
+        <td id="LC33" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">/*</span>!40101 SET character_set_client = @saved_cs_client <span class="pl-c">*/</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L34" class="blob-num js-line-number" data-line-number="34"></td>
+        <td id="LC34" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L35" class="blob-num js-line-number" data-line-number="35"></td>
+        <td id="LC35" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">--</span></span></td>
+      </tr>
+      <tr>
+        <td id="L36" class="blob-num js-line-number" data-line-number="36"></td>
+        <td id="LC36" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">--</span> Dumping data for table `country_lon_lng`</span></td>
+      </tr>
+      <tr>
+        <td id="L37" class="blob-num js-line-number" data-line-number="37"></td>
+        <td id="LC37" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">--</span></span></td>
+      </tr>
+      <tr>
+        <td id="L38" class="blob-num js-line-number" data-line-number="38"></td>
+        <td id="LC38" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L39" class="blob-num js-line-number" data-line-number="39"></td>
+        <td id="LC39" class="blob-code blob-code-inner js-file-line">LOCK TABLES <span class="pl-s"><span class="pl-pds">`</span>country_lon_lng<span class="pl-pds">`</span></span> WRITE;</td>
+      </tr>
+      <tr>
+        <td id="L40" class="blob-num js-line-number" data-line-number="40"></td>
+        <td id="LC40" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">/*</span>!40000 ALTER TABLE `country_lon_lng` DISABLE KEYS <span class="pl-c">*/</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L41" class="blob-num js-line-number" data-line-number="41"></td>
+        <td id="LC41" class="blob-code blob-code-inner js-file-line">INSERT INTO `country_lon_lng` VALUES (&#39;Afghanistan&#39;,33.93911,67.709953),(&#39;Albania&#39;,41.153332,20.168331),(&#39;Algeria&#39;,28.033886,1.659626),(&#39;Angola&#39;,-11.202692,17.873887),(&#39;Argentina&#39;,-38.416097,-63.61667199999999),(&#39;Armenia&#39;,40.069099,45.038189),(&#39;Australia&#39;,-25.274398,133.775136),(&#39;Austria&#39;,47.516231,14.550072),(&#39;Azerbaijan&#39;,40.143105,47.576927),(&#39;Bahrain&#39;,26.0667,50.5577),(&#39;Bangladesh&#39;,23.684994,90.356331),(&#39;Belarus&#39;,53.709807,27.953389),(&#39;Belgium&#39;,50.503887,4.469936),(&#39;Benin&#39;,9.30769,2.315834),(&#39;Bhutan&#39;,27.514162,90.433601),(&#39;Bolivia&#39;,-16.290154,-63.58865299999999),(&#39;Bosnia and Herzegovina&#39;,43.915886,17.679076),(&#39;Botswana&#39;,-22.328474,24.684866),(&#39;Brazil&#39;,-14.235004,-51.92528),(&#39;Bulgaria&#39;,42.733883,25.48583),(&#39;Burkina Faso&#39;,12.238333,-1.561593),(&#39;Burundi&#39;,-3.373056,29.918886),(&#39;Cambodia&#39;,12.565679,104.990963),(&#39;Cameroon&#39;,7.369721999999999,12.354722),(&#39;Canada&#39;,56.130366,-106.346771),(&#39;Central African Republic&#39;,6.611110999999999,20.939444),(&#39;Chad&#39;,15.454166,18.732207),(&#39;Chile&#39;,-35.675147,-71.542969),(&#39;China&#39;,35.86166,104.195397),(&#39;Colombia&#39;,4.570868,-74.297333),(&#39;Comoros&#39;,-11.6455,43.3333),(&#39;Congo (Brazzaville)&#39;,-0.228021,15.827659),(&#39;Congo (Kinshasa)&#39;,-4.038333,21.758664),(&#39;Costa Rica&#39;,9.748916999999999,-83.753428),(&#39;Croatia&#39;,45.1,15.2000001),(&#39;Cyprus&#39;,35.126413,33.429859),(&#39;Czech Republic&#39;,49.81749199999999,15.472962),(&#39;Denmark&#39;,56.26392,9.501785),(&#39;Djibouti&#39;,11.825138,42.590275),(&#39;Dominican Republic&#39;,18.735693,-70.162651),(&#39;Ecuador&#39;,-1.831239,-78.18340599999999),(&#39;Egypt&#39;,26.820553,30.802498),(&#39;El Salvador&#39;,13.794185,-88.89653),(&#39;Estonia&#39;,58.595272,25.0136071),(&#39;Ethiopia&#39;,9.145000000000001,40.489673),(&#39;France&#39;,46.227638,2.213749),(&#39;Gabon&#39;,-0.803689,11.609444),(&#39;Georgia&#39;,32.1656221,-82.9000751),(&#39;Germany&#39;,51.165691,10.451526),(&#39;Ghana&#39;,7.946527,-1.023194),(&#39;Greece&#39;,39.074208,21.824312),(&#39;Guatemala&#39;,15.783471,-90.23075899999999),(&#39;Guinea&#39;,9.945587,-9.696645),(&#39;Haiti&#39;,18.971187,-72.285215),(&#39;Honduras&#39;,15.199999,-86.241905),(&#39;Hong Kong&#39;,22.396428,114.109497),(&#39;Hungary&#39;,47.162494,19.5033041),(&#39;Iceland&#39;,64.963051,-19.020835),(&#39;India&#39;,20.593684,78.96288),(&#39;Indonesia&#39;,-0.789275,113.921327),(&#39;Iran&#39;,32.427908,53.688046),(&#39;Iraq&#39;,33.223191,43.679291),(&#39;Ireland&#39;,53.1423672,-7.692053599999999),(&#39;Israel&#39;,31.046051,34.851612),(&#39;Italy&#39;,41.87194,12.56738),(&#39;Ivory Coast&#39;,7.539988999999999,-5.547079999999999),(&#39;Jamaica&#39;,18.109581,-77.297508),(&#39;Japan&#39;,36.204824,138.252924),(&#39;Jordan&#39;,37.9973704,-97.3342624),(&#39;Kazakhstan&#39;,48.019573,66.923684),(&#39;Kenya&#39;,-0.023559,37.906193),(&#39;Kosovo&#39;,42.6026359,20.902977),(&#39;Kuwait&#39;,29.31166,47.481766),(&#39;Kyrgyzstan&#39;,41.20438,74.766098),(&#39;Laos&#39;,19.85627,102.495496),(&#39;Latvia&#39;,56.879635,24.603189),(&#39;Lebanon&#39;,33.854721,35.862285),(&#39;Lesotho&#39;,-29.609988,28.233608),(&#39;Liberia&#39;,6.428055,-9.429499000000002),(&#39;Libya&#39;,26.3351,17.228331),(&#39;Lithuania&#39;,55.169438,23.881275),(&#39;Luxembourg&#39;,49.815273,6.129582999999999),(&#39;Macedonia&#39;,41.608635,21.745275),(&#39;Madagascar&#39;,-18.766947,46.869107),(&#39;Malawi&#39;,-13.254308,34.301525),(&#39;Malaysia&#39;,4.210484,101.975766),(&#39;Mali&#39;,17.570692,-3.996166),(&#39;Malta&#39;,35.937496,14.375416),(&#39;Mauritania&#39;,21.00789,-10.940835),(&#39;Mauritius&#39;,-20.348404,57.55215200000001),(&#39;Mexico&#39;,23.634501,-102.552784),(&#39;Moldova&#39;,47.411631,28.369885),(&#39;Mongolia&#39;,46.862496,103.846656),(&#39;Montenegro&#39;,42.708678,19.37439),(&#39;Morocco&#39;,31.791702,-7.092619999999999),(&#39;Mozambique&#39;,-18.665695,35.529562),(&#39;Myanmar&#39;,21.916221,95.955974),(&#39;Nepal&#39;,28.394857,84.12400799999999),(&#39;Netherlands&#39;,52.132633,5.291265999999999),(&#39;New Zealand&#39;,-40.900557,174.885971),(&#39;Nicaragua&#39;,12.865416,-85.207229),(&#39;Niger&#39;,17.607789,8.081666),(&#39;Nigeria&#39;,9.081999,8.675277),(&#39;North Cyprus&#39;,35.2480359,33.6577243),(&#39;Norway&#39;,60.47202399999999,8.468945999999999),(&#39;Oman&#39;,21.4735329,55.975413),(&#39;Pakistan&#39;,30.375321,69.34511599999999),(&#39;Palestinian Territories&#39;,31.952162,35.233154),(&#39;Panama&#39;,8.537981,-80.782127),(&#39;Paraguay&#39;,-23.442503,-58.443832),(&#39;Peru&#39;,-9.189967,-75.015152),(&#39;Philippines&#39;,12.879721,121.774017),(&#39;Poland&#39;,51.919438,19.145136),(&#39;Portugal&#39;,39.39987199999999,-8.224454),(&#39;Qatar&#39;,25.354826,51.183884),(&#39;Romania&#39;,45.943161,24.96676),(&#39;Russia&#39;,61.52401,105.318756),(&#39;Rwanda&#39;,-1.940278,29.873888),(&#39;Saudi Arabia&#39;,23.885942,45.079162),(&#39;Senegal&#39;,14.497401,-14.452362),(&#39;Serbia&#39;,44.016521,21.005859),(&#39;Sierra Leone&#39;,8.460555,-11.779889),(&#39;Singapore&#39;,1.352083,103.819836),(&#39;Slovakia&#39;,48.669026,19.699024),(&#39;Slovenia&#39;,46.151241,14.995463),(&#39;Somaliland region&#39;,9.411743399999999,46.8252838),(&#39;South Africa&#39;,-30.559482,22.937506),(&#39;South Korea&#39;,35.907757,127.766922),(&#39;Spain&#39;,40.46366700000001,-3.74922),(&#39;Sri Lanka&#39;,7.873053999999999,80.77179699999999),(&#39;Sudan&#39;,12.862807,30.217636),(&#39;Suriname&#39;,3.919305,-56.027783),(&#39;Swaziland&#39;,-26.522503,31.465866),(&#39;Sweden&#39;,60.12816100000001,18.643501),(&#39;Switzerland&#39;,46.818188,8.227511999999999),(&#39;Syria&#39;,34.80207499999999,38.996815),(&#39;Taiwan&#39;,23.69781,120.960515),(&#39;Tajikistan&#39;,38.861034,71.276093),(&#39;Tanzania&#39;,-6.369028,34.888822),(&#39;Thailand&#39;,15.870032,100.992541),(&#39;Togo&#39;,8.619543,0.824782),(&#39;Trinidad and Tobago&#39;,10.691803,-61.222503),(&#39;Tunisia&#39;,33.886917,9.537499),(&#39;Turkey&#39;,38.963745,35.243322),(&#39;Turkmenistan&#39;,38.969719,59.556278),(&#39;Uganda&#39;,1.373333,32.290275),(&#39;Ukraine&#39;,48.379433,31.1655799),(&#39;United Arab Emirates&#39;,23.424076,53.847818),(&#39;United Kingdom&#39;,55.378051,-3.435973),(&#39;United States&#39;,37.09024,-95.712891),(&#39;Uruguay&#39;,-32.522779,-55.765835),(&#39;Uzbekistan&#39;,41.377491,64.585262),(&#39;Venezuela&#39;,6.42375,-66.58973),(&#39;Vietnam&#39;,14.058324,108.277199),(&#39;Yemen&#39;,15.552727,48.516388),(&#39;Zambia&#39;,-13.133897,27.849332),(&#39;Zimbabwe&#39;,-19.015438,29.154857);</td>
+      </tr>
+      <tr>
+        <td id="L42" class="blob-num js-line-number" data-line-number="42"></td>
+        <td id="LC42" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">/*</span>!40000 ALTER TABLE `country_lon_lng` ENABLE KEYS <span class="pl-c">*/</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L43" class="blob-num js-line-number" data-line-number="43"></td>
+        <td id="LC43" class="blob-code blob-code-inner js-file-line">UNLOCK TABLES;</td>
+      </tr>
+      <tr>
+        <td id="L44" class="blob-num js-line-number" data-line-number="44"></td>
+        <td id="LC44" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L45" class="blob-num js-line-number" data-line-number="45"></td>
+        <td id="LC45" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">--</span></span></td>
+      </tr>
+      <tr>
+        <td id="L46" class="blob-num js-line-number" data-line-number="46"></td>
+        <td id="LC46" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">--</span> Table structure for table `country_region`</span></td>
+      </tr>
+      <tr>
+        <td id="L47" class="blob-num js-line-number" data-line-number="47"></td>
+        <td id="LC47" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">--</span></span></td>
+      </tr>
+      <tr>
+        <td id="L48" class="blob-num js-line-number" data-line-number="48"></td>
+        <td id="LC48" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L49" class="blob-num js-line-number" data-line-number="49"></td>
+        <td id="LC49" class="blob-code blob-code-inner js-file-line"><span class="pl-k">DROP</span> <span class="pl-k">TABLE</span> IF EXISTS <span class="pl-s"><span class="pl-pds">`</span>country_region<span class="pl-pds">`</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L50" class="blob-num js-line-number" data-line-number="50"></td>
+        <td id="LC50" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">/*</span>!40101 SET @saved_cs_client     = @@character_set_client <span class="pl-c">*/</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L51" class="blob-num js-line-number" data-line-number="51"></td>
+        <td id="LC51" class="blob-code blob-code-inner js-file-line"> <span class="pl-k">SET</span> character_set_client <span class="pl-k">=</span> utf8mb4 ;</td>
+      </tr>
+      <tr>
+        <td id="L52" class="blob-num js-line-number" data-line-number="52"></td>
+        <td id="LC52" class="blob-code blob-code-inner js-file-line"><span class="pl-k">CREATE</span> <span class="pl-k">TABLE</span> `<span class="pl-en">country_region</span>` (</td>
+      </tr>
+      <tr>
+        <td id="L53" class="blob-num js-line-number" data-line-number="53"></td>
+        <td id="LC53" class="blob-code blob-code-inner js-file-line">  <span class="pl-s"><span class="pl-pds">`</span>Country<span class="pl-pds">`</span></span> <span class="pl-k">varchar</span>(<span class="pl-c1">25</span>) DEFAULT <span class="pl-k">NULL</span>,</td>
+      </tr>
+      <tr>
+        <td id="L54" class="blob-num js-line-number" data-line-number="54"></td>
+        <td id="LC54" class="blob-code blob-code-inner js-file-line">  <span class="pl-s"><span class="pl-pds">`</span>Region<span class="pl-pds">`</span></span> <span class="pl-k">varchar</span>(<span class="pl-c1">50</span>) DEFAULT <span class="pl-k">NULL</span></td>
+      </tr>
+      <tr>
+        <td id="L55" class="blob-num js-line-number" data-line-number="55"></td>
+        <td id="LC55" class="blob-code blob-code-inner js-file-line">) ENGINE<span class="pl-k">=</span>InnoDB DEFAULT CHARSET<span class="pl-k">=</span>utf8mb4 COLLATE<span class="pl-k">=</span>utf8mb4_0900_ai_ci;</td>
+      </tr>
+      <tr>
+        <td id="L56" class="blob-num js-line-number" data-line-number="56"></td>
+        <td id="LC56" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">/*</span>!40101 SET character_set_client = @saved_cs_client <span class="pl-c">*/</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L57" class="blob-num js-line-number" data-line-number="57"></td>
+        <td id="LC57" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L58" class="blob-num js-line-number" data-line-number="58"></td>
+        <td id="LC58" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">--</span></span></td>
+      </tr>
+      <tr>
+        <td id="L59" class="blob-num js-line-number" data-line-number="59"></td>
+        <td id="LC59" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">--</span> Dumping data for table `country_region`</span></td>
+      </tr>
+      <tr>
+        <td id="L60" class="blob-num js-line-number" data-line-number="60"></td>
+        <td id="LC60" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">--</span></span></td>
+      </tr>
+      <tr>
+        <td id="L61" class="blob-num js-line-number" data-line-number="61"></td>
+        <td id="LC61" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L62" class="blob-num js-line-number" data-line-number="62"></td>
+        <td id="LC62" class="blob-code blob-code-inner js-file-line">LOCK TABLES <span class="pl-s"><span class="pl-pds">`</span>country_region<span class="pl-pds">`</span></span> WRITE;</td>
+      </tr>
+      <tr>
+        <td id="L63" class="blob-num js-line-number" data-line-number="63"></td>
+        <td id="LC63" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">/*</span>!40000 ALTER TABLE `country_region` DISABLE KEYS <span class="pl-c">*/</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L64" class="blob-num js-line-number" data-line-number="64"></td>
+        <td id="LC64" class="blob-code blob-code-inner js-file-line">INSERT INTO `country_region` VALUES (&#39;Afghanistan&#39;,&#39;Southern Asia&#39;),(&#39;Albania&#39;,&#39;Central and Eastern Europe&#39;),(&#39;Algeria&#39;,&#39;Middle East and Northern Africa&#39;),(&#39;Angola&#39;,&#39;Sub-Saharan Africa&#39;),(&#39;Argentina&#39;,&#39;Latin America and Caribbean&#39;),(&#39;Armenia&#39;,&#39;Central and Eastern Europe&#39;),(&#39;Australia&#39;,&#39;Australia and New Zealand&#39;),(&#39;Austria&#39;,&#39;Western Europe&#39;),(&#39;Azerbaijan&#39;,&#39;Central and Eastern Europe&#39;),(&#39;Bahrain&#39;,&#39;Middle East and Northern Africa&#39;),(&#39;Bangladesh&#39;,&#39;Southern Asia&#39;),(&#39;Belarus&#39;,&#39;Central and Eastern Europe&#39;),(&#39;Belgium&#39;,&#39;Western Europe&#39;),(&#39;Benin&#39;,&#39;Sub-Saharan Africa&#39;),(&#39;Bhutan&#39;,&#39;Southern Asia&#39;),(&#39;Bolivia&#39;,&#39;Latin America and Caribbean&#39;),(&#39;Bosnia and Herzegovina&#39;,&#39;Central and Eastern Europe&#39;),(&#39;Botswana&#39;,&#39;Sub-Saharan Africa&#39;),(&#39;Brazil&#39;,&#39;Latin America and Caribbean&#39;),(&#39;Bulgaria&#39;,&#39;Central and Eastern Europe&#39;),(&#39;Burkina Faso&#39;,&#39;Sub-Saharan Africa&#39;),(&#39;Burundi&#39;,&#39;Sub-Saharan Africa&#39;),(&#39;Cambodia&#39;,&#39;Southeastern Asia&#39;),(&#39;Cameroon&#39;,&#39;Sub-Saharan Africa&#39;),(&#39;Canada&#39;,&#39;North America&#39;),(&#39;Central African Republic&#39;,&#39;Sub-Saharan Africa&#39;),(&#39;Chad&#39;,&#39;Sub-Saharan Africa&#39;),(&#39;Chile&#39;,&#39;Latin America and Caribbean&#39;),(&#39;China&#39;,&#39;Eastern Asia&#39;),(&#39;Colombia&#39;,&#39;Latin America and Caribbean&#39;),(&#39;Comoros&#39;,&#39;Sub-Saharan Africa&#39;),(&#39;Congo (Brazzaville)&#39;,&#39;Sub-Saharan Africa&#39;),(&#39;Congo (Kinshasa)&#39;,&#39;Sub-Saharan Africa&#39;),(&#39;Costa Rica&#39;,&#39;Latin America and Caribbean&#39;),(&#39;Croatia&#39;,&#39;Central and Eastern Europe&#39;),(&#39;Cyprus&#39;,&#39;Western Europe&#39;),(&#39;Czech Republic&#39;,&#39;Central and Eastern Europe&#39;),(&#39;Denmark&#39;,&#39;Western Europe&#39;),(&#39;Djibouti&#39;,&#39;Sub-Saharan Africa&#39;),(&#39;Dominican Republic&#39;,&#39;Latin America and Caribbean&#39;),(&#39;Ecuador&#39;,&#39;Latin America and Caribbean&#39;),(&#39;Egypt&#39;,&#39;Middle East and Northern Africa&#39;),(&#39;El Salvador&#39;,&#39;Latin America and Caribbean&#39;),(&#39;Estonia&#39;,&#39;Central and Eastern Europe&#39;),(&#39;Ethiopia&#39;,&#39;Sub-Saharan Africa&#39;),(&#39;Finland&#39;,&#39;Western Europe&#39;),(&#39;France&#39;,&#39;Western Europe&#39;),(&#39;Gabon&#39;,&#39;Sub-Saharan Africa&#39;),(&#39;Georgia&#39;,&#39;Central and Eastern Europe&#39;),(&#39;Germany&#39;,&#39;Western Europe&#39;),(&#39;Ghana&#39;,&#39;Sub-Saharan Africa&#39;),(&#39;Greece&#39;,&#39;Western Europe&#39;),(&#39;Guatemala&#39;,&#39;Latin America and Caribbean&#39;),(&#39;Guinea&#39;,&#39;Sub-Saharan Africa&#39;),(&#39;Haiti&#39;,&#39;Latin America and Caribbean&#39;),(&#39;Honduras&#39;,&#39;Latin America and Caribbean&#39;),(&#39;Hong Kong&#39;,&#39;Eastern Asia&#39;),(&#39;Hungary&#39;,&#39;Central and Eastern Europe&#39;),(&#39;Iceland&#39;,&#39;Western Europe&#39;),(&#39;India&#39;,&#39;Southern Asia&#39;),(&#39;Indonesia&#39;,&#39;Southeastern Asia&#39;),(&#39;Iran&#39;,&#39;Middle East and Northern Africa&#39;),(&#39;Iraq&#39;,&#39;Middle East and Northern Africa&#39;),(&#39;Ireland&#39;,&#39;Western Europe&#39;),(&#39;Israel&#39;,&#39;Middle East and Northern Africa&#39;),(&#39;Italy&#39;,&#39;Western Europe&#39;),(&#39;Ivory Coast&#39;,&#39;Sub-Saharan Africa&#39;),(&#39;Jamaica&#39;,&#39;Latin America and Caribbean&#39;),(&#39;Japan&#39;,&#39;Eastern Asia&#39;),(&#39;Jordan&#39;,&#39;Middle East and Northern Africa&#39;),(&#39;Kazakhstan&#39;,&#39;Central and Eastern Europe&#39;),(&#39;Kenya&#39;,&#39;Sub-Saharan Africa&#39;),(&#39;Kosovo&#39;,&#39;Central and Eastern Europe&#39;),(&#39;Kuwait&#39;,&#39;Middle East and Northern Africa&#39;),(&#39;Kyrgyzstan&#39;,&#39;Central and Eastern Europe&#39;),(&#39;Laos&#39;,&#39;Southeastern Asia&#39;),(&#39;Latvia&#39;,&#39;Central and Eastern Europe&#39;),(&#39;Lebanon&#39;,&#39;Middle East and Northern Africa&#39;),(&#39;Lesotho&#39;,&#39;Sub-Saharan Africa&#39;),(&#39;Liberia&#39;,&#39;Sub-Saharan Africa&#39;),(&#39;Libya&#39;,&#39;Middle East and Northern Africa&#39;),(&#39;Lithuania&#39;,&#39;Central and Eastern Europe&#39;),(&#39;Luxembourg&#39;,&#39;Western Europe&#39;),(&#39;Macedonia&#39;,&#39;Central and Eastern Europe&#39;),(&#39;Madagascar&#39;,&#39;Sub-Saharan Africa&#39;),(&#39;Malawi&#39;,&#39;Sub-Saharan Africa&#39;),(&#39;Malaysia&#39;,&#39;Southeastern Asia&#39;),(&#39;Mali&#39;,&#39;Sub-Saharan Africa&#39;),(&#39;Malta&#39;,&#39;Western Europe&#39;),(&#39;Mauritania&#39;,&#39;Sub-Saharan Africa&#39;),(&#39;Mauritius&#39;,&#39;Sub-Saharan Africa&#39;),(&#39;Mexico&#39;,&#39;Latin America and Caribbean&#39;),(&#39;Moldova&#39;,&#39;Central and Eastern Europe&#39;),(&#39;Mongolia&#39;,&#39;Eastern Asia&#39;),(&#39;Montenegro&#39;,&#39;Central and Eastern Europe&#39;),(&#39;Morocco&#39;,&#39;Middle East and Northern Africa&#39;),(&#39;Mozambique&#39;,&#39;Sub-Saharan Africa&#39;),(&#39;Myanmar&#39;,&#39;Southeastern Asia&#39;),(&#39;Nepal&#39;,&#39;Southern Asia&#39;),(&#39;Netherlands&#39;,&#39;Western Europe&#39;),(&#39;New Zealand&#39;,&#39;Australia and New Zealand&#39;),(&#39;Nicaragua&#39;,&#39;Latin America and Caribbean&#39;),(&#39;Niger&#39;,&#39;Sub-Saharan Africa&#39;),(&#39;Nigeria&#39;,&#39;Sub-Saharan Africa&#39;),(&#39;North Cyprus&#39;,&#39;Western Europe&#39;),(&#39;Norway&#39;,&#39;Western Europe&#39;),(&#39;Oman&#39;,&#39;Middle East and Northern Africa&#39;),(&#39;Pakistan&#39;,&#39;Southern Asia&#39;),(&#39;Palestinian Territories&#39;,&#39;Middle East and Northern Africa&#39;),(&#39;Panama&#39;,&#39;Latin America and Caribbean&#39;),(&#39;Paraguay&#39;,&#39;Latin America and Caribbean&#39;),(&#39;Peru&#39;,&#39;Latin America and Caribbean&#39;),(&#39;Philippines&#39;,&#39;Southeastern Asia&#39;),(&#39;Poland&#39;,&#39;Central and Eastern Europe&#39;),(&#39;Portugal&#39;,&#39;Western Europe&#39;),(&#39;Qatar&#39;,&#39;Middle East and Northern Africa&#39;),(&#39;Romania&#39;,&#39;Central and Eastern Europe&#39;),(&#39;Russia&#39;,&#39;Central and Eastern Europe&#39;),(&#39;Rwanda&#39;,&#39;Sub-Saharan Africa&#39;),(&#39;Saudi Arabia&#39;,&#39;Middle East and Northern Africa&#39;),(&#39;Senegal&#39;,&#39;Sub-Saharan Africa&#39;),(&#39;Serbia&#39;,&#39;Central and Eastern Europe&#39;),(&#39;Sierra Leone&#39;,&#39;Sub-Saharan Africa&#39;),(&#39;Singapore&#39;,&#39;Southeastern Asia&#39;),(&#39;Slovakia&#39;,&#39;Central and Eastern Europe&#39;),(&#39;Slovenia&#39;,&#39;Central and Eastern Europe&#39;),(&#39;Somaliland region&#39;,&#39;Sub-Saharan Africa&#39;),(&#39;South Africa&#39;,&#39;Sub-Saharan Africa&#39;),(&#39;South Korea&#39;,&#39;Eastern Asia&#39;),(&#39;Spain&#39;,&#39;Western Europe&#39;),(&#39;Sri Lanka&#39;,&#39;Southern Asia&#39;),(&#39;Sudan&#39;,&#39;Sub-Saharan Africa&#39;),(&#39;Suriname&#39;,&#39;Latin America and Caribbean&#39;),(&#39;Swaziland&#39;,&#39;Sub-Saharan Africa&#39;),(&#39;Sweden&#39;,&#39;Western Europe&#39;),(&#39;Switzerland&#39;,&#39;Western Europe&#39;),(&#39;Syria&#39;,&#39;Middle East and Northern Africa&#39;),(&#39;Taiwan&#39;,&#39;Eastern Asia&#39;),(&#39;Tajikistan&#39;,&#39;Central and Eastern Europe&#39;),(&#39;Tanzania&#39;,&#39;Sub-Saharan Africa&#39;),(&#39;Thailand&#39;,&#39;Southeastern Asia&#39;),(&#39;Togo&#39;,&#39;Sub-Saharan Africa&#39;),(&#39;Trinidad and Tobago&#39;,&#39;Latin America and Caribbean&#39;),(&#39;Tunisia&#39;,&#39;Middle East and Northern Africa&#39;),(&#39;Turkey&#39;,&#39;Middle East and Northern Africa&#39;),(&#39;Turkmenistan&#39;,&#39;Central and Eastern Europe&#39;),(&#39;Uganda&#39;,&#39;Sub-Saharan Africa&#39;),(&#39;Ukraine&#39;,&#39;Central and Eastern Europe&#39;),(&#39;United Arab Emirates&#39;,&#39;Middle East and Northern Africa&#39;),(&#39;United Kingdom&#39;,&#39;Western Europe&#39;),(&#39;United States&#39;,&#39;North America&#39;),(&#39;Uruguay&#39;,&#39;Latin America and Caribbean&#39;),(&#39;Uzbekistan&#39;,&#39;Central and Eastern Europe&#39;),(&#39;Venezuela&#39;,&#39;Latin America and Caribbean&#39;),(&#39;Vietnam&#39;,&#39;Southeastern Asia&#39;),(&#39;Yemen&#39;,&#39;Middle East and Northern Africa&#39;),(&#39;Zambia&#39;,&#39;Sub-Saharan Africa&#39;),(&#39;Zimbabwe&#39;,&#39;Sub-Saharan Africa&#39;);</td>
+      </tr>
+      <tr>
+        <td id="L65" class="blob-num js-line-number" data-line-number="65"></td>
+        <td id="LC65" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">/*</span>!40000 ALTER TABLE `country_region` ENABLE KEYS <span class="pl-c">*/</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L66" class="blob-num js-line-number" data-line-number="66"></td>
+        <td id="LC66" class="blob-code blob-code-inner js-file-line">UNLOCK TABLES;</td>
+      </tr>
+      <tr>
+        <td id="L67" class="blob-num js-line-number" data-line-number="67"></td>
+        <td id="LC67" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L68" class="blob-num js-line-number" data-line-number="68"></td>
+        <td id="LC68" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">--</span></span></td>
+      </tr>
+      <tr>
+        <td id="L69" class="blob-num js-line-number" data-line-number="69"></td>
+        <td id="LC69" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">--</span> Table structure for table `happiness_master`</span></td>
+      </tr>
+      <tr>
+        <td id="L70" class="blob-num js-line-number" data-line-number="70"></td>
+        <td id="LC70" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">--</span></span></td>
+      </tr>
+      <tr>
+        <td id="L71" class="blob-num js-line-number" data-line-number="71"></td>
+        <td id="LC71" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L72" class="blob-num js-line-number" data-line-number="72"></td>
+        <td id="LC72" class="blob-code blob-code-inner js-file-line"><span class="pl-k">DROP</span> <span class="pl-k">TABLE</span> IF EXISTS <span class="pl-s"><span class="pl-pds">`</span>happiness_master<span class="pl-pds">`</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L73" class="blob-num js-line-number" data-line-number="73"></td>
+        <td id="LC73" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">/*</span>!40101 SET @saved_cs_client     = @@character_set_client <span class="pl-c">*/</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L74" class="blob-num js-line-number" data-line-number="74"></td>
+        <td id="LC74" class="blob-code blob-code-inner js-file-line"> <span class="pl-k">SET</span> character_set_client <span class="pl-k">=</span> utf8mb4 ;</td>
+      </tr>
+      <tr>
+        <td id="L75" class="blob-num js-line-number" data-line-number="75"></td>
+        <td id="LC75" class="blob-code blob-code-inner js-file-line"><span class="pl-k">CREATE</span> <span class="pl-k">TABLE</span> `<span class="pl-en">happiness_master</span>` (</td>
+      </tr>
+      <tr>
+        <td id="L76" class="blob-num js-line-number" data-line-number="76"></td>
+        <td id="LC76" class="blob-code blob-code-inner js-file-line">  <span class="pl-s"><span class="pl-pds">`</span>Country<span class="pl-pds">`</span></span> <span class="pl-k">varchar</span>(<span class="pl-c1">25</span>) DEFAULT <span class="pl-k">NULL</span>,</td>
+      </tr>
+      <tr>
+        <td id="L77" class="blob-num js-line-number" data-line-number="77"></td>
+        <td id="LC77" class="blob-code blob-code-inner js-file-line">  <span class="pl-s"><span class="pl-pds">`</span>Happiness_year<span class="pl-pds">`</span></span> <span class="pl-k">int</span>(<span class="pl-c1">11</span>) DEFAULT <span class="pl-k">NULL</span>,</td>
+      </tr>
+      <tr>
+        <td id="L78" class="blob-num js-line-number" data-line-number="78"></td>
+        <td id="LC78" class="blob-code blob-code-inner js-file-line">  <span class="pl-s"><span class="pl-pds">`</span>Happiness_rank<span class="pl-pds">`</span></span> <span class="pl-k">int</span>(<span class="pl-c1">11</span>) DEFAULT <span class="pl-k">NULL</span>,</td>
+      </tr>
+      <tr>
+        <td id="L79" class="blob-num js-line-number" data-line-number="79"></td>
+        <td id="LC79" class="blob-code blob-code-inner js-file-line">  <span class="pl-s"><span class="pl-pds">`</span>Happiness_score<span class="pl-pds">`</span></span> double DEFAULT <span class="pl-k">NULL</span>,</td>
+      </tr>
+      <tr>
+        <td id="L80" class="blob-num js-line-number" data-line-number="80"></td>
+        <td id="LC80" class="blob-code blob-code-inner js-file-line">  <span class="pl-s"><span class="pl-pds">`</span>std_error<span class="pl-pds">`</span></span> double DEFAULT <span class="pl-k">NULL</span>,</td>
+      </tr>
+      <tr>
+        <td id="L81" class="blob-num js-line-number" data-line-number="81"></td>
+        <td id="LC81" class="blob-code blob-code-inner js-file-line">  <span class="pl-s"><span class="pl-pds">`</span>Economy<span class="pl-pds">`</span></span> double DEFAULT <span class="pl-k">NULL</span>,</td>
+      </tr>
+      <tr>
+        <td id="L82" class="blob-num js-line-number" data-line-number="82"></td>
+        <td id="LC82" class="blob-code blob-code-inner js-file-line">  <span class="pl-s"><span class="pl-pds">`</span>Family<span class="pl-pds">`</span></span> double DEFAULT <span class="pl-k">NULL</span>,</td>
+      </tr>
+      <tr>
+        <td id="L83" class="blob-num js-line-number" data-line-number="83"></td>
+        <td id="LC83" class="blob-code blob-code-inner js-file-line">  <span class="pl-s"><span class="pl-pds">`</span>Health<span class="pl-pds">`</span></span> double DEFAULT <span class="pl-k">NULL</span>,</td>
+      </tr>
+      <tr>
+        <td id="L84" class="blob-num js-line-number" data-line-number="84"></td>
+        <td id="LC84" class="blob-code blob-code-inner js-file-line">  <span class="pl-s"><span class="pl-pds">`</span>Freedom<span class="pl-pds">`</span></span> double DEFAULT <span class="pl-k">NULL</span>,</td>
+      </tr>
+      <tr>
+        <td id="L85" class="blob-num js-line-number" data-line-number="85"></td>
+        <td id="LC85" class="blob-code blob-code-inner js-file-line">  <span class="pl-s"><span class="pl-pds">`</span>Corruption<span class="pl-pds">`</span></span> double DEFAULT <span class="pl-k">NULL</span>,</td>
+      </tr>
+      <tr>
+        <td id="L86" class="blob-num js-line-number" data-line-number="86"></td>
+        <td id="LC86" class="blob-code blob-code-inner js-file-line">  <span class="pl-s"><span class="pl-pds">`</span>Generosity<span class="pl-pds">`</span></span> double DEFAULT <span class="pl-k">NULL</span>,</td>
+      </tr>
+      <tr>
+        <td id="L87" class="blob-num js-line-number" data-line-number="87"></td>
+        <td id="LC87" class="blob-code blob-code-inner js-file-line">  <span class="pl-s"><span class="pl-pds">`</span>Dystopia<span class="pl-pds">`</span></span> double DEFAULT <span class="pl-k">NULL</span></td>
+      </tr>
+      <tr>
+        <td id="L88" class="blob-num js-line-number" data-line-number="88"></td>
+        <td id="LC88" class="blob-code blob-code-inner js-file-line">) ENGINE<span class="pl-k">=</span>InnoDB DEFAULT CHARSET<span class="pl-k">=</span>utf8mb4 COLLATE<span class="pl-k">=</span>utf8mb4_0900_ai_ci;</td>
+      </tr>
+      <tr>
+        <td id="L89" class="blob-num js-line-number" data-line-number="89"></td>
+        <td id="LC89" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">/*</span>!40101 SET character_set_client = @saved_cs_client <span class="pl-c">*/</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L90" class="blob-num js-line-number" data-line-number="90"></td>
+        <td id="LC90" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L91" class="blob-num js-line-number" data-line-number="91"></td>
+        <td id="LC91" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">--</span></span></td>
+      </tr>
+      <tr>
+        <td id="L92" class="blob-num js-line-number" data-line-number="92"></td>
+        <td id="LC92" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">--</span> Dumping data for table `happiness_master`</span></td>
+      </tr>
+      <tr>
+        <td id="L93" class="blob-num js-line-number" data-line-number="93"></td>
+        <td id="LC93" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">--</span></span></td>
+      </tr>
+      <tr>
+        <td id="L94" class="blob-num js-line-number" data-line-number="94"></td>
+        <td id="LC94" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L95" class="blob-num js-line-number" data-line-number="95"></td>
+        <td id="LC95" class="blob-code blob-code-inner js-file-line">LOCK TABLES <span class="pl-s"><span class="pl-pds">`</span>happiness_master<span class="pl-pds">`</span></span> WRITE;</td>
+      </tr>
+      <tr>
+        <td id="L96" class="blob-num js-line-number" data-line-number="96"></td>
+        <td id="LC96" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">/*</span>!40000 ALTER TABLE `happiness_master` DISABLE KEYS <span class="pl-c">*/</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L97" class="blob-num js-line-number" data-line-number="97"></td>
+        <td id="LC97" class="blob-code blob-code-inner js-file-line">INSERT INTO `happiness_master` VALUES (&#39;Switzerland&#39;,2015,1,7.587,0.03411,1.39651,1.34951,0.94143,0.66557,0.41978,0.29678,2.51738),(&#39;Iceland&#39;,2015,2,7.561,0.04884,1.30232,1.40223,0.94784,0.62877,0.14145,0.4363,2.70201),(&#39;Denmark&#39;,2015,3,7.527,0.03328,1.32548,1.36058,0.87464,0.64938,0.48357,0.34139,2.49204),(&#39;Norway&#39;,2015,4,7.522,0.0388,1.459,1.33095,0.88521,0.66973,0.36503,0.34699,2.46531),(&#39;Canada&#39;,2015,5,7.427,0.03553,1.32629,1.32261,0.90563,0.63297,0.32957,0.45811,2.45176),(&#39;Finland&#39;,2015,6,7.406,0.0314,1.29025,1.31826,0.88911,0.64169,0.41372,0.23351,2.61955),(&#39;Netherlands&#39;,2015,7,7.378,0.02799,1.32944,1.28017,0.89284,0.61576,0.31814,0.4761,2.4657),(&#39;Sweden&#39;,2015,8,7.364,0.03157,1.33171,1.28907,0.91087,0.6598,0.43844,0.36262,2.37119),(&#39;New Zealand&#39;,2015,9,7.286,0.03371,1.25018,1.31967,0.90837,0.63938,0.42922,0.47501,2.26425),(&#39;Australia&#39;,2015,10,7.284,0.04083,1.33358,1.30923,0.93156,0.65124,0.35637,0.43562,2.26646),(&#39;Israel&#39;,2015,11,7.278,0.0347,1.22857,1.22393,0.91387,0.41319,0.07785,0.33172,3.08854),(&#39;Costa Rica&#39;,2015,12,7.226,0.04454,0.95578,1.23788,0.86027,0.63376,0.10583,0.25497,3.17728),(&#39;Austria&#39;,2015,13,7.2,0.03751,1.33723,1.29704,0.89042,0.62433,0.18676,0.33088,2.5332),(&#39;Mexico&#39;,2015,14,7.187,0.04176,1.02054,0.91451,0.81444,0.48181,0.21312,0.14074,3.60214),(&#39;United States&#39;,2015,15,7.119,0.03839,1.39451,1.24711,0.86179,0.54604,0.1589,0.40105,2.51011),(&#39;Brazil&#39;,2015,16,6.983,0.04076,0.98124,1.23287,0.69702,0.49049,0.17521,0.14574,3.26001),(&#39;Luxembourg&#39;,2015,17,6.946,0.03499,1.56391,1.21963,0.91894,0.61583,0.37798,0.28034,1.96961),(&#39;Ireland&#39;,2015,18,6.94,0.03676,1.33596,1.36948,0.89533,0.61777,0.28703,0.45901,1.9757),(&#39;Belgium&#39;,2015,19,6.937,0.03595,1.30782,1.28566,0.89667,0.5845,0.2254,0.2225,2.41484),(&#39;United Arab Emirates&#39;,2015,20,6.901,0.03729,1.42727,1.12575,0.80925,0.64157,0.38583,0.26428,2.24743),(&#39;United Kingdom&#39;,2015,21,6.867,0.01866,1.26637,1.28548,0.90943,0.59625,0.32067,0.51912,1.96994),(&#39;Oman&#39;,2015,22,6.853,0.05335,1.36011,1.08182,0.76276,0.63274,0.32524,0.21542,2.47489),(&#39;Venezuela&#39;,2015,23,6.81,0.06476,1.04424,1.25596,0.72052,0.42908,0.11069,0.05841,3.19131),(&#39;Singapore&#39;,2015,24,6.798,0.0378,1.52186,1.02,1.02525,0.54252,0.4921,0.31105,1.88501),(&#39;Panama&#39;,2015,25,6.786,0.0491,1.06353,1.1985,0.79661,0.5421,0.0927,0.24434,2.84848),(&#39;Germany&#39;,2015,26,6.75,0.01848,1.32792,1.29937,0.89186,0.61477,0.21843,0.28214,2.11569),(&#39;Chile&#39;,2015,27,6.67,0.058,1.10715,1.12447,0.85857,0.44132,0.12869,0.33363,2.67585),(&#39;Qatar&#39;,2015,28,6.611,0.06257,1.69042,1.0786,0.79733,0.6404,0.52208,0.32573,1.55674),(&#39;France&#39;,2015,29,6.575,0.03512,1.27778,1.26038,0.94579,0.55011,0.20646,0.12332,2.21126),(&#39;Argentina&#39;,2015,30,6.574,0.04612,1.05351,1.24823,0.78723,0.44974,0.08484,0.11451,2.836),(&#39;Czech Republic&#39;,2015,31,6.505,0.04168,1.17898,1.20643,0.84483,0.46364,0.02652,0.10686,2.67782),(&#39;Uruguay&#39;,2015,32,6.485,0.04539,1.06166,1.2089,0.8116,0.60362,0.24558,0.2324,2.32142),(&#39;Colombia&#39;,2015,33,6.477,0.05051,0.91861,1.24018,0.69077,0.53466,0.0512,0.18401,2.85737),(&#39;Thailand&#39;,2015,34,6.455,0.03557,0.9669,1.26504,0.7385,0.55664,0.03187,0.5763,2.31945),(&#39;Saudi Arabia&#39;,2015,35,6.411,0.04633,1.39541,1.08393,0.72025,0.31048,0.32524,0.13706,2.43872),(&#39;Spain&#39;,2015,36,6.329,0.03468,1.23011,1.31379,0.95562,0.45951,0.06398,0.18227,2.12367),(&#39;Malta&#39;,2015,37,6.302,0.04206,1.2074,1.30203,0.88721,0.60365,0.13586,0.51752,1.6488),(&#39;Taiwan&#39;,2015,38,6.298,0.03868,1.29098,1.07617,0.8753,0.3974,0.08129,0.25376,2.32323),(&#39;Kuwait&#39;,2015,39,6.295,0.04456,1.55422,1.16594,0.72492,0.55499,0.25609,0.16228,1.87634),(&#39;Suriname&#39;,2015,40,6.269,0.09811,0.99534,0.972,0.6082,0.59657,0.13633,0.16991,2.79094),(&#39;Trinidad and Tobago&#39;,2015,41,6.168,0.10895,1.21183,1.18354,0.61483,0.55884,0.0114,0.31844,2.26882),(&#39;El Salvador&#39;,2015,42,6.13,0.05618,0.76454,1.02507,0.67737,0.4035,0.11776,0.10692,3.035),(&#39;Guatemala&#39;,2015,43,6.123,0.05224,0.74553,1.04356,0.64425,0.57733,0.09472,0.27489,2.74255),(&#39;Uzbekistan&#39;,2015,44,6.003,0.04361,0.63244,1.34043,0.59772,0.65821,0.30826,0.22837,2.23741),(&#39;Slovakia&#39;,2015,45,5.995,0.04267,1.16891,1.26999,0.78902,0.31751,0.03431,0.16893,2.24639),(&#39;Japan&#39;,2015,46,5.987,0.03581,1.27074,1.25712,0.99111,0.49615,0.1806,0.10705,1.68435),(&#39;South Korea&#39;,2015,47,5.984,0.04098,1.24461,0.95774,0.96538,0.33208,0.07857,0.18557,2.21978),(&#39;Ecuador&#39;,2015,48,5.975,0.04528,0.86402,0.99903,0.79075,0.48574,0.1809,0.11541,2.53942),(&#39;Bahrain&#39;,2015,49,5.96,0.05412,1.32376,1.21624,0.74716,0.45492,0.306,0.17362,1.73797),(&#39;Italy&#39;,2015,50,5.948,0.03914,1.25114,1.19777,0.95446,0.26236,0.02901,0.22823,2.02518),(&#39;Bolivia&#39;,2015,51,5.89,0.05642,0.68133,0.97841,0.5392,0.57414,0.088,0.20536,2.82334),(&#39;Moldova&#39;,2015,52,5.889,0.03799,0.59448,1.01528,0.61826,0.32818,0.01615,0.20951,3.10712),(&#39;Paraguay&#39;,2015,53,5.878,0.04563,0.75985,1.30477,0.66098,0.53899,0.08242,0.3424,2.18896),(&#39;Kazakhstan&#39;,2015,54,5.855,0.04114,1.12254,1.12241,0.64368,0.51649,0.08454,0.11827,2.24729),(&#39;Slovenia&#39;,2015,55,5.848,0.04251,1.18498,1.27385,0.87337,0.60855,0.03787,0.25328,1.61583),(&#39;Lithuania&#39;,2015,56,5.833,0.03843,1.14723,1.25745,0.73128,0.21342,0.01031,0.02641,2.44649),(&#39;Nicaragua&#39;,2015,57,5.828,0.05371,0.59325,1.14184,0.74314,0.55475,0.19317,0.27815,2.32407),(&#39;Peru&#39;,2015,58,5.824,0.04615,0.90019,0.97459,0.73017,0.41496,0.05989,0.14982,2.5945),(&#39;Belarus&#39;,2015,59,5.813,0.03938,1.03192,1.23289,0.73608,0.37938,0.1909,0.11046,2.1309),(&#39;Poland&#39;,2015,60,5.791,0.04263,1.12555,1.27948,0.77903,0.53122,0.04212,0.16759,1.86565),(&#39;Malaysia&#39;,2015,61,5.77,0.0433,1.12486,1.07023,0.72394,0.53024,0.10501,0.33075,1.88541),(&#39;Croatia&#39;,2015,62,5.759,0.04394,1.08254,0.79624,0.78805,0.25883,0.0243,0.05444,2.75414),(&#39;Libya&#39;,2015,63,5.754,0.07832,1.13145,1.11862,0.7038,0.41668,0.11023,0.18295,2.09066),(&#39;Russia&#39;,2015,64,5.716,0.03135,1.13764,1.23617,0.66926,0.36679,0.03005,0.00199,2.27394),(&#39;Jamaica&#39;,2015,65,5.709,0.13693,0.81038,1.15102,0.68741,0.50442,0.02299,0.2123,2.32038),(&#39;North Cyprus&#39;,2015,66,5.695,0.05635,1.20806,1.07008,0.92356,0.49027,0.1428,0.26169,1.59888),(&#39;Cyprus&#39;,2015,67,5.689,0.0558,1.20813,0.89318,0.92356,0.40672,0.06146,0.30638,1.88931),(&#39;Algeria&#39;,2015,68,5.605,0.05099,0.93929,1.07772,0.61766,0.28579,0.17383,0.07822,2.43209),(&#39;Kosovo&#39;,2015,69,5.589,0.05018,0.80148,0.81198,0.63132,0.24749,0.04741,0.2831,2.76579),(&#39;Turkmenistan&#39;,2015,70,5.548,0.04175,0.95847,1.22668,0.53886,0.4761,0.30844,0.16979,1.86984),(&#39;Mauritius&#39;,2015,71,5.477,0.07197,1.00761,0.98521,0.7095,0.56066,0.07521,0.37744,1.76145),(&#39;Hong Kong&#39;,2015,72,5.474,0.05051,1.38604,1.05818,1.01328,0.59608,0.37124,0.39478,0.65429),(&#39;Estonia&#39;,2015,73,5.429,0.04013,1.15174,1.22791,0.77361,0.44888,0.15184,0.0868,1.58782),(&#39;Indonesia&#39;,2015,74,5.399,0.02596,0.82827,1.08708,0.63793,0.46611,0,0.51535,1.86399),(&#39;Vietnam&#39;,2015,75,5.36,0.03107,0.63216,0.91226,0.74676,0.59444,0.10441,0.1686,2.20173),(&#39;Turkey&#39;,2015,76,5.332,0.03864,1.06098,0.94632,0.73172,0.22815,0.15746,0.12253,2.08528),(&#39;Kyrgyzstan&#39;,2015,77,5.286,0.03823,0.47428,1.15115,0.65088,0.43477,0.04232,0.3003,2.2327),(&#39;Nigeria&#39;,2015,78,5.268,0.04192,0.65435,0.90432,0.16007,0.34334,0.0403,0.27233,2.89319),(&#39;Bhutan&#39;,2015,79,5.253,0.03225,0.77042,1.10395,0.57407,0.53206,0.15445,0.47998,1.63794),(&#39;Azerbaijan&#39;,2015,80,5.212,0.03363,1.02389,0.93793,0.64045,0.3703,0.16065,0.07799,2.00073),(&#39;Pakistan&#39;,2015,81,5.194,0.03726,0.59543,0.41411,0.51466,0.12102,0.10464,0.33671,3.10709),(&#39;Jordan&#39;,2015,82,5.192,0.04524,0.90198,1.05392,0.69639,0.40661,0.14293,0.11053,1.87996),(&#39;Montenegro&#39;,2015,82,5.192,0.05235,0.97438,0.90557,0.72521,0.1826,0.14296,0.1614,2.10017),(&#39;China&#39;,2015,84,5.14,0.02424,0.89012,0.94675,0.81658,0.51697,0.02781,0.08185,1.8604),(&#39;Zambia&#39;,2015,85,5.129,0.06988,0.47038,0.91612,0.29924,0.48827,0.12468,0.19591,2.6343),(&#39;Romania&#39;,2015,86,5.124,0.06607,1.04345,0.88588,0.7689,0.35068,0.00649,0.13748,1.93129),(&#39;Serbia&#39;,2015,87,5.123,0.04864,0.92053,1.00964,0.74836,0.20107,0.02617,0.19231,2.025),(&#39;Portugal&#39;,2015,88,5.102,0.04802,1.15991,1.13935,0.87519,0.51469,0.01078,0.13719,1.26462),(&#39;Latvia&#39;,2015,89,5.098,0.0464,1.11312,1.09562,0.72437,0.29671,0.06332,0.18226,1.62215),(&#39;Philippines&#39;,2015,90,5.073,0.04934,0.70532,1.03516,0.58114,0.62545,0.12279,0.24991,1.7536),(&#39;Somaliland region&#39;,2015,91,5.057,0.06161,0.18847,0.95152,0.43873,0.46582,0.39928,0.50318,2.11032),(&#39;Morocco&#39;,2015,92,5.013,0.0342,0.73479,0.64095,0.60954,0.41691,0.08546,0.07172,2.45373),(&#39;Macedonia&#39;,2015,93,5.007,0.05376,0.91851,1.00232,0.73545,0.33457,0.05327,0.22359,1.73933),(&#39;Mozambique&#39;,2015,94,4.971,0.07896,0.08308,1.02626,0.09131,0.34037,0.15603,0.22269,3.05137),(&#39;Albania&#39;,2015,95,4.959,0.05013,0.87867,0.80434,0.81325,0.35733,0.06413,0.14272,1.89894),(&#39;Bosnia and Herzegovina&#39;,2015,96,4.949,0.06913,0.83223,0.91916,0.79081,0.09245,0.00227,0.24808,2.06367),(&#39;Lesotho&#39;,2015,97,4.898,0.09438,0.37545,1.04103,0.07612,0.31767,0.12504,0.16388,2.79832),(&#39;Dominican Republic&#39;,2015,98,4.885,0.07446,0.89537,1.17202,0.66825,0.57672,0.14234,0.21684,1.21305),(&#39;Laos&#39;,2015,99,4.876,0.06698,0.59066,0.73803,0.54909,0.59591,0.24249,0.42192,1.73799),(&#39;Mongolia&#39;,2015,100,4.874,0.03313,0.82819,1.3006,0.60268,0.43626,0.02666,0.3323,1.34759),(&#39;Swaziland&#39;,2015,101,4.867,0.08742,0.71206,1.07284,0.07566,0.30658,0.0306,0.18259,2.48676),(&#39;Greece&#39;,2015,102,4.857,0.05062,1.15406,0.92933,0.88213,0.07699,0.01397,0,1.80101),(&#39;Lebanon&#39;,2015,103,4.839,0.04337,1.02564,0.80001,0.83947,0.33916,0.04582,0.21854,1.57059),(&#39;Hungary&#39;,2015,104,4.8,0.06107,1.12094,1.20215,0.75905,0.32112,0.02758,0.128,1.24074),(&#39;Honduras&#39;,2015,105,4.788,0.05648,0.59532,0.95348,0.6951,0.40148,0.06825,0.23027,1.84408),(&#39;Tajikistan&#39;,2015,106,4.786,0.03198,0.39047,0.85563,0.57379,0.47216,0.15072,0.22974,2.11399),(&#39;Tunisia&#39;,2015,107,4.739,0.03589,0.88113,0.60429,0.73793,0.26268,0.06358,0.06431,2.12466),(&#39;Palestinian Territories&#39;,2015,108,4.715,0.04394,0.59867,0.92558,0.66015,0.24499,0.12905,0.11251,2.04384),(&#39;Bangladesh&#39;,2015,109,4.694,0.03077,0.39753,0.43106,0.60164,0.4082,0.12569,0.21222,2.51767),(&#39;Iran&#39;,2015,110,4.686,0.04449,1.0088,0.54447,0.69805,0.30033,0.05863,0.38086,1.6944),(&#39;Ukraine&#39;,2015,111,4.681,0.04412,0.79907,1.20278,0.6739,0.25123,0.02961,0.15275,1.5714),(&#39;Iraq&#39;,2015,112,4.677,0.05232,0.98549,0.81889,0.60237,0,0.13788,0.17922,1.95335),(&#39;South Africa&#39;,2015,113,4.642,0.04585,0.92049,1.18468,0.27688,0.33207,0.08884,0.11973,1.71956),(&#39;Ghana&#39;,2015,114,4.633,0.04742,0.54558,0.67954,0.40132,0.42342,0.04355,0.23087,2.30919),(&#39;Zimbabwe&#39;,2015,115,4.61,0.0429,0.271,1.03276,0.33475,0.25861,0.08079,0.18987,2.44191),(&#39;Liberia&#39;,2015,116,4.571,0.11068,0.0712,0.78968,0.34201,0.28531,0.06232,0.24362,2.77729),(&#39;India&#39;,2015,117,4.565,0.02043,0.64499,0.38174,0.51529,0.39786,0.08492,0.26475,2.27513),(&#39;Sudan&#39;,2015,118,4.55,0.0674,0.52107,1.01404,0.36878,0.10081,0.1466,0.19062,2.20857),(&#39;Haiti&#39;,2015,119,4.518,0.07331,0.26673,0.74302,0.38847,0.24425,0.17175,0.46187,2.24173),(&#39;Congo (Kinshasa)&#39;,2015,120,4.517,0.0368,0,1.0012,0.09806,0.22605,0.07625,0.24834,2.86712),(&#39;Nepal&#39;,2015,121,4.514,0.03607,0.35997,0.86449,0.56874,0.38282,0.05907,0.32296,1.95637),(&#39;Ethiopia&#39;,2015,122,4.512,0.0378,0.19073,0.60406,0.44055,0.4345,0.15048,0.24325,2.44876),(&#39;Sierra Leone&#39;,2015,123,4.507,0.07068,0.33024,0.95571,0,0.4084,0.08786,0.21488,2.51009),(&#39;Mauritania&#39;,2015,124,4.436,0.03947,0.45407,0.86908,0.35874,0.24232,0.17461,0.219,2.11773),(&#39;Kenya&#39;,2015,125,4.419,0.04734,0.36471,0.99876,0.41435,0.42215,0.05839,0.37542,1.78555),(&#39;Djibouti&#39;,2015,126,4.369,0.08096,0.44025,0.59207,0.36291,0.46074,0.28105,0.18093,2.05125),(&#39;Armenia&#39;,2015,127,4.35,0.04763,0.76821,0.77711,0.7299,0.19847,0.039,0.07855,1.75873),(&#39;Botswana&#39;,2015,128,4.332,0.04934,0.99355,1.10464,0.04776,0.49495,0.12474,0.10461,1.46181),(&#39;Myanmar&#39;,2015,129,4.307,0.04351,0.27108,0.70905,0.48246,0.44017,0.19034,0.79588,1.41805),(&#39;Georgia&#39;,2015,130,4.297,0.04221,0.7419,0.38562,0.72926,0.40577,0.38331,0.05547,1.59541),(&#39;Malawi&#39;,2015,131,4.292,0.0613,0.01604,0.41134,0.22562,0.43054,0.06977,0.33128,2.80791),(&#39;Sri Lanka&#39;,2015,132,4.271,0.03751,0.83524,1.01905,0.70806,0.53726,0.09179,0.40828,0.67108),(&#39;Cameroon&#39;,2015,133,4.252,0.04678,0.4225,0.88767,0.23402,0.49309,0.05786,0.20618,1.95071),(&#39;Bulgaria&#39;,2015,134,4.218,0.04828,1.01216,1.10614,0.76649,0.30587,0.00872,0.11921,0.89991),(&#39;Egypt&#39;,2015,135,4.194,0.0326,0.8818,0.747,0.61712,0.17288,0.06324,0.11291,1.59927),(&#39;Yemen&#39;,2015,136,4.077,0.04367,0.54649,0.68093,0.40064,0.35571,0.07854,0.09131,1.92313),(&#39;Angola&#39;,2015,137,4.033,0.04758,0.75778,0.8604,0.16683,0.10384,0.07122,0.12344,1.94939),(&#39;Mali&#39;,2015,138,3.995,0.05602,0.26074,1.03526,0.20583,0.38857,0.12352,0.18798,1.79293),(&#39;Congo (Brazzaville)&#39;,2015,139,3.989,0.06682,0.67866,0.6629,0.31051,0.41466,0.11686,0.12388,1.68135),(&#39;Comoros&#39;,2015,140,3.956,0.04797,0.23906,0.79273,0.36315,0.22917,0.199,0.17441,1.95812),(&#39;Uganda&#39;,2015,141,3.931,0.04317,0.21102,1.13299,0.33861,0.45727,0.07267,0.29066,1.42766),(&#39;Senegal&#39;,2015,142,3.904,0.03608,0.36498,0.97619,0.4354,0.36772,0.10713,0.20843,1.44395),(&#39;Gabon&#39;,2015,143,3.896,0.04547,1.06024,0.90528,0.43372,0.31914,0.11091,0.06822,0.99895),(&#39;Niger&#39;,2015,144,3.845,0.03602,0.0694,0.77265,0.29707,0.47692,0.15639,0.19387,1.87877),(&#39;Cambodia&#39;,2015,145,3.819,0.05069,0.46038,0.62736,0.61114,0.66246,0.07247,0.40359,0.98195),(&#39;Tanzania&#39;,2015,146,3.781,0.05061,0.2852,1.00268,0.38215,0.32878,0.05747,0.34377,1.38079),(&#39;Madagascar&#39;,2015,147,3.681,0.03633,0.20824,0.66801,0.46721,0.19184,0.08124,0.21333,1.851),(&#39;Central African Republic&#39;,2015,148,3.678,0.06112,0.0785,0,0.06699,0.48879,0.08289,0.23835,2.7223),(&#39;Chad&#39;,2015,149,3.667,0.0383,0.34193,0.76062,0.1501,0.23501,0.05269,0.18386,1.94296),(&#39;Guinea&#39;,2015,150,3.656,0.0359,0.17417,0.46475,0.24009,0.37725,0.12139,0.28657,1.99172),(&#39;Ivory Coast&#39;,2015,151,3.655,0.05141,0.46534,0.77115,0.15185,0.46866,0.17922,0.20165,1.41723),(&#39;Burkina Faso&#39;,2015,152,3.587,0.04324,0.25812,0.85188,0.27125,0.39493,0.12832,0.21747,1.46494),(&#39;Afghanistan&#39;,2015,153,3.575,0.03084,0.31982,0.30285,0.30335,0.23414,0.09719,0.3651,1.9521),(&#39;Rwanda&#39;,2015,154,3.465,0.03464,0.22208,0.7737,0.42864,0.59201,0.55191,0.22628,0.67042),(&#39;Benin&#39;,2015,155,3.34,0.03656,0.28665,0.35386,0.3191,0.4845,0.0801,0.1826,1.63328),(&#39;Syria&#39;,2015,156,3.006,0.05015,0.6632,0.47489,0.72193,0.15684,0.18906,0.47179,0.32858),(&#39;Burundi&#39;,2015,157,2.905,0.08658,0.0153,0.41587,0.22396,0.1185,0.10062,0.19727,1.83302),(&#39;Togo&#39;,2015,158,2.839,0.06727,0.20868,0.13995,0.28443,0.36453,0.10731,0.16681,1.56726),(&#39;Denmark&#39;,2016,1,7.526,7.46,1.44178,1.16374,0.79504,0.57941,0.44453,0.36171,2.73939),(&#39;Switzerland&#39;,2016,2,7.509,7.428,1.52733,1.14524,0.86303,0.58557,0.41203,0.28083,2.69463),(&#39;Iceland&#39;,2016,3,7.501,7.333,1.42666,1.18326,0.86733,0.56624,0.14975,0.47678,2.83137),(&#39;Norway&#39;,2016,4,7.498,7.421,1.57744,1.1269,0.79579,0.59609,0.35776,0.37895,2.66465),(&#39;Finland&#39;,2016,5,7.413,7.351,1.40598,1.13464,0.81091,0.57104,0.41004,0.25492,2.82596),(&#39;Canada&#39;,2016,6,7.404,7.335,1.44015,1.0961,0.8276,0.5737,0.31329,0.44834,2.70485),(&#39;Netherlands&#39;,2016,7,7.339,7.284,1.46468,1.02912,0.81231,0.55211,0.29927,0.47416,2.70749),(&#39;New Zealand&#39;,2016,8,7.334,7.264,1.36066,1.17278,0.83096,0.58147,0.41904,0.49401,2.47553),(&#39;Australia&#39;,2016,9,7.313,7.241,1.44443,1.10476,0.8512,0.56837,0.32331,0.47407,2.5465),(&#39;Sweden&#39;,2016,10,7.291,7.227,1.45181,1.08764,0.83121,0.58218,0.40867,0.38254,2.54734),(&#39;Israel&#39;,2016,11,7.267,7.199,1.33766,0.99537,0.84917,0.36432,0.08728,0.32288,3.31029),(&#39;Austria&#39;,2016,12,7.119,7.045,1.45038,1.08383,0.80565,0.54355,0.21348,0.32865,2.69343),(&#39;United States&#39;,2016,13,7.104,7.02,1.50796,1.04782,0.779,0.48163,0.14868,0.41077,2.72782),(&#39;Costa Rica&#39;,2016,14,7.087,6.999,1.06879,1.02152,0.76146,0.55225,0.10547,0.22553,3.35168),(&#39;Puerto Rico&#39;,2016,15,7.039,6.794,1.35943,1.08113,0.77758,0.46823,0.12275,0.22202,3.0076),(&#39;Germany&#39;,2016,16,6.994,6.93,1.44787,1.09774,0.81487,0.53466,0.28551,0.30452,2.50931),(&#39;Brazil&#39;,2016,17,6.952,6.875,1.08754,1.03938,0.61415,0.40425,0.14166,0.15776,3.50733),(&#39;Belgium&#39;,2016,18,6.929,6.861,1.42539,1.05249,0.81959,0.51354,0.26248,0.2424,2.61355),(&#39;Ireland&#39;,2016,19,6.907,6.836,1.48341,1.16157,0.81455,0.54008,0.29754,0.44963,2.15988),(&#39;Luxembourg&#39;,2016,20,6.871,6.804,1.69752,1.03999,0.84542,0.5487,0.35329,0.27571,2.11055),(&#39;Mexico&#39;,2016,21,6.778,6.68,1.11508,0.7146,0.71143,0.37709,0.18355,0.11735,3.55906),(&#39;Singapore&#39;,2016,22,6.739,6.674,1.64555,0.86758,0.94719,0.4877,0.46987,0.32706,1.99375),(&#39;United Kingdom&#39;,2016,23,6.725,6.647,1.40283,1.08672,0.80991,0.50036,0.27399,0.50156,2.14999),(&#39;Chile&#39;,2016,24,6.705,6.615,1.2167,0.90587,0.81883,0.37789,0.11451,0.31595,2.95505),(&#39;Panama&#39;,2016,25,6.701,6.601,1.18306,0.98912,0.70835,0.48927,0.08423,0.2418,3.00559),(&#39;Argentina&#39;,2016,26,6.65,6.56,1.15137,1.06612,0.69711,0.42284,0.07296,0.10989,3.12985),(&#39;Czech Republic&#39;,2016,27,6.596,6.515,1.30915,1.00793,0.76376,0.41418,0.03986,0.09929,2.96211),(&#39;United Arab Emirates&#39;,2016,28,6.573,6.494,1.57352,0.87114,0.72993,0.56215,0.35561,0.26591,2.21507),(&#39;Uruguay&#39;,2016,29,6.545,6.456,1.18157,1.03143,0.72183,0.54388,0.21394,0.18056,2.67139),(&#39;Malta&#39;,2016,30,6.488,6.409,1.30782,1.09879,0.80315,0.54994,0.17554,0.56237,1.99032),(&#39;Colombia&#39;,2016,31,6.481,6.384,1.03032,1.02169,0.59659,0.44735,0.05399,0.15626,3.17471),(&#39;France&#39;,2016,32,6.478,6.397,1.39488,1.00508,0.83795,0.46562,0.17808,0.1216,2.4744),(&#39;Thailand&#39;,2016,33,6.474,6.396,1.0893,1.04477,0.64915,0.49553,0.02833,0.58696,2.5796),(&#39;Saudi Arabia&#39;,2016,34,6.379,6.287,1.48953,0.84829,0.59267,0.37904,0.30008,0.15457,2.61482),(&#39;Taiwan&#39;,2016,34,6.379,6.305,1.39729,0.92624,0.79565,0.32377,0.0663,0.25495,2.61523),(&#39;Qatar&#39;,2016,36,6.375,6.178,1.82427,0.87964,0.71723,0.56679,0.48049,0.32388,1.58224),(&#39;Spain&#39;,2016,37,6.361,6.288,1.34253,1.12945,0.87896,0.37545,0.06137,0.17665,2.39663),(&#39;Algeria&#39;,2016,38,6.355,6.227,1.05266,0.83309,0.61804,0.21006,0.16157,0.07044,3.40904),(&#39;Guatemala&#39;,2016,39,6.324,6.213,0.83454,0.87119,0.54039,0.50379,0.08701,0.28808,3.19863),(&#39;Suriname&#39;,2016,40,6.269,6.073,1.09686,0.77866,0.50933,0.52234,0.12692,0.16665,3.06852),(&#39;Kuwait&#39;,2016,41,6.239,6.154,1.61714,0.87758,0.63569,0.43166,0.23669,0.15965,2.28085),(&#39;Bahrain&#39;,2016,42,6.218,6.128,1.44024,0.94397,0.65696,0.47375,0.25772,0.17147,2.27405),(&#39;Trinidad and Tobago&#39;,2016,43,6.168,5.95,1.32572,0.98569,0.52608,0.48453,0.01241,0.31935,2.51394),(&#39;Venezuela&#39;,2016,44,6.084,5.973,1.13367,1.03302,0.61904,0.19847,0.08304,0.0425,2.97468),(&#39;Slovakia&#39;,2016,45,6.078,5.996,1.27973,1.08268,0.70367,0.23391,0.02947,0.13837,2.61065),(&#39;El Salvador&#39;,2016,46,6.068,5.967,0.8737,0.80975,0.596,0.37269,0.10613,0.08877,3.22134),(&#39;Malaysia&#39;,2016,47,6.005,5.921,1.25142,0.88025,0.62366,0.39031,0.09081,0.41474,2.35384),(&#39;Nicaragua&#39;,2016,48,5.992,5.877,0.69384,0.89521,0.65213,0.46582,0.16292,0.29773,2.82428),(&#39;Uzbekistan&#39;,2016,49,5.987,5.896,0.73591,1.1681,0.50163,0.60848,0.28333,0.34326,2.34638),(&#39;Italy&#39;,2016,50,5.977,5.898,1.35495,1.04167,0.85102,0.18827,0.02556,0.16684,2.34918),(&#39;Ecuador&#39;,2016,51,5.976,5.88,0.97306,0.85974,0.68613,0.4027,0.18037,0.10074,2.77366),(&#39;Belize&#39;,2016,52,5.956,5.71,0.87616,0.68655,0.45569,0.51231,0.10771,0.23684,3.08039),(&#39;Japan&#39;,2016,53,5.921,5.85,1.38007,1.06054,0.91491,0.46761,0.18985,0.10224,1.80584),(&#39;Kazakhstan&#39;,2016,54,5.919,5.837,1.22943,0.95544,0.57386,0.4052,0.11132,0.15011,2.49325),(&#39;Moldova&#39;,2016,55,5.897,5.823,0.69177,0.83132,0.52309,0.25202,0.01903,0.19997,3.38007),(&#39;Russia&#39;,2016,56,5.856,5.789,1.23228,1.05261,0.58991,0.32682,0.03586,0.02736,2.59115),(&#39;Poland&#39;,2016,57,5.835,5.749,1.24585,1.04685,0.69058,0.4519,0.055,0.14443,2.20035),(&#39;South Korea&#39;,2016,57,5.835,5.747,1.35948,0.72194,0.88645,0.25168,0.07716,0.18824,2.35015),(&#39;Bolivia&#39;,2016,59,5.822,5.74,0.79422,0.83779,0.4697,0.50961,0.07746,0.21698,2.91635),(&#39;Lithuania&#39;,2016,60,5.813,5.734,1.2692,1.06411,0.64674,0.18929,0.0182,0.02025,2.60525),(&#39;Belarus&#39;,2016,61,5.802,5.723,1.13062,1.04993,0.63104,0.29091,0.17457,0.13942,2.38582),(&#39;North Cyprus&#39;,2016,62,5.771,5.67,1.31141,0.81826,0.84142,0.43596,0.16578,0.26322,1.93447),(&#39;Slovenia&#39;,2016,63,5.768,5.683,1.29947,1.05613,0.79151,0.53164,0.03635,0.25738,1.79522),(&#39;Peru&#39;,2016,64,5.743,5.647,0.99602,0.81255,0.62994,0.37502,0.05292,0.14527,2.73117),(&#39;Turkmenistan&#39;,2016,65,5.658,5.58,1.08017,1.03817,0.44006,0.37408,0.28467,0.22567,2.21489),(&#39;Mauritius&#39;,2016,66,5.648,5.507,1.14372,0.75695,0.66189,0.46145,0.05203,0.36951,2.20223),(&#39;Libya&#39;,2016,67,5.615,5.406,1.06688,0.95076,0.52304,0.40672,0.10339,0.17087,2.39374),(&#39;Latvia&#39;,2016,68,5.56,5.486,1.21788,0.95025,0.63952,0.27996,0.0889,0.17445,2.20859),(&#39;Cyprus&#39;,2016,69,5.546,5.442,1.31857,0.70697,0.8488,0.29507,0.05228,0.27906,2.04497),(&#39;Paraguay&#39;,2016,70,5.538,5.453,0.89373,1.11111,0.58295,0.46235,0.07396,0.25296,2.16091),(&#39;Romania&#39;,2016,71,5.528,5.427,1.1697,0.72803,0.67602,0.36712,0.00679,0.12889,2.45184),(&#39;Estonia&#39;,2016,72,5.517,5.437,1.27964,1.05163,0.68098,0.41511,0.18519,0.08423,1.81985),(&#39;Jamaica&#39;,2016,73,5.51,5.315,0.89333,0.96372,0.59469,0.43597,0.04294,0.22245,2.35682),(&#39;Croatia&#39;,2016,74,5.488,5.402,1.18649,0.60809,0.70524,0.23907,0.04002,0.18434,2.52462),(&#39;Hong Kong&#39;,2016,75,5.458,5.362,1.5107,0.87021,0.95277,0.48079,0.31647,0.40097,0.92614),(&#39;Somalia&#39;,2016,76,5.44,5.321,0,0.33613,0.11466,0.56778,0.3118,0.27225,3.83772),(&#39;Kosovo&#39;,2016,77,5.401,5.308,0.90145,0.66062,0.54,0.14396,0.06547,0.27992,2.80998),(&#39;Turkey&#39;,2016,78,5.389,5.295,1.16492,0.87717,0.64718,0.23889,0.12348,0.04707,2.29074),(&#39;Indonesia&#39;,2016,79,5.314,5.237,0.95104,0.87625,0.49374,0.39237,0.00322,0.56521,2.03171),(&#39;Jordan&#39;,2016,80,5.303,5.187,0.99673,0.86216,0.60712,0.36023,0.13297,0.14262,2.20142),(&#39;Azerbaijan&#39;,2016,81,5.291,5.226,1.12373,0.76042,0.54504,0.35327,0.17914,0.0564,2.2735),(&#39;Philippines&#39;,2016,82,5.279,5.16,0.81217,0.87877,0.47036,0.54854,0.11757,0.21674,2.23484),(&#39;China&#39;,2016,83,5.245,5.199,1.0278,0.79381,0.73561,0.44012,0.02745,0.04959,2.17087),(&#39;Bhutan&#39;,2016,84,5.196,5.138,0.8527,0.90836,0.49759,0.46074,0.1616,0.48546,1.82916),(&#39;Kyrgyzstan&#39;,2016,85,5.185,5.103,0.56044,0.95434,0.55449,0.40212,0.04762,0.38432,2.28136),(&#39;Serbia&#39;,2016,86,5.177,5.083,1.03437,0.81329,0.6458,0.15718,0.04339,0.20737,2.27539),(&#39;Bosnia and Herzegovina&#39;,2016,87,5.163,5.063,0.93383,0.64367,0.70766,0.09511,0,0.29889,2.48406),(&#39;Montenegro&#39;,2016,88,5.161,5.055,1.07838,0.74173,0.63533,0.15111,0.12721,0.17191,2.25531),(&#39;Dominican Republic&#39;,2016,89,5.155,5.037,1.02787,0.99496,0.57669,0.52259,0.12372,0.21286,1.69626),(&#39;Morocco&#39;,2016,90,5.151,5.058,0.84058,0.38595,0.59471,0.25646,0.08404,0.04053,2.94891),(&#39;Hungary&#39;,2016,91,5.145,5.056,1.24142,0.93164,0.67608,0.1977,0.04472,0.099,1.95473),(&#39;Pakistan&#39;,2016,92,5.132,5.038,0.68816,0.26135,0.40306,0.14622,0.1388,0.31185,3.18286),(&#39;Lebanon&#39;,2016,93,5.129,5.031,1.12268,0.64184,0.76171,0.26228,0.03061,0.23693,2.07339),(&#39;Portugal&#39;,2016,94,5.123,5.03,1.27607,0.94367,0.79363,0.44727,0.01521,0.11691,1.53015),(&#39;Macedonia&#39;,2016,95,5.121,5.017,1.0193,0.78236,0.64738,0.27668,0.07047,0.23507,2.08947),(&#39;Vietnam&#39;,2016,96,5.061,4.991,0.74037,0.79117,0.66157,0.55954,0.11556,0.25075,1.9418),(&#39;Somaliland Region&#39;,2016,97,5.057,4.934,0.25558,0.75862,0.33108,0.3913,0.36794,0.51479,2.43801),(&#39;Tunisia&#39;,2016,98,5.045,4.965,0.97724,0.43165,0.59577,0.23553,0.0817,0.03936,2.68413),(&#39;Greece&#39;,2016,99,5.033,4.935,1.24886,0.75473,0.80029,0.05822,0.04127,0,2.12944),(&#39;Tajikistan&#39;,2016,100,4.996,4.923,0.48835,0.75602,0.53119,0.43408,0.13509,0.25998,2.39106),(&#39;Mongolia&#39;,2016,101,4.907,4.838,0.98853,1.08983,0.55469,0.35972,0.03285,0.34539,1.53586),(&#39;Laos&#39;,2016,102,4.876,4.742,0.68042,0.5497,0.38291,0.52168,0.22423,0.43079,2.08637),(&#39;Nigeria&#39;,2016,103,4.875,4.75,0.75216,0.64498,0.05108,0.27854,0.0305,0.23219,2.88586),(&#39;Honduras&#39;,2016,104,4.871,4.75,0.69429,0.75596,0.58383,0.26755,0.06906,0.2044,2.29551),(&#39;Iran&#39;,2016,105,4.813,4.703,1.11758,0.38857,0.64232,0.22544,0.0557,0.38538,1.99817),(&#39;Zambia&#39;,2016,106,4.795,4.645,0.61202,0.6376,0.23573,0.42662,0.11479,0.17866,2.58991),(&#39;Nepal&#39;,2016,107,4.793,4.698,0.44626,0.69699,0.50073,0.37012,0.07008,0.3816,2.32694),(&#39;Palestinian Territories&#39;,2016,108,4.754,4.649,0.67024,0.71629,0.56844,0.17744,0.10613,0.11154,2.40364),(&#39;Albania&#39;,2016,109,4.655,4.546,0.9553,0.50163,0.73007,0.31866,0.05301,0.1684,1.92816),(&#39;Bangladesh&#39;,2016,110,4.643,4.56,0.54177,0.24749,0.52989,0.39778,0.12583,0.19132,2.60904),(&#39;Sierra Leone&#39;,2016,111,4.635,4.505,0.36485,0.628,0,0.30685,0.08196,0.23897,3.01402),(&#39;Iraq&#39;,2016,112,4.575,4.446,1.07474,0.59205,0.51076,0.24856,0.13636,0.19589,1.81657),(&#39;Namibia&#39;,2016,113,4.574,4.374,0.93287,0.70362,0.34745,0.48614,0.10398,0.07795,1.92198),(&#39;Cameroon&#39;,2016,114,4.513,4.417,0.52497,0.62542,0.12698,0.42736,0.06126,0.2268,2.5198),(&#39;Ethiopia&#39;,2016,115,4.508,4.425,0.29283,0.37932,0.34578,0.36703,0.1717,0.29522,2.65614),(&#39;South Africa&#39;,2016,116,4.459,4.371,1.02416,0.96053,0.18611,0.42483,0.08415,0.13656,1.64227),(&#39;Sri Lanka&#39;,2016,117,4.415,4.322,0.97318,0.84783,0.62007,0.50817,0.07964,0.46978,0.91681),(&#39;India&#39;,2016,118,4.404,4.351,0.74036,0.29247,0.45091,0.40285,0.08722,0.25028,2.18032),(&#39;Myanmar&#39;,2016,119,4.395,4.327,0.34112,0.69981,0.3988,0.42692,0.20243,0.81971,1.50655),(&#39;Egypt&#39;,2016,120,4.362,4.259,0.95395,0.49813,0.52116,0.18847,0.10393,0.12706,1.96895),(&#39;Armenia&#39;,2016,121,4.36,4.266,0.86086,0.62477,0.64083,0.14037,0.03616,0.07793,1.97864),(&#39;Kenya&#39;,2016,122,4.356,4.259,0.52267,0.7624,0.30147,0.40576,0.06686,0.41328,1.88326),(&#39;Ukraine&#39;,2016,123,4.324,4.236,0.87287,1.01413,0.58628,0.12859,0.01829,0.20363,1.50066),(&#39;Ghana&#39;,2016,124,4.276,4.185,0.63107,0.49353,0.29681,0.40973,0.0326,0.21203,2.2002),(&#39;Congo (Kinshasa)&#39;,2016,125,4.272,4.191,0.05661,0.80676,0.188,0.15602,0.06075,0.25458,2.74924),(&#39;Georgia&#39;,2016,126,4.252,4.164,0.83792,0.19249,0.64035,0.32461,0.3188,0.06786,1.87031),(&#39;Congo (Brazzaville)&#39;,2016,127,4.236,4.107,0.77109,0.47799,0.28212,0.37938,0.09753,0.12077,2.10681),(&#39;Senegal&#39;,2016,128,4.219,4.151,0.44314,0.77416,0.40457,0.31056,0.11681,0.19103,1.97861),(&#39;Bulgaria&#39;,2016,129,4.217,4.104,1.11306,0.92542,0.67806,0.21219,0.00615,0.12793,1.15377),(&#39;Mauritania&#39;,2016,130,4.201,4.127,0.61391,0.84142,0.28639,0.1268,0.17955,0.22686,1.9263),(&#39;Zimbabwe&#39;,2016,131,4.193,4.101,0.35041,0.71478,0.1595,0.25429,0.08582,0.18503,2.4427),(&#39;Malawi&#39;,2016,132,4.156,4.041,0.08709,0.147,0.29364,0.4143,0.07564,0.30968,2.82859),(&#39;Sudan&#39;,2016,133,4.139,3.928,0.63069,0.81928,0.29759,0,0.10039,0.18077,2.10995),(&#39;Gabon&#39;,2016,134,4.121,4.03,1.15851,0.72368,0.3494,0.28098,0.09314,0.06244,1.45332),(&#39;Mali&#39;,2016,135,4.073,3.988,0.31292,0.86333,0.16347,0.27544,0.13647,0.21064,2.11087),(&#39;Haiti&#39;,2016,136,4.028,3.893,0.34097,0.29561,0.27494,0.12072,0.14476,0.47958,2.37116),(&#39;Botswana&#39;,2016,137,3.974,3.875,1.09426,0.89186,0.34752,0.44089,0.10769,0.12425,0.96741),(&#39;Comoros&#39;,2016,138,3.956,3.86,0.27509,0.60323,0.29981,0.15412,0.18437,0.1827,2.25632),(&#39;Ivory Coast&#39;,2016,139,3.916,3.826,0.55507,0.57576,0.04476,0.40663,0.1553,0.20338,1.97478),(&#39;Cambodia&#39;,2016,140,3.907,3.798,0.55604,0.5375,0.42494,0.58852,0.08092,0.40339,1.31573),(&#39;Angola&#39;,2016,141,3.866,3.753,0.84731,0.66366,0.04991,0.00589,0.08434,0.12071,2.09459),(&#39;Niger&#39;,2016,142,3.856,3.781,0.1327,0.6053,0.26162,0.38041,0.17176,0.2097,2.09469),(&#39;South Sudan&#39;,2016,143,3.832,3.596,0.39394,0.18519,0.15781,0.19662,0.13015,0.25899,2.50929),(&#39;Chad&#39;,2016,144,3.763,3.672,0.42214,0.63178,0.03824,0.12807,0.04952,0.18667,2.30637),(&#39;Burkina Faso&#39;,2016,145,3.739,3.647,0.31995,0.63054,0.21297,0.3337,0.12533,0.24353,1.87319),(&#39;Uganda&#39;,2016,145,3.739,3.629,0.34719,0.90981,0.19625,0.43653,0.06442,0.27102,1.51416),(&#39;Yemen&#39;,2016,147,3.724,3.621,0.57939,0.47493,0.31048,0.2287,0.05892,0.09821,1.97295),(&#39;Madagascar&#39;,2016,148,3.695,3.621,0.27954,0.46115,0.37109,0.13684,0.07506,0.2204,2.15075),(&#39;Tanzania&#39;,2016,149,3.666,3.561,0.47155,0.77623,0.357,0.3176,0.05099,0.31472,1.37769),(&#39;Liberia&#39;,2016,150,3.622,3.463,0.10706,0.50353,0.23165,0.25748,0.04852,0.24063,2.23284),(&#39;Guinea&#39;,2016,151,3.607,3.533,0.22415,0.3109,0.18829,0.30953,0.1192,0.29914,2.15604),(&#39;Rwanda&#39;,2016,152,3.515,3.444,0.32846,0.61586,0.31865,0.5432,0.50521,0.23552,0.96819),(&#39;Benin&#39;,2016,153,3.484,3.404,0.39499,0.10419,0.21028,0.39747,0.06681,0.2018,2.10812),(&#39;Afghanistan&#39;,2016,154,3.36,3.288,0.38227,0.11037,0.17344,0.1643,0.07112,0.31268,2.14558),(&#39;Togo&#39;,2016,155,3.303,3.192,0.28123,0,0.24811,0.34678,0.11587,0.17517,2.1354),(&#39;Syria&#39;,2016,156,3.069,2.936,0.74719,0.14866,0.62994,0.06912,0.17233,0.48397,0.81789),(&#39;Burundi&#39;,2016,157,2.905,2.732,0.06831,0.23442,0.15747,0.0432,0.09419,0.2029,2.10404),(&#39;Norway&#39;,2017,1,7.53700017929077,7.47955553799868,1.61646318435669,1.53352355957031,0.796666502952576,0.635422587394714,0.315963834524155,0.36201223731041,2.27702665328979),(&#39;Denmark&#39;,2017,2,7.52199983596802,7.46227160707116,1.48238301277161,1.55112159252167,0.792565524578094,0.626006722450256,0.40077006816864,0.355280488729477,2.31370735168457),(&#39;Iceland&#39;,2017,3,7.50400018692017,7.38596990078688,1.480633020401,1.6105740070343,0.833552122116089,0.627162635326385,0.153526559472084,0.475540220737457,2.32271528244019),(&#39;Switzerland&#39;,2017,4,7.49399995803833,7.42622749567032,1.56497955322266,1.51691174507141,0.858131289482117,0.620070576667786,0.367007285356522,0.290549278259277,2.2767162322998),(&#39;Finland&#39;,2017,5,7.4689998626709,7.41045764952898,1.44357192516327,1.5402467250824,0.80915766954422,0.617950856685638,0.38261154294014,0.24548277258873,2.4301815032959),(&#39;Netherlands&#39;,2017,6,7.3769998550415,7.32657386884093,1.50394463539124,1.42893922328949,0.810696125030518,0.585384488105774,0.282661825418472,0.470489829778671,2.29480409622192),(&#39;Canada&#39;,2017,7,7.31599998474121,7.24759713411331,1.47920441627502,1.48134899139404,0.83455765247345,0.611100912094116,0.287371516227722,0.435539722442627,2.18726444244385),(&#39;New Zealand&#39;,2017,8,7.31400012969971,7.24848981752992,1.40570604801178,1.54819512367249,0.816759705543518,0.614062130451202,0.382816702127457,0.500005125999451,2.0464563369751),(&#39;Sweden&#39;,2017,9,7.28399991989136,7.22390496239066,1.49438726902008,1.47816216945648,0.830875158309937,0.612924098968506,0.384398728609085,0.385399252176285,2.09753799438477),(&#39;Australia&#39;,2017,10,7.28399991989136,7.2113486148417,1.484414935112,1.51004195213318,0.84388679265976,0.601607382297516,0.301183730363846,0.477699249982834,2.06521081924438),(&#39;Israel&#39;,2017,11,7.21299982070923,7.14614638492465,1.37538242340088,1.37628996372223,0.83840399980545,0.405988603830338,0.0852421000599861,0.330082654953003,2.80175733566284),(&#39;Costa Rica&#39;,2017,12,7.0789999961853,6.98988832607865,1.10970628261566,1.41640365123749,0.759509265422821,0.580131649971008,0.100106589496136,0.214613229036331,2.89863920211792),(&#39;Austria&#39;,2017,13,7.00600004196167,6.94133027181029,1.48709726333618,1.4599449634552,0.815328419208527,0.567766189575195,0.221060365438461,0.316472321748734,2.1385064125061),(&#39;United States&#39;,2017,14,6.99300003051758,6.91134331345558,1.54625928401947,1.41992056369781,0.77428662776947,0.505740523338318,0.135638788342476,0.392578780651093,2.2181134223938),(&#39;Ireland&#39;,2017,15,6.97700023651123,6.91064880549908,1.53570663928986,1.55823111534119,0.80978262424469,0.573110342025757,0.29838815331459,0.42785832285881,1.77386903762817),(&#39;Germany&#39;,2017,16,6.95100021362305,6.89661885797977,1.48792338371277,1.47252035140991,0.798950731754303,0.562511384487152,0.276731938123703,0.336269170045853,2.01576995849609),(&#39;Belgium&#39;,2017,17,6.89099979400635,6.82617883756757,1.46378076076508,1.46231269836426,0.818091869354248,0.539770722389221,0.251343131065369,0.231503337621689,2.12421035766602),(&#39;Luxembourg&#39;,2017,18,6.86299991607666,6.80231373228133,1.74194359779358,1.45758366584778,0.845089495182037,0.59662789106369,0.31883442401886,0.283180981874466,1.61951208114624),(&#39;United Kingdom&#39;,2017,19,6.71400022506714,6.64420868903399,1.44163393974304,1.49646008014679,0.805335938930511,0.508190035820007,0.265428066253662,0.492774158716202,1.70414352416992),(&#39;Chile&#39;,2017,20,6.65199995040894,6.56474934071302,1.25278460979462,1.28402495384216,0.819479703903198,0.376895278692245,0.0822879821062088,0.326662421226501,2.50958585739136),(&#39;United Arab Emirates&#39;,2017,21,6.64799976348877,6.57395222321153,1.62634336948395,1.26641023159027,0.726798236370087,0.60834527015686,0.324489563703537,0.3609419465065,1.734703540802),(&#39;Brazil&#39;,2017,22,6.63500022888184,6.5445309561491,1.10735321044922,1.43130600452423,0.616552352905273,0.437453746795654,0.111092761158943,0.16234989464283,2.76926708221436),(&#39;Czech Republic&#39;,2017,23,6.60900020599365,6.5341379493475,1.35268235206604,1.43388521671295,0.754444003105164,0.490946173667908,0.0368729270994663,0.0881067588925362,2.45186185836792),(&#39;Argentina&#39;,2017,24,6.59899997711182,6.50791486814618,1.18529546260834,1.44045114517212,0.695137083530426,0.494519203901291,0.059739887714386,0.109457060694695,2.61400532722473),(&#39;Mexico&#39;,2017,25,6.57800006866455,6.48485122963786,1.15318381786346,1.210862159729,0.709978997707367,0.412730008363724,0.132774114608765,0.120990432798862,2.83715486526489),(&#39;Singapore&#39;,2017,26,6.57200002670288,6.50727698430419,1.69227766990662,1.35381436347961,0.949492394924164,0.549840569496155,0.46430778503418,0.345965981483459,1.21636199951172),(&#39;Malta&#39;,2017,27,6.52699995040894,6.45560312792659,1.34327983856201,1.48841166496277,0.821944236755371,0.588767051696777,0.153066068887711,0.574730575084686,1.55686283111572),(&#39;Uruguay&#39;,2017,28,6.4539999961853,6.36209377467632,1.21755969524384,1.41222786903381,0.719216823577881,0.57939225435257,0.178061872720718,0.175096929073334,2.17240953445435),(&#39;Guatemala&#39;,2017,29,6.4539999961853,6.34112601965666,0.872001945972443,1.25558519363403,0.540239989757538,0.531310617923737,0.0772232785820961,0.283488392829895,2.89389109611511),(&#39;Panama&#39;,2017,30,6.4520001411438,6.34686956614256,1.23374843597412,1.37319254875183,0.706156134605408,0.550026834011078,0.070983923971653,0.21055693924427,2.30719995498657),(&#39;France&#39;,2017,31,6.44199991226196,6.36823202207685,1.43092346191406,1.38777685165405,0.844465851783752,0.470222115516663,0.172502428293228,0.129762306809425,2.00595474243164),(&#39;Thailand&#39;,2017,32,6.42399978637695,6.33888271704316,1.12786877155304,1.42579245567322,0.647239029407501,0.580200731754303,0.0316127352416515,0.572123110294342,2.03950834274292),(&#39;Taiwan Province of China&#39;,2017,33,6.42199993133545,6.34940384075046,1.43362653255463,1.38456535339355,0.793984234333038,0.361466586589813,0.0638292357325554,0.258360475301743,2.1266074180603),(&#39;Spain&#39;,2017,34,6.40299987792969,6.33494491055608,1.38439786434174,1.53209090232849,0.888960599899292,0.408781230449677,0.0709140971302986,0.190133571624756,1.92775774002075),(&#39;Qatar&#39;,2017,35,6.375,6.18152318567038,1.87076568603516,1.27429687976837,0.710098087787628,0.604130983352661,0.439299255609512,0.330473870038986,1.1454644203186),(&#39;Colombia&#39;,2017,36,6.35699987411499,6.26197969406843,1.07062232494354,1.4021829366684,0.595027923583984,0.477487415075302,0.0466687418520451,0.149014472961426,2.61606812477112),(&#39;Saudi Arabia&#39;,2017,37,6.3439998626709,6.24383311331272,1.53062355518341,1.28667759895325,0.590148329734802,0.449750572443008,0.27343225479126,0.147616013884544,2.0654296875),(&#39;Trinidad and Tobago&#39;,2017,38,6.16800022125244,5.95446655184031,1.36135590076447,1.3802285194397,0.519983291625977,0.518630743026733,0.00896481610834599,0.325296461582184,2.05324745178223),(&#39;Kuwait&#39;,2017,39,6.10500001907349,6.01804304927588,1.63295245170593,1.25969874858856,0.632105708122253,0.496337592601776,0.215159550309181,0.228289797902107,1.64042520523071),(&#39;Slovakia&#39;,2017,40,6.09800004959106,6.01865168705583,1.32539355754852,1.50505924224854,0.712732911109924,0.295817464590073,0.0242108516395092,0.136544480919838,2.09777665138245),(&#39;Bahrain&#39;,2017,41,6.08699989318848,5.99501071855426,1.48841226100922,1.32311046123505,0.653133034706116,0.536746919155121,0.257042169570923,0.172668486833572,1.65614938735962),(&#39;Malaysia&#39;,2017,42,6.08400011062622,5.98802058473229,1.29121541976929,1.28464603424072,0.618784427642822,0.402264982461929,0.0656007081270218,0.416608929634094,2.00444889068604),(&#39;Nicaragua&#39;,2017,43,6.07100009918213,5.95541659802198,0.737299203872681,1.28721570968628,0.653095960617065,0.447551846504211,0.130687981843948,0.301674216985703,2.51393055915833),(&#39;Ecuador&#39;,2017,44,6.00799989700317,5.91015211865306,1.00082039833069,1.28616881370544,0.685636222362518,0.4551981985569,0.140134647488594,0.150112465023994,2.29035258293152),(&#39;El Salvador&#39;,2017,45,6.00299978256226,5.89736444279552,0.909784495830536,1.18212509155273,0.596018552780151,0.432452529668808,0.0899809598922729,0.0782579854130745,2.7145938873291),(&#39;Poland&#39;,2017,46,5.97300004959106,5.89209175795317,1.29178786277771,1.44571197032928,0.699475347995758,0.520342111587524,0.0593078061938286,0.158465966582298,1.79772281646729),(&#39;Uzbekistan&#39;,2017,47,5.97100019454956,5.876462816149,0.786441087722778,1.54896914958954,0.498272627592087,0.658248662948608,0.246528223156929,0.415983647108078,1.81691360473633),(&#39;Italy&#39;,2017,48,5.96400022506714,5.88526354417205,1.39506661891937,1.44492328166962,0.853144347667694,0.256450712680817,0.0280280914157629,0.17278964817524,1.81331205368042),(&#39;Russia&#39;,2017,49,5.96299982070923,5.89572473391891,1.28177809715271,1.46928238868713,0.547349333763123,0.373783111572266,0.0329628810286522,0.0522638224065304,2.20560741424561),(&#39;Belize&#39;,2017,50,5.95599985122681,5.71475738465786,0.907975316047668,1.08141779899597,0.450191766023636,0.547509372234344,0.0965810716152191,0.240015640854836,2.63195562362671),(&#39;Japan&#39;,2017,51,5.92000007629395,5.84928070798516,1.41691517829895,1.43633782863617,0.913475871086121,0.505625545978546,0.163760736584663,0.12057276815176,1.36322355270386),(&#39;Lithuania&#39;,2017,52,5.90199995040894,5.82133025944233,1.31458234786987,1.47351610660553,0.62894994020462,0.234231784939766,0.0118656428530812,0.010164656676352,2.22844052314758),(&#39;Algeria&#39;,2017,53,5.87200021743774,5.76571400120854,1.09186446666718,1.1462174654007,0.617584645748138,0.233335807919502,0.146096110343933,0.0694366469979286,2.56760382652283),(&#39;Latvia&#39;,2017,54,5.84999990463257,5.77973627105355,1.26074862480164,1.40471494197845,0.638566970825195,0.325707912445068,0.0738427266478539,0.153074786067009,1.99365520477295),(&#39;South Korea&#39;,2017,55,5.83799982070923,5.7534406131506,1.40167844295502,1.12827444076538,0.900214076042175,0.257921665906906,0.0632826685905457,0.206674367189407,1.88037800788879),(&#39;Moldova&#39;,2017,56,5.83799982070923,5.76762880295515,0.728870630264282,1.25182557106018,0.589465200901031,0.240729048848152,0.0100912861526012,0.208779126405716,2.80780839920044),(&#39;Romania&#39;,2017,57,5.82499980926514,5.73030546173453,1.21768391132355,1.15009129047394,0.685158312320709,0.457003742456436,0.00438790069893003,0.133519917726517,2.17683148384094),(&#39;Bolivia&#39;,2017,58,5.82299995422363,5.74202300593257,0.833756566047668,1.22761905193329,0.473630249500275,0.558732926845551,0.0604777261614799,0.22556072473526,2.44327902793884),(&#39;Turkmenistan&#39;,2017,59,5.82200002670288,5.75881917789578,1.13077676296234,1.49314916133881,0.437726080417633,0.41827192902565,0.259270340204239,0.24992498755455,1.83290982246399),(&#39;Kazakhstan&#39;,2017,60,5.81899976730347,5.73435775995255,1.28455626964569,1.38436901569366,0.606041550636292,0.437454283237457,0.119282886385918,0.201964423060417,1.78489255905151),(&#39;North Cyprus&#39;,2017,61,5.80999994277954,5.72263342067599,1.3469113111496,1.18630337715149,0.834647238254547,0.471203625202179,0.155353352427483,0.266845703125,1.54915761947632),(&#39;Slovenia&#39;,2017,62,5.75799989700317,5.67377463400364,1.3412059545517,1.45251882076263,0.790828227996826,0.572575807571411,0.0451289787888527,0.242649093270302,1.31331729888916),(&#39;Peru&#39;,2017,63,5.71500015258789,5.61805352658033,1.03522527217865,1.21877038478851,0.630166113376617,0.450002878904343,0.0470490865409374,0.126819714903831,2.20726943016052),(&#39;Mauritius&#39;,2017,64,5.62900018692017,5.52813818216324,1.18939554691315,1.20956099033356,0.638007462024689,0.491247326135635,0.0421815551817417,0.360933750867844,1.6975839138031),(&#39;Cyprus&#39;,2017,65,5.62099981307983,5.5273069268465,1.35593807697296,1.13136327266693,0.84471470117569,0.355111539363861,0.0412379764020443,0.271254301071167,1.62124919891357),(&#39;Estonia&#39;,2017,66,5.61100006103516,5.53386024788022,1.32087934017181,1.47667109966278,0.695168316364288,0.479131430387497,0.183248922228813,0.0988908112049103,1.35750865936279),(&#39;Belarus&#39;,2017,67,5.56899976730347,5.49188529059291,1.15655755996704,1.44494521617889,0.637714266777039,0.295400261878967,0.156313821673393,0.15513750910759,1.72323298454285),(&#39;Libya&#39;,2017,68,5.52500009536743,5.37304638385773,1.10180306434631,1.35756433010101,0.520169019699097,0.465733230113983,0.0926102101802826,0.152073666453362,1.83501124382019),(&#39;Turkey&#39;,2017,69,5.5,5.40513503670692,1.19827437400818,1.33775317668915,0.637605607509613,0.300740599632263,0.0996715798974037,0.0466930419206619,1.87927794456482),(&#39;Paraguay&#39;,2017,70,5.49300003051758,5.40861879140139,0.932537317276001,1.50728487968445,0.579250693321228,0.473507791757584,0.091065913438797,0.224150657653809,1.6853334903717),(&#39;Hong Kong S.A.R., China&#39;,2017,71,5.47200012207031,5.39440607100725,1.55167484283447,1.26279091835022,0.943062424659729,0.490968644618988,0.293933749198914,0.374465793371201,0.554633140563965),(&#39;Philippines&#39;,2017,72,5.42999982833862,5.31466460242867,0.85769921541214,1.25391757488251,0.468009054660797,0.585214674472809,0.0993318930268288,0.193513423204422,1.97260475158691),(&#39;Serbia&#39;,2017,73,5.39499998092651,5.29843030571938,1.06931757926941,1.25818979740143,0.65078467130661,0.208715528249741,0.0409037806093693,0.220125883817673,1.94708442687988),(&#39;Jordan&#39;,2017,74,5.33599996566772,5.22358990892768,0.991012394428253,1.23908889293671,0.604590058326721,0.418421149253845,0.11980327218771,0.172170460224152,1.79117655754089),(&#39;Hungary&#39;,2017,75,5.32399988174438,5.24496005430818,1.2860119342804,1.34313309192657,0.687763452529907,0.175863519310951,0.0366369374096394,0.0784016624093056,1.71645927429199),(&#39;Jamaica&#39;,2017,76,5.31099987030029,5.04060101211071,0.925579309463501,1.36821806430817,0.641022384166718,0.474307239055634,0.0552677810192108,0.233818337321281,1.61232566833496),(&#39;Croatia&#39;,2017,77,5.29300022125244,5.19422323793173,1.22255623340607,0.96798300743103,0.701288521289825,0.255772292613983,0.0431031100451946,0.248002976179123,1.85449242591858),(&#39;Kosovo&#39;,2017,78,5.27899980545044,5.19315161541104,0.951484382152557,1.13785350322723,0.541452050209045,0.260287940502167,0.0574716180562973,0.319931447505951,2.01054072380066),(&#39;China&#39;,2017,79,5.27299976348877,5.2267214372009,1.08116579055786,1.16083741188049,0.741415500640869,0.472787708044052,0.0227942746132612,0.0288068410009146,1.76493859291077),(&#39;Pakistan&#39;,2017,80,5.26900005340576,5.17801646545529,0.72688353061676,0.672690689563751,0.402047783136368,0.23521526157856,0.124348066747189,0.315446019172668,2.79248929023743),(&#39;Indonesia&#39;,2017,81,5.26200008392334,5.17111156970263,0.995538592338562,1.27444469928741,0.492345720529556,0.443323463201523,0.0153171354904771,0.611704587936401,1.42947697639465),(&#39;Venezuela&#39;,2017,82,5.25,5.1299680544436,1.12843120098114,1.43133759498596,0.617144227027893,0.153997123241425,0.0644911229610443,0.0650196298956871,1.78946375846863),(&#39;Montenegro&#39;,2017,83,5.23699998855591,5.13295553654432,1.12112903594971,1.23837649822235,0.667464673519135,0.194989055395126,0.0881741940975189,0.197911024093628,1.72919154167175),(&#39;Morocco&#39;,2017,84,5.2350001335144,5.15165930226445,0.878114581108093,0.774864435195923,0.59771066904068,0.408158332109451,0.0877631828188896,0.0322099551558495,2.45618939399719),(&#39;Azerbaijan&#39;,2017,85,5.23400020599365,5.16871387675405,1.15360176563263,1.15240025520325,0.540775775909424,0.398155838251114,0.180987507104874,0.0452693402767181,1.76248168945312),(&#39;Dominican Republic&#39;,2017,86,5.23000001907349,5.11093915298581,1.07937383651733,1.40241670608521,0.574873745441437,0.55258983373642,0.113945253193378,0.186967849731445,1.31946516036987),(&#39;Greece&#39;,2017,87,5.22700023651123,5.12875430360436,1.28948748111725,1.23941457271576,0.810198903083801,0.0957312509417534,0.04328977689147,0,1.74922156333923),(&#39;Lebanon&#39;,2017,88,5.22499990463257,5.13111752077937,1.07498753070831,1.12962424755096,0.735081076622009,0.288515985012054,0.037513829767704,0.264450758695602,1.69507384300232),(&#39;Portugal&#39;,2017,89,5.19500017166138,5.10495861023665,1.3151752948761,1.36704301834106,0.795843541622162,0.498465299606323,0.0158694516867399,0.0951027125120163,1.10768270492554),(&#39;Bosnia and Herzegovina&#39;,2017,90,5.18200016021729,5.08766463369131,0.982409417629242,1.0693359375,0.705186307430267,0.204403176903725,0,0.328867495059967,1.89217257499695),(&#39;Honduras&#39;,2017,91,5.18100023269653,5.0604176685214,0.730573117733002,1.14394497871399,0.582569479942322,0.348079860210419,0.0733454525470734,0.236188873648643,2.06581115722656),(&#39;Macedonia&#39;,2017,92,5.17500019073486,5.07782774180174,1.06457793712616,1.20789301395416,0.644948184490204,0.325905978679657,0.0602777935564518,0.25376096367836,1.6174693107605),(&#39;Somalia&#39;,2017,93,5.15100002288818,5.0595163358748,0.0226431842893362,0.721151351928711,0.113989137113094,0.602126955986023,0.282410323619843,0.291631311178207,3.11748456954956),(&#39;Vietnam&#39;,2017,94,5.07399988174438,5.000718998909,0.788547575473785,1.27749133110046,0.652168989181519,0.571055591106415,0.0876332372426987,0.234968051314354,1.46231865882874),(&#39;Nigeria&#39;,2017,95,5.07399988174438,4.93849962800741,0.783756256103516,1.21577048301697,0.0569157302379608,0.394952565431595,0.0261215660721064,0.230947196483612,2.36539053916931),(&#39;Tajikistan&#39;,2017,96,5.04099988937378,4.970574182868,0.524713635444641,1.27146327495575,0.529235124588013,0.471566706895828,0.146377146244049,0.248997643589973,1.84904932975769),(&#39;Bhutan&#39;,2017,97,5.01100015640259,4.94266575068235,0.885416388511658,1.34012651443481,0.495879292488098,0.501537680625916,0.173380389809608,0.474054545164108,1.14018440246582),(&#39;Kyrgyzstan&#39;,2017,98,5.00400018692017,4.91808047071099,0.596220076084137,1.39423859119415,0.553457796573639,0.454943388700485,0.0394391790032387,0.42858037352562,1.53672313690186),(&#39;Nepal&#39;,2017,99,4.96199989318848,4.85664370700717,0.479820191860199,1.17928326129913,0.504130780696869,0.440305948257446,0.0729755461215973,0.394096165895462,1.8912410736084),(&#39;Mongolia&#39;,2017,100,4.95499992370605,4.88832033827901,1.02723586559296,1.4930112361908,0.557783484458923,0.394143968820572,0.0329022891819477,0.338464230298996,1.11129236221313),(&#39;South Africa&#39;,2017,101,4.8289999961853,4.72856480464339,1.05469870567322,1.38478863239288,0.187080070376396,0.479246735572815,0.0725094974040985,0.139362379908562,1.51090860366821),(&#39;Tunisia&#39;,2017,102,4.80499982833862,4.72563264966011,1.00726580619812,0.868351459503174,0.613212049007416,0.289680689573288,0.0867231488227844,0.0496933571994305,1.89025115966797),(&#39;Palestinian Territories&#39;,2017,103,4.77500009536743,4.66815184816718,0.716249227523804,1.15564715862274,0.565666973590851,0.25471106171608,0.0892826020717621,0.114173173904419,1.8788902759552),(&#39;Egypt&#39;,2017,104,4.7350001335144,4.64486647740006,0.989701807498932,0.997471392154694,0.520187258720398,0.282110154628754,0.114381365478039,0.128631442785263,1.70216107368469),(&#39;Bulgaria&#39;,2017,105,4.71400022506714,4.62430574372411,1.1614590883255,1.43437945842743,0.708217680454254,0.289231717586517,0.0110515309497714,0.113177694380283,0.996139287948608),(&#39;Sierra Leone&#39;,2017,106,4.70900011062622,4.56735688626766,0.36842092871666,0.984136044979095,0.00556475389748812,0.318697690963745,0.0710951760411263,0.293040901422501,2.66845989227295),(&#39;Cameroon&#39;,2017,107,4.69500017166138,4.5934594860673,0.564305365085602,0.946018218994141,0.132892116904259,0.430388748645782,0.0513066314160824,0.236298456788063,2.3336455821991),(&#39;Iran&#39;,2017,108,4.69199991226196,4.58577511683106,1.15687310695648,0.711551249027252,0.639333188533783,0.249322608113289,0.048761073499918,0.387242913246155,1.49873495101929),(&#39;Albania&#39;,2017,109,4.64400005340576,4.53553610041738,0.996192753314972,0.803685247898102,0.731159746646881,0.381498634815216,0.0398642159998417,0.201312944293022,1.49044156074524),(&#39;Bangladesh&#39;,2017,110,4.60799980163574,4.52617794498801,0.586682975292206,0.735131740570068,0.533241033554077,0.478356659412384,0.123717859387398,0.172255352139473,1.97873616218567),(&#39;Namibia&#39;,2017,111,4.57399988174438,4.37764502257109,0.964434325695038,1.0984708070755,0.33861181139946,0.520303547382355,0.0931469723582268,0.0771337449550629,1.4818902015686),(&#39;Kenya&#39;,2017,112,4.55299997329712,4.45030835598707,0.560479462146759,1.06795072555542,0.309988349676132,0.452763766050339,0.0646413192152977,0.444860309362411,1.6519021987915),(&#39;Mozambique&#39;,2017,113,4.55000019073486,4.3258980551362,0.234305649995804,0.870701014995575,0.106654435396194,0.480791091918945,0.179436385631561,0.322228103876114,2.35565090179443),(&#39;Myanmar&#39;,2017,114,4.54500007629395,4.47526020616293,0.367110550403595,1.12323594093323,0.397522568702698,0.514492034912109,0.188816204667091,0.838075160980225,1.11529040336609),(&#39;Senegal&#39;,2017,115,4.53499984741211,4.46839591354132,0.479309022426605,1.17969191074371,0.409362852573395,0.377922266721725,0.115460447967052,0.183468893170357,1.78964614868164),(&#39;Zambia&#39;,2017,116,4.51399993896484,4.38389437645674,0.636406779289246,1.00318729877472,0.257835894823074,0.461603492498398,0.0782135501503944,0.249580144882202,1.82670545578003),(&#39;Iraq&#39;,2017,117,4.49700021743774,4.37140902519226,1.10271048545837,0.978613197803497,0.501180469989777,0.288555532693863,0.107215754687786,0.19963726401329,1.31890726089478),(&#39;Gabon&#39;,2017,118,4.46500015258789,4.37263853952289,1.1982102394104,1.1556202173233,0.356578588485718,0.312328577041626,0.0760467872023582,0.0437853783369064,1.32291626930237),(&#39;Ethiopia&#39;,2017,119,4.46000003814697,4.377271399647,0.339233845472336,0.86466920375824,0.353409707546234,0.408842742443085,0.165455713868141,0.312650740146637,2.01574373245239),(&#39;Sri Lanka&#39;,2017,120,4.44000005722046,4.32655292212963,1.00985014438629,1.25997638702393,0.625130832195282,0.561213254928589,0.0736539661884308,0.490863561630249,0.419389247894287),(&#39;Armenia&#39;,2017,121,4.37599992752075,4.28526524275541,0.900596737861633,1.00748372077942,0.637524425983429,0.198303267359734,0.0266744215041399,0.0834880918264389,1.5214991569519),(&#39;India&#39;,2017,122,4.31500005722046,4.25847809694707,0.792221248149872,0.754372596740723,0.455427616834641,0.469987004995346,0.0922268852591515,0.231538489460945,1.5191171169281),(&#39;Mauritania&#39;,2017,123,4.29199981689453,4.20683601751924,0.648457288742065,1.2720308303833,0.285349279642105,0.0960980430245399,0.136957004666328,0.201870024204254,1.65163731575012),(&#39;Congo (Brazzaville)&#39;,2017,124,4.29099988937378,4.17194627374411,0.808964252471924,0.832044363021851,0.28995743393898,0.435025870800018,0.0796181336045265,0.120852127671242,1.72413563728333),(&#39;Georgia&#39;,2017,125,4.28599977493286,4.19706558406353,0.950612664222717,0.57061493396759,0.649546980857849,0.309410035610199,0.251666635274887,0.0540088154375553,1.50013780593872),(&#39;Congo (Kinshasa)&#39;,2017,126,4.28000020980835,4.20218958690763,0.0921023488044739,1.22902345657349,0.191407024860382,0.235961347818375,0.0602413564920425,0.246455833315849,2.22495865821838),(&#39;Mali&#39;,2017,127,4.19000005722046,4.11032940343022,0.476180493831635,1.28147339820862,0.169365674257278,0.306613743305206,0.104970246553421,0.183354198932648,1.66819095611572),(&#39;Ivory Coast&#39;,2017,128,4.17999982833862,4.08481709346175,0.603048920631409,0.904780030250549,0.0486421696841717,0.447706192731857,0.130061775445938,0.201237469911575,1.84496426582336),(&#39;Cambodia&#39;,2017,129,4.16800022125244,4.05748262897134,0.601765096187592,1.00623834133148,0.429783403873444,0.633375823497772,0.0681059509515762,0.385922968387604,1.04294109344482),(&#39;Sudan&#39;,2017,130,4.13899993896484,3.9322527128458,0.65951669216156,1.21400856971741,0.290920823812485,0.0149958552792668,0.089847519993782,0.182317450642586,1.68706583976746),(&#39;Ghana&#39;,2017,131,4.11999988555908,4.01729256257415,0.667224824428558,0.873664736747742,0.295637726783752,0.423026293516159,0.0253363698720932,0.256923943758011,1.57786750793457),(&#39;Ukraine&#39;,2017,132,4.09600019454956,4.00659028455615,0.89465194940567,1.39453756809235,0.575903952121735,0.122974775731564,0.0230294708162546,0.270061463117599,0.814382314682007),(&#39;Uganda&#39;,2017,133,4.08099985122681,3.96619973540306,0.381430715322495,1.12982773780823,0.217632606625557,0.443185955286026,0.057069718837738,0.325766056776047,1.526362657547),(&#39;Burkina Faso&#39;,2017,134,4.03200006484985,3.93994106531143,0.3502277135849,1.04328000545502,0.215844258666039,0.324367851018906,0.120328105986118,0.250864684581757,1.72721290588379),(&#39;Niger&#39;,2017,135,4.02799987792969,3.94405293613672,0.161925330758095,0.993025004863739,0.26850500702858,0.36365869641304,0.138572946190834,0.228673845529556,1.87398338317871),(&#39;Malawi&#39;,2017,136,3.97000002861023,3.86252123981714,0.233442038297653,0.512568831443787,0.315089583396912,0.466914653778076,0.0727116540074348,0.287170469760895,2.08178615570068),(&#39;Chad&#39;,2017,137,3.93600010871887,3.83728869348764,0.438012987375259,0.953855872154236,0.0411347150802612,0.16234202682972,0.0535818822681904,0.216113850474358,2.07123804092407),(&#39;Zimbabwe&#39;,2017,138,3.875,3.77130035728216,0.375846534967422,1.08309590816498,0.196763753890991,0.336384207010269,0.0953753814101219,0.189143493771553,1.59797024726868),(&#39;Lesotho&#39;,2017,139,3.80800008773804,3.5716561999917,0.521021246910095,1.19009518623352,0,0.390661299228668,0.119094640016556,0.157497271895409,1.42983531951904),(&#39;Angola&#39;,2017,140,3.79500007629395,3.63835821717978,0.858428180217743,1.10441195964813,0.0498686656355858,0,0.0697203353047371,0.097926490008831,1.61448240280151),(&#39;Afghanistan&#39;,2017,141,3.79399991035461,3.71433840543032,0.401477217674255,0.581543326377869,0.180746778845787,0.106179520487785,0.0611578300595284,0.311870932579041,2.15080118179321),(&#39;Botswana&#39;,2017,142,3.76600003242493,3.65787739858031,1.12209415435791,1.22155499458313,0.341755509376526,0.505196332931519,0.0985831990838051,0.0993484482169151,0.3779137134552),(&#39;Benin&#39;,2017,143,3.65700006484985,3.56821657836437,0.431085407733917,0.435299843549728,0.209930211305618,0.425962775945663,0.0609290152788162,0.207948461174965,1.88563096523285),(&#39;Madagascar&#39;,2017,144,3.64400005340576,3.57368100091815,0.305808693170547,0.913020372390747,0.375223308801651,0.189196765422821,0.0672319754958153,0.208732530474663,1.58461260795593),(&#39;Haiti&#39;,2017,145,3.6029999256134,3.47128505349159,0.368610262870789,0.640449821949005,0.277321130037308,0.0303698573261499,0.0998721495270729,0.489203780889511,1.69716763496399),(&#39;Yemen&#39;,2017,146,3.59299993515015,3.49324955046177,0.591683447360992,0.93538224697113,0.310080915689468,0.249463722109795,0.0567674227058887,0.104125209152699,1.34560060501099),(&#39;South Sudan&#39;,2017,147,3.59100008010864,3.45646157443523,0.39724862575531,0.601323127746582,0.163486003875732,0.147062435746193,0.116793513298035,0.285670816898346,1.87956738471985),(&#39;Liberia&#39;,2017,148,3.53299999237061,3.41224372386932,0.119041793048382,0.872117936611176,0.229918196797371,0.332881182432175,0.0389482490718365,0.26654988527298,1.67328596115112),(&#39;Guinea&#39;,2017,149,3.50699996948242,3.4295718100667,0.244549930095673,0.791244685649872,0.194129139184952,0.348587512969971,0.110937617719173,0.264815092086792,1.55231189727783),(&#39;Togo&#39;,2017,150,3.49499988555908,3.39596165940166,0.305444717407227,0.431882530450821,0.247105568647385,0.38042613863945,0.0956650152802467,0.196896150708199,1.83722925186157),(&#39;Rwanda&#39;,2017,151,3.47099995613098,3.39896967872977,0.368745893239975,0.945707023143768,0.326424807310104,0.581843852996826,0.455220013856888,0.252756029367447,0.540061235427856),(&#39;Syria&#39;,2017,152,3.46199989318848,3.26033122956753,0.777153134346008,0.396102607250214,0.50053334236145,0.0815394446253777,0.151347130537033,0.493663728237152,1.06157350540161),(&#39;Tanzania&#39;,2017,153,3.34899997711182,3.23657019883394,0.511135876178741,1.04198980331421,0.364509284496307,0.390017777681351,0.0660351067781448,0.354256361722946,0.621130466461182),(&#39;Burundi&#39;,2017,154,2.90499997138977,2.73530960977077,0.091622568666935,0.629793584346771,0.151610791683197,0.0599007532000542,0.0841479450464249,0.204435184597969,1.68302416801453),(&#39;Central African Republic&#39;,2017,155,2.69300007820129,2.52111588716507,0,0,0.0187726859003305,0.270842045545578,0.0565650761127472,0.280876487493515,2.06600475311279);</td>
+      </tr>
+      <tr>
+        <td id="L98" class="blob-num js-line-number" data-line-number="98"></td>
+        <td id="LC98" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">/*</span>!40000 ALTER TABLE `happiness_master` ENABLE KEYS <span class="pl-c">*/</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L99" class="blob-num js-line-number" data-line-number="99"></td>
+        <td id="LC99" class="blob-code blob-code-inner js-file-line">UNLOCK TABLES;</td>
+      </tr>
+      <tr>
+        <td id="L100" class="blob-num js-line-number" data-line-number="100"></td>
+        <td id="LC100" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">/*</span>!40103 SET TIME_ZONE=@OLD_TIME_ZONE <span class="pl-c">*/</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L101" class="blob-num js-line-number" data-line-number="101"></td>
+        <td id="LC101" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L102" class="blob-num js-line-number" data-line-number="102"></td>
+        <td id="LC102" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">/*</span>!40101 SET SQL_MODE=@OLD_SQL_MODE <span class="pl-c">*/</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L103" class="blob-num js-line-number" data-line-number="103"></td>
+        <td id="LC103" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">/*</span>!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS <span class="pl-c">*/</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L104" class="blob-num js-line-number" data-line-number="104"></td>
+        <td id="LC104" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">/*</span>!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS <span class="pl-c">*/</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L105" class="blob-num js-line-number" data-line-number="105"></td>
+        <td id="LC105" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">/*</span>!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT <span class="pl-c">*/</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L106" class="blob-num js-line-number" data-line-number="106"></td>
+        <td id="LC106" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">/*</span>!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS <span class="pl-c">*/</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L107" class="blob-num js-line-number" data-line-number="107"></td>
+        <td id="LC107" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">/*</span>!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION <span class="pl-c">*/</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L108" class="blob-num js-line-number" data-line-number="108"></td>
+        <td id="LC108" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">/*</span>!40111 SET SQL_NOTES=@OLD_SQL_NOTES <span class="pl-c">*/</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L109" class="blob-num js-line-number" data-line-number="109"></td>
+        <td id="LC109" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L110" class="blob-num js-line-number" data-line-number="110"></td>
+        <td id="LC110" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">--</span> Dump completed on 2018-12-12 20:16:05</span></td>
+      </tr>
+</table>
+
+  <details class="details-reset details-overlay BlobToolbar position-absolute js-file-line-actions dropdown d-none" aria-hidden="true">
+    <summary class="btn-octicon ml-0 px-2 p-0 bg-white border border-gray-dark rounded-1" aria-label="Inline file action toolbar">
+      <svg class="octicon octicon-kebab-horizontal" viewBox="0 0 13 16" version="1.1" width="13" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm5 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM13 7.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/></svg>
+    </summary>
+    <details-menu>
+      <ul class="BlobToolbar-dropdown dropdown-menu dropdown-menu-se mt-2">
+        <li><clipboard-copy role="menuitem" class="dropdown-item" id="js-copy-lines" style="cursor:pointer;" data-original-text="Copy lines">Copy lines</clipboard-copy></li>
+        <li><clipboard-copy role="menuitem" class="dropdown-item" id="js-copy-permalink" style="cursor:pointer;" data-original-text="Copy permalink">Copy permalink</clipboard-copy></li>
+        <li><a class="dropdown-item js-update-url-with-hash" id="js-view-git-blame" role="menuitem" href="/femiode01/The_winners/blame/b710e4bc0a0bc95e9d8d2a155a3ea53d66526048/dumps/initial_dump_12-12-2018.sql">View git blame</a></li>
+          <li><a class="dropdown-item" id="js-new-issue" role="menuitem" href="/femiode01/The_winners/issues/new">Open new issue</a></li>
+      </ul>
+    </details-menu>
+  </details>
+
+  </div>
+
+    </div>
+
+  
+
+  <details class="details-reset details-overlay details-overlay-dark">
+    <summary data-hotkey="l" aria-label="Jump to line"></summary>
+    <details-dialog class="Box Box--overlay d-flex flex-column anim-fade-in fast linejump" aria-label="Jump to line">
+      <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-jump-to-line-form Box-body d-flex" action="" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+        <input class="form-control flex-auto mr-3 linejump-input js-jump-to-line-field" type="text" placeholder="Jump to line&hellip;" aria-label="Jump to line" autofocus>
+        <button type="submit" class="btn" data-close-dialog>Go</button>
+</form>    </details-dialog>
+  </details>
+
+
+
+  </div>
+  <div class="modal-backdrop js-touch-events"></div>
+</div>
+
+    </div>
+  </div>
+
+  </div>
+
+        
+<div class="footer container-lg px-3" role="contentinfo">
+  <div class="position-relative d-flex flex-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
+    <ul class="list-style-none d-flex flex-wrap ">
+      <li class="mr-3">&copy; 2018 <span title="0.28337s from unicorn-7748b7599f-9nqzv">GitHub</span>, Inc.</li>
+        <li class="mr-3"><a data-ga-click="Footer, go to terms, text:terms" href="https://github.com/site/terms">Terms</a></li>
+        <li class="mr-3"><a data-ga-click="Footer, go to privacy, text:privacy" href="https://github.com/site/privacy">Privacy</a></li>
+        <li class="mr-3"><a href="/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li class="mr-3"><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+        <li><a data-ga-click="Footer, go to help, text:help" href="https://help.github.com">Help</a></li>
+    </ul>
+
+    <a aria-label="Homepage" title="GitHub" class="footer-octicon mr-lg-4" href="https://github.com">
+      <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+</a>
+   <ul class="list-style-none d-flex flex-wrap ">
+        <li class="mr-3"><a data-ga-click="Footer, go to contact, text:contact" href="https://github.com/contact">Contact GitHub</a></li>
+        <li class="mr-3"><a href="https://github.com/pricing" data-ga-click="Footer, go to Pricing, text:Pricing">Pricing</a></li>
+      <li class="mr-3"><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li class="mr-3"><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+        <li class="mr-3"><a href="https://blog.github.com" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a data-ga-click="Footer, go to about, text:about" href="https://github.com/about">About</a></li>
+
+    </ul>
+  </div>
+  <div class="d-flex flex-justify-center pb-6">
+    <span class="f6 text-gray-light"></span>
+  </div>
+</div>
+
+
+
+  <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"/></svg>
+    <button type="button" class="flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+      <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+    </button>
+    You can’t perform that action at this time.
+  </div>
+
+
+    
+    <script crossorigin="anonymous" integrity="sha512-ZyfxfFeiA0/UlWPAYjYT19nSJ8Tjx1LkEFoBHsSVNRfZpZQSbhnd6N+UgYRbdILEg/t1TOvkpQe395AHcNHJPg==" type="application/javascript" src="https://github.githubassets.com/assets/frameworks-ddeb44bd94948b84d6609e894b8ca376.js"></script>
+    
+    <script crossorigin="anonymous" async="async" integrity="sha512-dIlDkwIRm0HGhY8Q9GPL9omp3IhdHAJMDiSN9JDTXZjixVErX5+OfxY4cClVvdQCH/HFeimc001MwW6zLMWhwQ==" type="application/javascript" src="https://github.githubassets.com/assets/github-c662c528279c9093260bf61a348438a8.js"></script>
+    
+    
+    
+  <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner d-none">
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"/></svg>
+    <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+  </div>
+  <div class="facebox" id="facebox" style="display:none;">
+  <div class="facebox-popup">
+    <div class="facebox-content" role="dialog" aria-labelledby="facebox-header" aria-describedby="facebox-description">
+    </div>
+    <button type="button" class="facebox-close js-facebox-close" aria-label="Close modal">
+      <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+    </button>
+  </div>
+</div>
+
+  <template id="site-details-dialog">
+  <details class="details-reset details-overlay details-overlay-dark lh-default text-gray-dark" open>
+    <summary aria-haspopup="dialog" aria-label="Close dialog"></summary>
+    <details-dialog class="Box Box--overlay d-flex flex-column anim-fade-in fast">
+      <button class="Box-btn-octicon m-0 btn-octicon position-absolute right-0 top-0" type="button" aria-label="Close dialog" data-close-dialog>
+        <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+      </button>
+      <div class="octocat-spinner my-6 js-details-dialog-spinner"></div>
+    </details-dialog>
+  </details>
+</template>
+
+  <div class="Popover js-hovercard-content position-absolute" style="display: none; outline: none;" tabindex="0">
+  <div class="Popover-message Popover-message--bottom-left Popover-message--large Box box-shadow-large" style="width:360px;">
+  </div>
+</div>
+
+<div id="hovercard-aria-description" class="sr-only">
+  Press h to open a hovercard with more details.
+</div>
+
+
+  </body>
+</html>
+
