@@ -151,8 +151,8 @@ xhr1.onload = function () {
                         details = feature.properties;
                         country = details.name;
                         document.getElementsByClassName("country")[0].innerHTML = country;
-                        document.getElementsByClassName("Score")[0].innerHTML = "Happiness_Score " + (populationById[country] ? populationById[country].Happiness_Score : "¯\\_(ツ)_/¯");
-                        document.getElementsByClassName("Rank")[0].innerHTML = "Happiness_Rank " + (populationById[country] ? populationById[country].Happiness_Rank : "¯\\_(ツ)_/¯");
+                        document.getElementsByClassName("Score")[0].innerHTML = "Score <br />" + (populationById[country] ? populationById[country].Happiness_Score : "¯\\_(ツ)_/¯");
+                        document.getElementsByClassName("Rank")[0].innerHTML = "Rank <br />" + (populationById[country] ? populationById[country].Happiness_Rank : "¯\\_(ツ)_/¯");
                         document.getElementsByClassName("details")[0].style.visibility = 'visible';
                     },
                     'mouseout': function (e) {
@@ -227,8 +227,8 @@ xhr1.onload = function () {
                         details = feature.properties;
                         country = details.name;
                         document.getElementsByClassName("country")[0].innerHTML = country;
-                        document.getElementsByClassName("Score")[0].innerHTML = "Happiness_Score " + (populationById[country] ? populationById[country].Happiness_Score : "¯\\_(ツ)_/¯");
-                        document.getElementsByClassName("Rank")[0].innerHTML = "Happiness_Rank " + (populationById[country] ? populationById[country].Happiness_Rank : "¯\\_(ツ)_/¯");
+                        document.getElementsByClassName("Score")[0].innerHTML = "Score <br /> " + (populationById[country] ? populationById[country].Happiness_Score : "¯\\_(ツ)_/¯");
+                        document.getElementsByClassName("Rank")[0].innerHTML = "Rank <br /> " + (populationById[country] ? populationById[country].Happiness_Rank : "¯\\_(ツ)_/¯");
                         document.getElementsByClassName("details")[0].style.visibility = 'visible';
                     },
                     'mouseout': function (e) {
@@ -256,32 +256,90 @@ xhr1.onload = function () {
          };
      }
      
-         var legend = L.control({ position: 'bottomright' })
-         legend.onAdd = function (map) {
+        var legend1 = L.control({position: 'bottomright'});
+        var legend2 = L.control({position: 'bottomright'});
+        var legend3 = L.control({position: 'bottomright'});
+        var div1 = L.DomUtil.create('div', 'info legend');
+        var div2 = L.DomUtil.create('div', 'info legend');
+        var div3 = L.DomUtil.create('div', 'info legend');
+                    
+        legend1.onAdd = function (map) {
 
-         var div = L.DomUtil.create('div', 'info legend'),
+
+         //var div = L.DomUtil.create('div', 'info legend'),
+         var 
          grades = [0, 20, 40, 80, 100, 120, 130, 150],
-         labels = [],
+         labels = ['<strong> YEAR 2015 </strong>'],
          from, to;
-
          for (var i = 0; i < grades.length; i++) {
          from = grades[i];
          to = grades[i + 1];
 
          labels.push(
-             '<i style="background:' + getColor2(from + 1) + '"></i> ' +
+             '<i style="background:' + getColor2(from + 1,'2015') + '"></i> ' +
              from + (to ? '&ndash;' + to : '+'));
          }
 
-         div.innerHTML = labels.join('<br>');
-         //div.innerHTML = '<select><option>1</option><option>2</option><option>3</option></select>';
-         //div.firstChild.onmousedown = div.firstChild.ondblclick = L.DomEvent.stopPropagation;
-         return div;
-     };
+       
+         div1.innerHTML = labels.join('<br>');
+        
+         return div1;
+        };
+        
+         legend1.addTo(map);
+         
+         legend2.onAdd = function (map) {
 
-     legend.addTo(map);
 
-    }
+         //var div = L.DomUtil.create('div', 'info legend'),
+         var 
+         grades = [0, 20, 40, 80, 100, 120, 130, 150],
+         labels = ['<strong> YEAR 2016 </strong>'],
+         from, to;
+         for (var i = 0; i < grades.length; i++) {
+         from = grades[i];
+         to = grades[i + 1];
+
+         labels.push(
+             '<i style="background:' + getColor2(from + 1,'2016') + '"></i> ' +
+             from + (to ? '&ndash;' + to : '+'));
+         }
+
+       
+         div2.innerHTML = labels.join('<br>');
+        
+         return div2;
+        };
+        
+         legend2.addTo(map);
+         legend3.onAdd = function (map) {
+
+
+         //var div = L.DomUtil.create('div', 'info legend'),
+         var 
+         grades = [0, 20, 40, 80, 100, 120, 130, 150],
+         labels = ['<strong> YEAR 2017 </strong>'],
+         from, to;
+         for (var i = 0; i < grades.length; i++) {
+         from = grades[i];
+         to = grades[i + 1];
+
+         labels.push(
+             '<i style="background:' + getColor2(from + 1,'2017') + '"></i> ' +
+             from + (to ? '&ndash;' + to : '+'));
+         }
+
+       
+         div3.innerHTML = labels.join('<br>');
+        
+         return div3;
+        };
+        
+         legend3.addTo(map);
+                
+        
+        
+        };
 };
 xhr1.send();
 jQuery(document).ready( function(){
