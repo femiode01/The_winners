@@ -97,9 +97,40 @@ section.main{
 }
 
 .chartContainer .home-tile{
-	padding-top: 50px;
-	padding-bottom: 50px;
-	background-color: #ddd;
+	padding-bottom: 30px;
+}
+/** home **/
+.home-tile a{
+	display: block;
+	overflow: hidden;
+	position: relative;
+}
+
+.home-tile a img{
+	width: 100%;
+	height: auto;
+}
+
+.home-tile a .title{
+	background-color: rgba(60,60,60, .7);
+	color: #fff;
+	text-transform: uppercase;
+	padding-top: 20px; 
+	padding-bottom: 20px;
+	transition: all ease-in-out .3s;
+	bottom: -60px;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+}
+
+.home-tile a:hover{
+	text-transform: none;
+}
+
+.home-tile a:hover .title{
+	bottom: 0;
+	transition: all ease-in-out .3s;
 }
 
 /*** map page ***/
