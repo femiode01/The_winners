@@ -28,3 +28,7 @@ The very first look of the Choropleth World map using Leaflet Js , D3 and topoJs
 ![image](https://user-images.githubusercontent.com/41707119/50077868-93165980-01b3-11e9-801a-b9fea161417e.png)
 
 I have worked on the above code and tried to put the filter for each of the year data as well as legends, pop up information for each country and different colour code for different year.
+
+Worked with the leaflet provided control option to get the three diffrent legends for the three consicutive year data for more than 150 countries. It would look like something as shown below:
+
+![image](https://user-images.githubusercontent.com/41707119/50202125-ee1e8c80-032a-11e9-93da-b40e98c0047f.png)
