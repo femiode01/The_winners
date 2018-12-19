@@ -80,7 +80,7 @@ def apiCharts(dt):
 @app.route("/api/bar/<dt>")
 def apiBar(dt):
 	
-	sql = "SELECT * FROM happiness_master WHERE happiness_year = '"+dt+"' order by happiness_rank asc limit 15"
+	sql = "SELECT * FROM happiness_master WHERE happiness_year = '"+dt+"' order by happiness_rank asc limit 50"
 	cursor.execute(sql)
 	results = cursor.fetchall()
 
